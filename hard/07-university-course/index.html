@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COMP-204 Web Document Structure — Willowbrook University</title>
+    <meta name="description" content="COMP-204 Web Document Structure, autumn 2026: syllabus, weekly timetable, assessment weighting, reading list and contact details. 6 ECTS, level 2, Department of Computing, Willowbrook University.">
+</head>
+<body>
+    <p><a href="#main">Skip to main content</a></p>
+
+    <header>
+        <p>Willowbrook University — Department of Computing</p>
+
+        <nav aria-label="Prospectus">
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Library</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>COMP-204 Web Document Structure</h1>
+        <p>Autumn semester 2026, academic year 2026/27.</p>
+
+        <nav aria-label="Sections of this page">
+            <ul>
+                <li><a href="#overview">Course overview</a></li>
+                <li><a href="#outcomes">Learning outcomes</a></li>
+                <li><a href="#timetable">Weekly timetable</a></li>
+                <li><a href="#syllabus">Syllabus, week by week</a></li>
+                <li><a href="#assessment">Assessment</a></li>
+                <li><a href="#lecture">Sample lecture</a></li>
+                <li><a href="#official-syllabus">Official syllabus document</a></li>
+                <li><a href="#reading">Reading list</a></li>
+                <li><a href="#feedback">What students say</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="overview">
+            <h2>Course overview</h2>
+
+            <p>
+                COMP-204 is about the layer of the web that is still there when the
+                styling and the scripting are switched off. Over twelve weeks you will
+                learn to read a document the way a browser, a search engine and a screen
+                reader read it, and to write documents that all three can make sense of.
+            </p>
+            <p>
+                The course is deliberately narrow. We do not cover layout, animation or
+                frameworks; other courses do that. We spend the whole semester on
+                structure, semantics, forms, tables and accessible media, because in
+                fifteen years of teaching this department has found that these are the
+                things graduates are never taught and always need.
+            </p>
+            <p>
+                Teaching is two lectures and one supervised lab each week. Nothing on
+                this course is assessed by multiple choice; every piece of work you
+                submit is a document somebody has to be able to read.
+            </p>
+
+            <figure>
+                <img src="../../assets/images/campus-computing-lab.svg"
+                     alt="Lab 2.04: four rows of paired workstations facing a projector wall, with a lecturer's bench at the front."
+                     width="500" height="260">
+                <figcaption>
+                    Lab 2.04 in the Ada Building, where the Tuesday and Thursday labs run.
+                </figcaption>
+            </figure>
+
+            <h3>Course facts</h3>
+            <dl>
+                <dt>Credits</dt>
+                <dd>
+                    6 <abbr title="European Credit Transfer and Accumulation System">ECTS</abbr>,
+                    about 150 hours of total student effort.
+                </dd>
+
+                <dt>Level</dt>
+                <dd>Level 2 undergraduate. Open to exchange students.</dd>
+
+                <dt>Language of instruction</dt>
+                <dd>English. Written work may be submitted in English or Dutch.</dd>
+
+                <dt>Contact hours</dt>
+                <dd>Five hours a week for twelve weeks: two lectures, one two-hour lab.</dd>
+
+                <dt>Mode of delivery</dt>
+                <dd>
+                    On campus. Lectures are recorded and captioned; labs are not recorded.
+                </dd>
+
+                <dt>Examination period</dt>
+                <dd>
+                    <time datetime="2027-01-11">11</time> to
+                    <time datetime="2027-01-22">22 January 2027</time>. The written
+                    examination for this course is on
+                    <time datetime="2027-01-15">15 January 2027</time>.
+                </dd>
+
+                <dt>Maximum enrolment</dt>
+                <dd>72 students, in three lab groups of 24.</dd>
+            </dl>
+        </section>
+
+        <section id="outcomes">
+            <h2>Learning outcomes</h2>
+            <p>By the end of the course you will be able to:</p>
+            <ul>
+                <li>Read an unfamiliar page and describe its document outline from memory.</li>
+                <li>Choose between elements on the basis of meaning rather than appearance.</li>
+                <li>Mark up tabular data so that every cell can be traced to its headers.</li>
+                <li>Build a form that is fully usable with a keyboard and a screen reader.</li>
+                <li>
+                    Provide text alternatives for images, audio and video that carry the
+                    same information as the media.
+                </li>
+                <li>
+                    Audit a page against
+                    <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2
+                    level AA and write up the findings for a non-technical client.
+                </li>
+                <li>Justify a markup decision in writing, citing the specification.</li>
+            </ul>
+        </section>
+
+        <section id="timetable">
+            <h2>Weekly timetable</h2>
+            <p>
+                Rooms are in the Ada Building unless stated. Times are local to
+                Willowbrook.
+            </p>
+
+            <table border="1">
+                <caption>
+                    COMP-204 teaching week, by day, time and room. The Tuesday lab runs
+                    across two slots, and the Thursday project workshop uses both labs at
+                    once.
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Lecture Theatre 1</th>
+                        <th scope="col">Lab 2.04</th>
+                        <th scope="col">Lab 2.06</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="4" scope="rowgroup">Monday</th>
+                    </tr>
+                    <tr>
+                        <th scope="row"><time datetime="09:00">09:00</time>–<time datetime="10:00">10:00</time></th>
+                        <td>Lecture 1: topic of the week</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><time datetime="16:00">16:00</time>–<time datetime="17:00">17:00</time></th>
+                        <td>—</td>
+                        <td>Drop-in help, no booking needed</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="4" scope="rowgroup">Tuesday</th>
+                    </tr>
+                    <tr>
+                        <th scope="row"><time datetime="10:00">10:00</time>–<time datetime="11:00">11:00</time></th>
+                        <td>—</td>
+                        <td rowspan="2">
+                            Lab group A, supervised.
+                            <time datetime="PT120M">Two hours</time>, both slots.
+                        </td>
+                        <td rowspan="2">
+                            Lab group B, supervised.
+                            <time datetime="PT120M">Two hours</time>, both slots.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><time datetime="11:00">11:00</time>–<time datetime="12:00">12:00</time></th>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="4" scope="rowgroup">Wednesday</th>
+                    </tr>
+                    <tr>
+                        <th scope="row"><time datetime="14:00">14:00</time>–<time datetime="15:00">15:00</time></th>
+                        <td>Lecture 2: worked example</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="4" scope="rowgroup">Thursday</th>
+                    </tr>
+                    <tr>
+                        <th scope="row"><time datetime="13:00">13:00</time>–<time datetime="15:00">15:00</time></th>
+                        <td>—</td>
+                        <td colspan="2">
+                            Group project workshop, weeks 7 to 12 only. Both labs are opened
+                            and the dividing door is unlocked.
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="4" scope="rowgroup">Friday</th>
+                    </tr>
+                    <tr>
+                        <th scope="row"><time datetime="11:00">11:00</time>–<time datetime="12:00">12:00</time></th>
+                        <td>—</td>
+                        <td>Lab group C, supervised</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            Week 7 is a reading week: no lectures, labs open for drop-in only.
+                            Room changes are announced by email and always confirmed on the
+                            department noticeboard by 08:00 on the day.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="syllabus">
+            <h2>Syllabus, week by week</h2>
+            <p>Open a week to see the topic, the preparation and anything that is due.</p>
+
+            <details>
+                <summary>Week 1 — What a document is</summary>
+                <p>
+                    The document tree, elements against text, and why the browser builds a
+                    structure whether or not you gave it one.
+                </p>
+                <p>Read: course reader, chapter 1. Nothing due.</p>
+            </details>
+
+            <details>
+                <summary>Week 2 — Headings and the outline</summary>
+                <p>
+                    Heading levels as containment. Reading a page by its outline. Common
+                    outline failures in real sites.
+                </p>
+                <p>Read: course reader, chapter 2. Exercise 1 due Friday.</p>
+            </details>
+
+            <details>
+                <summary>Week 3 — Landmarks and page regions</summary>
+                <p>
+                    Header, navigation, main, complementary content and footer. When a
+                    region is a landmark and when it is only a section.
+                </p>
+                <p>Read: HTML Living Standard, section 4.3. Exercise 2 due Friday.</p>
+            </details>
+
+            <details>
+                <summary>Week 4 — Text-level semantics</summary>
+                <p>
+                    Emphasis against importance, quotations and citations, abbreviations,
+                    dates and times, code and keyboard input.
+                </p>
+                <p>Read: course reader, chapter 3. Exercise 3 due Friday.</p>
+            </details>
+
+            <details>
+                <summary>Week 5 — Lists and relationships</summary>
+                <p>
+                    Ordered, unordered and description lists. Nesting. Why a list of links
+                    is still a list.
+                </p>
+                <p>Read: course reader, chapter 4. Exercise 4 due Friday.</p>
+            </details>
+
+            <details>
+                <summary>Week 6 — Tabular data</summary>
+                <p>
+                    Captions, header cells, scope, row groups, merged cells, and the
+                    difference between a table and a layout.
+                </p>
+                <p>
+                    Read: WCAG 2.2 understanding document for success criterion 1.3.1.
+                    Exercise 5 due Friday. <strong>Structure audit brief released.</strong>
+                </p>
+            </details>
+
+            <details>
+                <summary>Week 7 — Reading week</summary>
+                <p>
+                    No lectures. Labs open for drop-in help with the structure audit. The
+                    audit is due at the end of the following week.
+                </p>
+                <p>
+                    Due: structure audit,
+                    <time datetime="2026-11-06">6 November 2026</time>.
+                </p>
+            </details>
+
+            <details>
+                <summary>Week 8 — Forms, part one</summary>
+                <p>
+                    Controls, labels, grouping with fieldsets and legends, and what a
+                    placeholder is not.
+                </p>
+                <p>Read: course reader, chapter 5. Exercise 6 due Friday.</p>
+            </details>
+
+            <details>
+                <summary>Week 9 — Forms, part two</summary>
+                <p>
+                    Input types, validation attributes, error messages that a screen
+                    reader announces, and autofill.
+                </p>
+                <p>Read: course reader, chapter 6. Exercise 7 due Friday. Group project set.</p>
+            </details>
+
+            <details>
+                <summary>Week 10 — Images and figures</summary>
+                <p>
+                    Alternative text as a decision, not a field. Decorative images,
+                    complex images, figures and captions.
+                </p>
+                <p>Read: course reader, chapter 7. Exercise 8 due Friday.</p>
+            </details>
+
+            <details>
+                <summary>Week 11 — Audio, video and embedded content</summary>
+                <p>
+                    Captions, transcripts, text descriptions, multiple sources, and
+                    embedding somebody else's document responsibly.
+                </p>
+                <p>Read: course reader, chapter 8. Exercise 9 due Friday.</p>
+            </details>
+
+            <details>
+                <summary>Week 12 — Metadata, documents and the outside world</summary>
+                <p>
+                    The document head, language, descriptions, canonical addresses, and
+                    what search engines and social platforms actually read.
+                </p>
+                <p>
+                    Exercise 10 due Friday. Due: group project,
+                    <time datetime="2026-12-11">11 December 2026</time>.
+                </p>
+            </details>
+        </section>
+
+        <section id="assessment">
+            <h2>Assessment</h2>
+
+            <table border="1">
+                <caption>COMP-204 assessment components, weighting and deadlines</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Component</th>
+                        <th scope="col">What it is</th>
+                        <th scope="col">Weight</th>
+                        <th scope="col">Due</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Weekly exercises</th>
+                        <td>Ten short markup tasks, best eight count</td>
+                        <td>20%</td>
+                        <td>Fridays, weeks 2 to 12</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Structure audit</th>
+                        <td>A 2,000-word audit of a live site, with corrected markup</td>
+                        <td>25%</td>
+                        <td><time datetime="2026-11-06">6 November 2026</time></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Group project</th>
+                        <td>An accessible multi-page document, in groups of three</td>
+                        <td>25%</td>
+                        <td><time datetime="2026-12-11">11 December 2026</time></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Written examination</th>
+                        <td>Two hours, closed book, three questions from five</td>
+                        <td>30%</td>
+                        <td><time datetime="2027-01-15">15 January 2027</time></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td>Four components</td>
+                        <td>100%</td>
+                        <td>—</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p>
+                The pass mark is 50% overall, with at least 40% in the written
+                examination. A student who passes overall but fails the examination
+                component may resit the examination once, in the August period, capped at
+                50%.
+            </p>
+            <p>
+                Late work loses five percentage points per working day, up to five days,
+                after which it is not marked. Extensions are granted by the department
+                office, not by the lecturer.
+            </p>
+        </section>
+
+        <section id="lecture">
+            <h2>Sample lecture</h2>
+            <p>
+                An excerpt from lecture 4, on text-level semantics, so you can hear how
+                the course is taught before you enrol.
+            </p>
+
+            <audio controls preload="metadata">
+                <source src="../../assets/audio/comp204-lecture-04-excerpt.m4a" type="audio/mp4">
+                <source src="../../assets/audio/comp204-lecture-04-excerpt.wav" type="audio/wav">
+                <p>
+                    Your browser cannot play this recording.
+                    <a href="../../assets/audio/comp204-lecture-04-excerpt.m4a">
+                        Download the excerpt as an M4A file (115 KB)
+                    </a>
+                    and read the summary below.
+                </p>
+            </audio>
+
+            <p>
+                <a href="../../assets/audio/comp204-lecture-04-excerpt.m4a" download>
+                    Download the excerpt (M4A, 115 KB)
+                </a>
+            </p>
+
+            <h3>What is in the excerpt</h3>
+            <p>
+                Prof. Vasquez opens lecture 4 by setting out what the session covers: why
+                a heading describes hierarchy rather than text size, how to read a
+                document outline, a side-by-side comparison of the same page built from
+                generic containers and from landmark elements, and a demonstration in
+                which she walks a real page with a screen reader. The full recording runs
+                for fifty-two minutes and is published with captions in the course
+                workspace.
+            </p>
+        </section>
+
+        <section id="official-syllabus">
+            <h2>Official syllabus document</h2>
+            <p>
+                The department publishes the binding version of the syllabus separately.
+                It is embedded below, and it is the version referred to in any dispute
+                about assessment.
+            </p>
+
+            <iframe src="../../assets/embeds/comp204-syllabus.html"
+                    title="Official COMP-204 syllabus, autumn 2026"
+                    width="640" height="480" loading="lazy"></iframe>
+
+            <p>
+                <a href="../../assets/embeds/comp204-syllabus.html" target="_blank" rel="noopener">
+                    Open the official COMP-204 syllabus in a new tab
+                </a>
+            </p>
+        </section>
+
+        <section id="reading">
+            <h2>Reading list</h2>
+
+            <h3>Required, in this order</h3>
+            <ol>
+                <li>
+                    Course reader, <cite>Web Document Structure</cite>, chapters 1 to 8.
+                    Available from the department office and the library reserve shelf.
+                </li>
+                <li>
+                    <cite>HTML Living Standard</cite>, sections 4.3 and 4.4.
+                    <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener">
+                        Read the HTML Living Standard on whatwg.org (opens in a new tab)
+                    </a>
+                </li>
+                <li>
+                    <cite>Web Content Accessibility Guidelines 2.2</cite>, success criteria
+                    1.3.1, 2.4.6 and 3.3.2.
+                    <a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener">
+                        Read WCAG 2.2 on w3.org (opens in a new tab)
+                    </a>
+                </li>
+            </ol>
+
+            <h3>Recommended</h3>
+            <ul>
+                <li>Vasquez, E. (2024) <cite>Reading Other People's Markup</cite>. Willowbrook Press.</li>
+                <li>Okonjo, A. (2022) <cite>Forms Nobody Complains About</cite>. Meridian Books.</li>
+                <li>The department's own HTML authoring guide, on the intranet.</li>
+            </ul>
+        </section>
+
+        <aside id="prerequisites">
+            <h2>Prerequisites and support</h2>
+
+            <h3>Before you take this course</h3>
+            <p>You must have passed:</p>
+            <ul>
+                <li>COMP-101 Introduction to Programming</li>
+                <li>COMP-118 The Web Platform</li>
+            </ul>
+            <p>
+                If you have not passed COMP-118 but have professional experience, the
+                department can waive it. Email the lecturer with a page you have built
+                and she will decide within a week.
+            </p>
+
+            <h3>Study support</h3>
+            <p>
+                The Writing and Study Centre runs a weekly clinic on technical writing,
+                which most students find more useful than a second reading of the course
+                reader.
+            </p>
+
+            <h3>Accessibility service</h3>
+            <p>
+                Extra time, a separate examination room, materials in advance and note
+                takers are all arranged through the accessibility service, not through
+                the department. Contact them in the first two weeks of the semester;
+                arrangements cannot be made retrospectively after an assessment.
+            </p>
+            <address>
+                Accessibility Service, Willowbrook University<br>
+                Email: <a href="mailto:access@willowbrook.example.edu">access@willowbrook.example.edu</a><br>
+                Telephone: <a href="tel:+3120555010">+31 20 555 010</a>
+            </address>
+        </aside>
+
+        <section id="feedback">
+            <h2>What students say</h2>
+
+            <blockquote cite="https://willowbrook.example.edu/course-evaluations/comp-204">
+                <p>
+                    I came in thinking this would be the easy course of the semester
+                    because it is "just HTML". I have never had so much red ink on a
+                    submission, and I have never learned so much from it.
+                </p>
+            </blockquote>
+            <p>— <cite>Student evaluation, 2025/26 cohort</cite></p>
+
+            <blockquote cite="https://willowbrook.example.edu/course-evaluations/comp-204">
+                <p>
+                    The screen reader demonstration in week 3 changed how I build things.
+                    I got a placement partly because I could explain in the interview why
+                    my markup was the way it was.
+                </p>
+            </blockquote>
+            <p>— <cite>Student evaluation, 2024/25 cohort</cite></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <h3>Course lecturer</h3>
+            <figure>
+                <img src="../../assets/images/portrait-prof-elena-vasquez.svg"
+                     alt="Prof. Elena Vasquez, dark hair tied back, wearing a purple blouse, in her office."
+                     width="180" height="180">
+                <figcaption>Prof. Elena Vasquez</figcaption>
+            </figure>
+            <address>
+                Prof. Elena Vasquez<br>
+                Room 4.12, Ada Building<br>
+                Office hours: Tuesdays <time datetime="14:00">14:00</time> to
+                <time datetime="16:00">16:00</time>, no appointment needed<br>
+                Email: <a href="mailto:e.vasquez@willowbrook.example.edu">e.vasquez@willowbrook.example.edu</a>
+            </address>
+
+            <h3>Department office</h3>
+            <address>
+                Department of Computing<br>
+                Ada Building, Willowbrook University<br>
+                Kruislaan 404<br>
+                1098 SM Amsterdam<br>
+                Netherlands<br>
+                Telephone: <a href="tel:+3120555000">+31 20 555 000</a><br>
+                Email: <a href="mailto:computing@willowbrook.example.edu">computing@willowbrook.example.edu</a>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            This page describes COMP-204 in the 2026/27 academic year. Last revised
+            <time datetime="2026-08-14">14 August 2026</time>. The official syllabus
+            document takes precedence over this page.
+        </p>
+
+        <nav aria-label="Footer">
+            <ul>
+                <li><a href="#">Full course catalogue</a></li>
+                <li><a href="#">Examination regulations</a></li>
+                <li><a href="#">Academic calendar 2026/27</a></li>
+            </ul>
+        </nav>
+
+        <p>© 2026 Willowbrook University, Department of Computing.</p>
+        <p><a href="../../">Back to all HTML challenges</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Semantic page regions diagram</title>
+  <desc id="d">Placeholder cover graphic for Semantic page regions diagram.</desc>
+  <rect width="1000" height="560" fill="#12232e"/>
+  <circle cx="200" cy="140" r="150" fill="#6fb3d2" fill-opacity="0.8"/>
+  <rect x="450" y="168" width="380" height="240" rx="24" fill="#f0a35e" fill-opacity="0.85"/>
+  <rect x="120" y="336" width="300" height="120" rx="18" fill="#f0a35e" fill-opacity="0.55"/>
+  <text x="500" y="504" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#ffffff" text-anchor="middle">Semantic page regions</text>
+  <text x="500" y="544" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#ffffff" text-anchor="middle">diagram</text>
+</svg>

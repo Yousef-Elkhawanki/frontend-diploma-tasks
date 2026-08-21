@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Computing lab, Willowbrook University</title>
+  <desc id="d">Placeholder scene graphic for Computing lab, Willowbrook University.</desc>
+  <rect width="1000" height="520" fill="#1c2430"/>
+  <circle cx="860" cy="110" r="58" fill="#e9c46a"/>
+  <path d="M0 322 L 280 177 L 500 322 Z" fill="#3a4a5e"/>
+  <path d="M380 343 L 660 156 L 950 343 Z" fill="#3a4a5e" fill-opacity="0.75"/>
+  <rect y="333" width="1000" height="187" fill="#2b3646"/>
+  <text x="500" y="480" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">Computing lab, Willowbrook</text>
+  <text x="500" y="512" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">University</text>
+</svg>

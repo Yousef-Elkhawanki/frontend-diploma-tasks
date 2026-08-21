@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-labelledby="t d">
+  <title id="t">Lina Moreau, instructor</title>
+  <desc id="d">Placeholder portrait graphic for Lina Moreau, instructor.</desc>
+  <rect width="480" height="480" fill="#1a2430"/>
+  <circle cx="240" cy="185" r="88" fill="#f1d2b5"/>
+  <path d="M60 480 C 60 350 150 300 240 300 C 330 300 420 350 420 480 Z" fill="#4ea8de"/>
+  <text x="240" y="205" font-family="Helvetica, Arial, sans-serif" font-size="64" fill="#1a2430" text-anchor="middle">LM</text>
+  <text x="240" y="430" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle">Lina Moreau, instructor</text>
+</svg>

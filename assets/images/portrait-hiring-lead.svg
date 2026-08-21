@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-labelledby="t d">
+  <title id="t">Yasmin Farouk, hiring lead</title>
+  <desc id="d">Placeholder portrait graphic for Yasmin Farouk, hiring lead.</desc>
+  <rect width="480" height="480" fill="#1f2b26"/>
+  <circle cx="240" cy="185" r="88" fill="#f2d3b3"/>
+  <path d="M60 480 C 60 350 150 300 240 300 C 330 300 420 350 420 480 Z" fill="#4e7c67"/>
+  <text x="240" y="205" font-family="Helvetica, Arial, sans-serif" font-size="64" fill="#1f2b26" text-anchor="middle">YF</text>
+  <text x="240" y="430" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle">Yasmin Farouk, hiring lead</text>
+</svg>

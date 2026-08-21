@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-labelledby="t d">
+  <title id="t">Weekly market summary</title>
+  <desc id="d">Placeholder cover graphic for Weekly market summary.</desc>
+  <rect width="900" height="500" fill="#101820"/>
+  <circle cx="180" cy="125" r="150" fill="#4ea8de" fill-opacity="0.8"/>
+  <rect x="405" y="150" width="380" height="240" rx="24" fill="#7bd389" fill-opacity="0.85"/>
+  <rect x="108" y="300" width="300" height="120" rx="18" fill="#7bd389" fill-opacity="0.55"/>
+  <text x="450" y="444" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#ffffff" text-anchor="middle">Weekly market summary</text>
+</svg>

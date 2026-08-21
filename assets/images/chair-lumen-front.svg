@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t d">
+  <title id="t">Lumen desk chair, front view</title>
+  <desc id="d">Placeholder product graphic for Lumen desk chair, front view.</desc>
+  <rect width="800" height="600" fill="#12161a"/>
+  <ellipse cx="400" cy="492" rx="240" ry="34" fill="#9bc1bc" fill-opacity="0.35"/>
+  <rect x="224" y="132" width="352" height="300" rx="42" fill="#37424d"/>
+  <circle cx="400" cy="282" r="90" fill="#9bc1bc"/>
+  <text x="400" y="560" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">Lumen desk chair, front</text>
+  <text x="400" y="592" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">view</text>
+</svg>

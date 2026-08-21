@@ -1,0 +1,26 @@
+SARA HADDAD
+Front-End Developer - Amman, Jordan
+sara.haddad@example.com | +962 7 9012 3456
+Portfolio: https://sara-haddad.example.com
+
+SUMMARY
+Front-end developer with four years of experience building accessible,
+standards-based interfaces for public sector and education clients.
+
+EXPERIENCE
+2023 - present  Front-End Developer, Cedar Digital, Amman
+                Rebuilt the national library catalogue front end; the new
+                markup passes WCAG 2.2 AA and cut page weight by 61%.
+2021 - 2023     Junior Developer, Bayt Labs, Amman
+                Built and maintained eleven marketing sites and the shared
+                HTML component library used across the studio.
+
+EDUCATION
+2017 - 2021     BSc Computer Science, University of Jordan
+
+SKILLS
+Semantic HTML, CSS, JavaScript, accessibility testing (NVDA, VoiceOver),
+Git, design systems, technical writing.
+
+LANGUAGES
+Arabic (native), English (fluent), French (intermediate)

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-labelledby="t d">
+  <title id="t">Dr. Elif Demir</title>
+  <desc id="d">Placeholder portrait graphic for Dr. Elif Demir.</desc>
+  <rect width="480" height="480" fill="#1f2a22"/>
+  <circle cx="240" cy="185" r="88" fill="#f2d6b8"/>
+  <path d="M60 480 C 60 350 150 300 240 300 C 330 300 420 350 420 480 Z" fill="#4f8f5a"/>
+  <text x="240" y="205" font-family="Helvetica, Arial, sans-serif" font-size="64" fill="#1f2a22" text-anchor="middle">ED</text>
+  <text x="240" y="430" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle">Dr. Elif Demir</text>
+</svg>

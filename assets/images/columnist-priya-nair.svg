@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-labelledby="t d">
+  <title id="t">Priya Nair, columnist</title>
+  <desc id="d">Placeholder portrait graphic for Priya Nair, columnist.</desc>
+  <rect width="480" height="480" fill="#22242e"/>
+  <circle cx="240" cy="185" r="88" fill="#eccfb2"/>
+  <path d="M60 480 C 60 350 150 300 240 300 C 330 300 420 350 420 480 Z" fill="#c96f4a"/>
+  <text x="240" y="205" font-family="Helvetica, Arial, sans-serif" font-size="64" fill="#22242e" text-anchor="middle">PN</text>
+  <text x="240" y="430" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle">Priya Nair, columnist</text>
+</svg>

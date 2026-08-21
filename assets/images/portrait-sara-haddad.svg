@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-labelledby="t d">
+  <title id="t">Sara Haddad</title>
+  <desc id="d">Placeholder portrait graphic for Sara Haddad.</desc>
+  <rect width="480" height="480" fill="#1f2933"/>
+  <circle cx="240" cy="185" r="88" fill="#f5d5a8"/>
+  <path d="M60 480 C 60 350 150 300 240 300 C 330 300 420 350 420 480 Z" fill="#3b6e8f"/>
+  <text x="240" y="205" font-family="Helvetica, Arial, sans-serif" font-size="64" fill="#1f2933" text-anchor="middle">SH</text>
+  <text x="240" y="430" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle">Sara Haddad</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Lexicon dictionary app</title>
+  <desc id="d">Placeholder cover graphic for Lexicon dictionary app.</desc>
+  <rect width="900" height="560" fill="#22182b"/>
+  <circle cx="180" cy="140" r="150" fill="#b892ff" fill-opacity="0.8"/>
+  <rect x="405" y="168" width="380" height="240" rx="24" fill="#ffd166" fill-opacity="0.85"/>
+  <rect x="108" y="336" width="300" height="120" rx="18" fill="#ffd166" fill-opacity="0.55"/>
+  <text x="450" y="504" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#ffffff" text-anchor="middle">Lexicon dictionary app</text>
+</svg>

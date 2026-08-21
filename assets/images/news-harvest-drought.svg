@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Drought hits olive harvest</title>
+  <desc id="d">Placeholder cover graphic for Drought hits olive harvest.</desc>
+  <rect width="1000" height="560" fill="#2a2318"/>
+  <circle cx="200" cy="140" r="150" fill="#e0a75e" fill-opacity="0.8"/>
+  <rect x="450" y="168" width="380" height="240" rx="24" fill="#8fae54" fill-opacity="0.85"/>
+  <rect x="120" y="336" width="300" height="120" rx="18" fill="#8fae54" fill-opacity="0.55"/>
+  <text x="500" y="504" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#ffffff" text-anchor="middle">Drought hits olive harvest</text>
+</svg>

@@ -1,0 +1,38 @@
+NORTHWIND STUDIO
+Job description - Front-End Engineer (Accessibility focus)
+Reference: NWS-2026-FE-07
+Location: Manchester, United Kingdom (hybrid, 2 days on site)
+Contract: Permanent, full time
+Salary band: GBP 42,000 - 52,000 depending on experience
+Closing date: 30 September 2026
+
+ABOUT THE ROLE
+You will join the six-person platform team that builds and maintains the
+component library used by every Northwind client project. Roughly half of
+your time is spent writing HTML, CSS and TypeScript; the other half is spent
+reviewing other people's markup, testing with assistive technology and
+writing the guidance that goes with each component.
+
+RESPONSIBILITIES
+- Build components that meet WCAG 2.2 AA before any visual polish is added.
+- Review pull requests from six project teams, focusing on markup semantics.
+- Run monthly accessibility clinics for designers and content editors.
+- Maintain the studio's HTML authoring guide.
+
+ESSENTIAL EXPERIENCE
+- Two or more years writing production HTML and CSS.
+- Confident with keyboard-only testing and at least one screen reader.
+- Able to explain a markup decision in writing to a non-developer.
+
+DESIRABLE
+- Experience with design tokens or a shared component library.
+- Public speaking, writing or teaching experience.
+
+HOW WE HIRE
+1. Application review (one week).
+2. Portfolio conversation, 45 minutes, remote.
+3. Paid take-home markup review task, 3 hours.
+4. Team interview, 90 minutes, on site in Manchester.
+
+Northwind Studio is a disability confident employer. Tell us in your
+application if you need an adjustment at any stage.

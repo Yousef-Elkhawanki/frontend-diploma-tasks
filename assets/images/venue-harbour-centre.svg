@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Harbour Centre conference venue</title>
+  <desc id="d">Placeholder scene graphic for Harbour Centre conference venue.</desc>
+  <rect width="1000" height="520" fill="#1d3040"/>
+  <circle cx="860" cy="110" r="58" fill="#f2c14e"/>
+  <path d="M0 322 L 280 177 L 500 322 Z" fill="#3c5d78"/>
+  <path d="M380 343 L 660 156 L 950 343 Z" fill="#3c5d78" fill-opacity="0.75"/>
+  <rect y="333" width="1000" height="187" fill="#28425a"/>
+  <text x="500" y="480" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">Harbour Centre conference</text>
+  <text x="500" y="512" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">venue</text>
+</svg>

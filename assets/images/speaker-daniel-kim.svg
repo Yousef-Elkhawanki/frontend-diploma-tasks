@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" role="img" aria-labelledby="t d">
+  <title id="t">Daniel Kim</title>
+  <desc id="d">Placeholder portrait graphic for Daniel Kim.</desc>
+  <rect width="480" height="480" fill="#182633"/>
+  <circle cx="240" cy="185" r="88" fill="#f0d3b4"/>
+  <path d="M60 480 C 60 350 150 300 240 300 C 330 300 420 350 420 480 Z" fill="#3f7ea8"/>
+  <text x="240" y="205" font-family="Helvetica, Arial, sans-serif" font-size="64" fill="#182633" text-anchor="middle">DK</text>
+  <text x="240" y="430" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#ffffff" text-anchor="middle">Daniel Kim</text>
+</svg>

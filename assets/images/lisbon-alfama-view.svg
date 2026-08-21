@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Rooftops of Alfama, Lisbon</title>
+  <desc id="d">Placeholder scene graphic for Rooftops of Alfama, Lisbon.</desc>
+  <rect width="1000" height="560" fill="#2a3a4a"/>
+  <circle cx="860" cy="110" r="58" fill="#f6c667"/>
+  <path d="M0 347 L 280 190 L 500 347 Z" fill="#c2703f"/>
+  <path d="M380 370 L 660 168 L 950 370 Z" fill="#c2703f" fill-opacity="0.75"/>
+  <rect y="358" width="1000" height="202" fill="#8a5a3b"/>
+  <text x="500" y="520" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">Rooftops of Alfama, Lisbon</text>
+</svg>

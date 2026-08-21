@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Tram 28 climbing a Lisbon street</title>
+  <desc id="d">Placeholder scene graphic for Tram 28 climbing a Lisbon street.</desc>
+  <rect width="900" height="520" fill="#243040"/>
+  <circle cx="760" cy="110" r="58" fill="#f2b134"/>
+  <path d="M0 322 L 252 177 L 450 322 Z" fill="#4e5a6e"/>
+  <path d="M342 343 L 594 156 L 855 343 Z" fill="#4e5a6e" fill-opacity="0.75"/>
+  <rect y="333" width="900" height="187" fill="#3a4250"/>
+  <text x="450" y="480" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">Tram 28 climbing a Lisbon</text>
+  <text x="450" y="512" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle">street</text>
+</svg>

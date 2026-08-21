@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" aria-labelledby="t d">
+  <title id="t">City museum reopening</title>
+  <desc id="d">Placeholder cover graphic for City museum reopening.</desc>
+  <rect width="900" height="520" fill="#241a2b"/>
+  <circle cx="180" cy="130" r="150" fill="#b892ff" fill-opacity="0.8"/>
+  <rect x="405" y="156" width="380" height="240" rx="24" fill="#ffd166" fill-opacity="0.85"/>
+  <rect x="108" y="312" width="300" height="120" rx="18" fill="#ffd166" fill-opacity="0.55"/>
+  <text x="450" y="464" font-family="Helvetica, Arial, sans-serif" font-size="34" fill="#ffffff" text-anchor="middle">City museum reopening</text>
+</svg>

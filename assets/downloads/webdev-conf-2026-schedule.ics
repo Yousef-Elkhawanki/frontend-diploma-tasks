@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Northern Web Conference//Schedule 2026//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:opening-keynote@northernweb.example
+DTSTAMP:20260401T090000Z
+DTSTART:20261008T070000Z
+DTEND:20261008T080000Z
+SUMMARY:Opening keynote - The Web We Can Maintain
+LOCATION:Harbour Centre, Main Hall, Gothenburg
+DESCRIPTION:Nadia Rahman on long-lived front ends.
+END:VEVENT
+BEGIN:VEVENT
+UID:html-structure-workshop@northernweb.example
+DTSTAMP:20260401T090000Z
+DTSTART:20261008T083000Z
+DTEND:20261008T103000Z
+SUMMARY:Workshop - Document structure for large sites
+LOCATION:Harbour Centre, Workshop Room B, Gothenburg
+DESCRIPTION:Hands-on session with Tomas Lindqvist. Laptop required.
+END:VEVENT
+BEGIN:VEVENT
+UID:closing-panel@northernweb.example
+DTSTAMP:20260401T090000Z
+DTSTART:20261009T140000Z
+DTEND:20261009T151500Z
+SUMMARY:Closing panel - Teaching the platform
+LOCATION:Harbour Centre, Main Hall, Gothenburg
+END:VEVENT
+END:VCALENDAR

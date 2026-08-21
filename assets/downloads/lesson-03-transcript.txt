@@ -1,0 +1,21 @@
+ACCESSIBLE WEB MEDIA - LESSON 3
+Captions, transcripts and audio description
+Instructor: Lina Moreau
+Running time of the lesson clip: 5 seconds
+
+TRANSCRIPT OF THE SAMPLE CLIP
+The sample clip has no spoken audio. It is a five second time-lapse: a closed
+pink flower bud fills the frame, then the petals unfold until the flower is
+fully open.
+
+WHY A SILENT CLIP STILL NEEDS TEXT
+A viewer who cannot hear the audio needs to know that there is nothing to
+hear; silence with no caption is indistinguishable from a broken caption
+track. A viewer who cannot see the video needs a description of what happens,
+because nothing in the audio conveys it.
+
+WHAT TO PRODUCE FOR EVERY CLIP
+1. A caption track for everything audible, including "[no dialogue]".
+2. A text description track, or an audio description, for everything visible
+   that matters.
+3. A full transcript on the page or linked from it, like this file.
