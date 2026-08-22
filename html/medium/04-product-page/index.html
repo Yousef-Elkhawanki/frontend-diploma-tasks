@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aurora One over-ear headphones — Northlight Audio</title>
+    <meta name="description" content="Aurora One over-ear headphones: 40 mm drivers, 52 hours of battery life, replaceable ear pads and a three-year repair promise. Now £249, reduced from £299.">
+</head>
+<body>
+    <header>
+        <p>Northlight Audio</p>
+
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Cables</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+
+        <nav aria-label="Breadcrumb">
+            <ol>
+                <li><a href="#">Northlight Audio</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#overview" aria-current="page">Aurora One</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h1>Aurora One</h1>
+            <p>
+                Over-ear headphones built to be repaired: 52 hours of battery, ear pads
+                you can replace with a coin, and a spare parts list published for ten
+                years.
+            </p>
+
+            <p>
+                <del>£299.00</del> <ins>£249.00</ins> — saving £50.00
+            </p>
+
+            <p>
+                Average customer rating:
+                <meter min="0" max="5" value="4.4" low="2" high="4" optimum="5">
+                    4.4 out of 5
+                </meter>
+                4.4 out of 5, from 318 ratings.
+                <a href="#reviews">Read the reviews</a>
+            </p>
+
+            <p><strong>In stock.</strong> Ordered before 16:00, shipped the same working day.</p>
+
+            <h2>The product</h2>
+
+            <figure>
+                <img src="./assets/images/headphones-aurora-front.svg"
+                     alt="The Aurora One headphones seen from the front, headband upright, both ear cups facing the camera."
+                     width="400" height="300">
+                <figcaption>Front view, graphite finish.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./assets/images/headphones-aurora-folded.svg"
+                     alt="The same headphones folded flat, with both ear cups rotated into the plane of the headband."
+                     width="400" height="300">
+                <figcaption>Folded flat for a bag, 4 cm deep.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./assets/images/headphones-aurora-case.svg"
+                     alt="The hard travel case, open, with the folded headphones inside and the cable in a mesh pocket in the lid."
+                     width="400" height="300">
+                <figcaption>The travel case is included, not an accessory.</figcaption>
+            </figure>
+
+            <h2>What matters most</h2>
+            <ul>
+                <li><strong>52 hours</strong> of playback with active noise cancelling on.</li>
+                <li>Ear pads and headband are replaceable with a coin, no glue anywhere.</li>
+                <li>
+                    Works as a plain wired pair over
+                    <abbr title="Universal Serial Bus Type-C">USB-C</abbr> or 3.5 mm when
+                    the battery is flat.
+                </li>
+                <li>Three-year repair promise, extendable at checkout.</li>
+            </ul>
+        </section>
+
+        <section id="buy">
+            <h2>Choose your Aurora One</h2>
+
+            <form action="#buy" method="post">
+                <fieldset>
+                    <legend>Colour</legend>
+
+                    <p>
+                        <input type="radio" id="colour-graphite" name="colour" value="graphite" checked required>
+                        <label for="colour-graphite">Graphite</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="colour-sand" name="colour" value="sand">
+                        <label for="colour-sand">Sand</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="colour-blue" name="colour" value="deep-blue" disabled>
+                        <label for="colour-blue">Deep blue — out of stock until 14 September 2026</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ear pad size</legend>
+
+                    <p>
+                        <input type="radio" id="pad-small" name="pad-size" value="small">
+                        <label for="pad-small">Small</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="pad-medium" name="pad-size" value="medium" checked>
+                        <label for="pad-medium">Medium — fits most head shapes</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="pad-large" name="pad-size" value="large">
+                        <label for="pad-large">Large</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extras</legend>
+
+                    <p>
+                        <label for="warranty">Extended repair promise</label>
+                        <select id="warranty" name="warranty">
+                            <option value="none" selected>Three years, included</option>
+                            <option value="plus-2">Add two years — £24.00</option>
+                            <option value="plus-3">Add three years — £34.00</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="engraving">Engraving on the headband (optional)</label>
+                        <input type="text" id="engraving" name="engraving" maxlength="16"
+                               placeholder="e.g. R. Alvarez" autocomplete="off">
+                        <small>Up to 16 characters. Engraved items cannot be returned.</small>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="gift-wrap" name="gift-wrap" value="yes">
+                        <label for="gift-wrap">Gift wrap this order — £3.50</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" value="1"
+                           min="1" max="5" step="1" required>
+                    <small>Maximum five per order.</small>
+                </p>
+
+                <p>
+                    <button type="submit">Add to basket</button>
+                </p>
+            </form>
+        </section>
+
+        <section id="specifications">
+            <h2>Specifications</h2>
+
+            <table border="1">
+                <caption>Aurora One technical specifications</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Specification</th>
+                        <th scope="col">Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Driver</th>
+                        <td>40 mm dynamic, paper composite cone</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Frequency response</th>
+                        <td>12 Hz – 24 kHz</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Impedance</th>
+                        <td>32 ohm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Battery life</th>
+                        <td>52 hours with noise cancelling, 68 hours without</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Charging time</th>
+                        <td>2 hours to full; 10 minutes gives 6 hours</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Weight</th>
+                        <td>268 g</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wireless</th>
+                        <td>Bluetooth 5.3, two devices at once, SBC and AAC</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wired</th>
+                        <td>USB-C digital, 3.5 mm analogue</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Folding</th>
+                        <td>Flat, 4 cm deep in the case</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Spare parts</th>
+                        <td>Pads, headband, hinge and battery available until 2036</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="in-the-box">
+            <h2>In the box</h2>
+
+            <dl>
+                <dt>Aurora One headphones</dt>
+                <dd>In your chosen colour, with medium pads fitted unless you chose otherwise.</dd>
+
+                <dt>Hard travel case</dt>
+                <dd>Recycled polycarbonate shell with a mesh pocket in the lid.</dd>
+
+                <dt>USB-C to USB-C cable</dt>
+                <dd>1.2 m, braided, carries both audio and charge.</dd>
+
+                <dt>3.5 mm cable</dt>
+                <dd>1.2 m, straight, with an in-line microphone.</dd>
+
+                <dt>Repair leaflet</dt>
+                <dd>Printed diagrams for changing the pads, headband and battery.</dd>
+            </dl>
+        </section>
+
+        <section id="questions">
+            <h2>Questions buyers ask</h2>
+
+            <details>
+                <summary>Can I use them while they charge?</summary>
+                <p>
+                    Yes, over USB-C or 3.5 mm. Charging while playing adds about 40
+                    minutes to a full charge.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do the ear pads really come off without tools?</summary>
+                <p>
+                    They twist off by hand. The headband needs a coin or a flat
+                    screwdriver to release two clips. Replacement pads are £19 a pair.
+                </p>
+            </details>
+
+            <details>
+                <summary>Will they work with my flight entertainment system?</summary>
+                <p>
+                    Yes, with the 3.5 mm cable. Two-pin airline sockets need an adapter,
+                    which is not included.
+                </p>
+            </details>
+
+            <details>
+                <summary>What happens if I break them outside the warranty?</summary>
+                <p>
+                    We publish the spare parts list and the service manual, and our
+                    workshop in Leeds quotes for repairs on any Aurora One regardless of
+                    age. We have never refused a repair on age alone.
+                </p>
+            </details>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <p>318 ratings, average 4.4 out of 5. Showing the three most recent.</p>
+
+            <article>
+                <h3>Replaced a pair I had glued back together twice</h3>
+                <p>
+                    By Rebecca Oyelaran on <time datetime="2026-08-02">2 August 2026</time>.
+                    Verified purchase.
+                </p>
+                <p>
+                    Rated <meter min="0" max="5" value="5" optimum="5">5 out of 5</meter>
+                    5 out of 5.
+                </p>
+                <p>
+                    I have owned four pairs of headphones in six years and every one died
+                    at the hinge. This is the first pair I can actually fix. Sound is
+                    warm rather than clinical, which suits the podcasts and jazz I mostly
+                    listen to.
+                </p>
+            </article>
+
+            <article>
+                <h3>Excellent battery, average microphone</h3>
+                <p>
+                    By Tom Whitfield on <time datetime="2026-07-21">21 July 2026</time>.
+                    Verified purchase.
+                </p>
+                <p>
+                    Rated <meter min="0" max="5" value="4" optimum="5">4 out of 5</meter>
+                    4 out of 5.
+                </p>
+                <p>
+                    Three weeks of commuting on one charge, which is not an exaggeration.
+                    Colleagues on calls say I sound like I am in a corridor, so I still
+                    use a separate microphone for meetings.
+                </p>
+            </article>
+
+            <article>
+                <h3>Too tight for a large head with the medium pads</h3>
+                <p>
+                    By Anja Sorensen on <time datetime="2026-07-04">4 July 2026</time>.
+                    Verified purchase.
+                </p>
+                <p>
+                    Rated <meter min="0" max="5" value="3" optimum="5">3 out of 5</meter>
+                    3 out of 5.
+                </p>
+                <p>
+                    Uncomfortable after an hour until I ordered the large pads, which
+                    fixed it completely. I am marking it down because the size guidance
+                    on the page could have told me that before I ordered, not after.
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Delivery and returns</h2>
+
+            <h3>Delivery</h3>
+            <ul>
+                <li>Standard, 2–4 working days — free</li>
+                <li>Next working day, ordered before 16:00 — £4.95</li>
+                <li>Collect from our Leeds workshop — free</li>
+            </ul>
+
+            <h3>Returns</h3>
+            <p>
+                Return anything unused within 30 days for a full refund, including the
+                delivery you paid. Engraved headphones are made to order and cannot be
+                returned unless they are faulty.
+            </p>
+            <p><a href="#">Read the full returns policy</a></p>
+
+            <p>
+                <small>
+                    Reduced from £299.00, the price at which this product was offered for
+                    at least 30 consecutive days before 1 July 2026. Price includes
+                    <abbr title="Value Added Tax">VAT</abbr> at 20%.
+                </small>
+            </p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2026 Northlight Audio Ltd, Leeds. Company number 09182736.</p>
+        <p><a href="../../">Back to all HTML challenges</a></p>
+    </footer>
+</body>
+</html>

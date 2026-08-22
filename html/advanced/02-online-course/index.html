@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessible Web Media — Meridian Learn</title>
+    <meta name="description" content="A five-hour course on captions, transcripts, audio description and accessible images, taught by accessibility engineer Lina Moreau. Fourteen lessons, four modules, certificate on completion.">
+    <link rel="canonical" href="https://meridianlearn.example/courses/accessible-web-media">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Accessible Web Media — Meridian Learn">
+    <meta property="og:description" content="Captions, transcripts, audio description and accessible images, in fourteen lessons.">
+    <meta property="og:url" content="https://meridianlearn.example/courses/accessible-web-media">
+</head>
+<body>
+    <p><a href="#main">Skip to main content</a></p>
+
+    <header>
+        <p>Meridian Learn</p>
+
+        <nav aria-label="Platform">
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">My learning</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+
+        <nav aria-label="Breadcrumb">
+            <ol>
+                <li><a href="#">Meridian Learn</a></li>
+                <li><a href="#">Web development</a></li>
+                <li><a href="#course" aria-current="page">Accessible Web Media</a></li>
+            </ol>
+        </nav>
+
+        <p>Signed in as Adem Yilmaz. <a href="#">Your learning</a></p>
+    </header>
+
+    <main id="main">
+        <section id="course">
+            <h1>Accessible Web Media</h1>
+            <p>
+                Everything you need to publish audio, video and images that work for
+                people who cannot hear them, cannot see them, or cannot do either.
+            </p>
+
+            <figure>
+                <img src="./assets/images/course-cover-media-accessibility.svg"
+                     alt="Course cover: a video player with a caption bar, a waveform and a transcript document side by side."
+                     width="560" height="315">
+                <figcaption>Accessible Web Media, fourth edition, updated August 2026.</figcaption>
+            </figure>
+
+            <p>
+                Taught by <a href="#instructor">Lina Moreau</a>, accessibility engineer.
+            </p>
+
+            <h2>Course facts</h2>
+            <dl>
+                <dt>Length</dt>
+                <dd><time datetime="PT5H40M">5 hours 40 minutes</time> of lessons, plus exercises.</dd>
+
+                <dt>Structure</dt>
+                <dd>Four modules, fourteen lessons, two quizzes.</dd>
+
+                <dt>Level</dt>
+                <dd>Intermediate. You should be comfortable writing HTML by hand.</dd>
+
+                <dt>Language</dt>
+                <dd>English, with captions in English and Arabic on every lesson.</dd>
+
+                <dt>Last updated</dt>
+                <dd><time datetime="2026-08-04">4 August 2026</time></dd>
+
+                <dt>Price</dt>
+                <dd>£58, or free with a Meridian Learn subscription.</dd>
+            </dl>
+
+            <h2>Your progress</h2>
+            <p>
+                <label for="course-progress">Lessons completed</label>
+                <progress id="course-progress" value="7" max="14">7 of 14</progress>
+                7 of 14 lessons complete, 50%.
+            </p>
+            <p>
+                Student rating:
+                <meter min="0" max="5" value="4.7" low="2" high="4" optimum="5">4.7 out of 5</meter>
+                4.7 out of 5, from 1,284 students.
+            </p>
+
+            <h2>About this course</h2>
+            <p>
+                Most media on the web is published without captions, without a
+                transcript, and with an alt attribute somebody typed to make a linter
+                stop complaining. This course is about doing it properly, and about
+                doing it quickly enough that you keep doing it after the first week.
+            </p>
+            <p>
+                We work file by file. You will write caption files by hand before you
+                use a tool, because a tool that gets it 90% right is only useful to
+                somebody who can see the other 10%. You will write text descriptions for
+                clips where nothing is said, alt text for images that carry data, and
+                transcripts for a two-speaker interview.
+            </p>
+            <p>
+                Nothing in this course requires a paid tool. Everything is done with a
+                text editor, a browser and the files you already have.
+            </p>
+
+            <h3>By the end of the course you will be able to</h3>
+            <ul>
+                <li>Write a WebVTT caption file by hand and check it in a browser.</li>
+                <li>Decide when a clip needs a description track and when it does not.</li>
+                <li>Produce a transcript that reads as a document, not as a caption dump.</li>
+                <li>Write alt text for photographs, diagrams, charts and decorative images.</li>
+                <li>Choose between captions, subtitles and a transcript for a given audience.</li>
+                <li>Review somebody else's media and write up what is missing.</li>
+            </ul>
+        </section>
+
+        <section id="lesson">
+            <h2>Module 2, lesson 3 — Captions, transcripts and audio description</h2>
+            <p>
+                Lesson 8 of 14. <time datetime="PT12M">12 minutes</time> of video, plus
+                a 15-minute exercise.
+            </p>
+
+            <video controls poster="./assets/images/video-poster-lesson-03.svg"
+                   preload="metadata" width="640" height="360">
+                <source src="./assets/video/lesson-03-timelapse.webm" type="video/webm">
+                <source src="./assets/video/lesson-03-timelapse.mp4" type="video/mp4">
+                <track src="./assets/captions/lesson-03-timelapse-en.vtt"
+                       kind="captions" srclang="en" label="English captions" default>
+                <track src="./assets/captions/lesson-03-timelapse-ar.vtt"
+                       kind="captions" srclang="ar" label="التعليقات بالعربية">
+                <track src="./assets/captions/lesson-03-timelapse-descriptions.vtt"
+                       kind="descriptions" srclang="en" label="English descriptions">
+                <p>
+                    Your browser cannot play this video.
+                    <a href="./assets/video/lesson-03-timelapse.mp4">
+                        Download the clip as an MP4 file (1.1 MB)
+                    </a>
+                    or read the transcript below — the transcript contains everything the
+                    clip contains.
+                </p>
+            </video>
+
+            <h3>The sample clip</h3>
+            <p>
+                The clip is five seconds long, has no spoken audio, and shows a flower
+                bud opening. It was chosen because it is the hardest kind of clip to
+                caption well: there is nothing to hear, and everything to see.
+            </p>
+
+            <h3>Lesson notes</h3>
+            <p>
+                A silent clip still needs a caption track. To a viewer who cannot hear
+                the audio, silence and a broken caption file are indistinguishable — so
+                the first cue in the English track says
+                <q>[no dialogue — silent time-lapse]</q>. That one cue is the difference
+                between a viewer trusting your player and a viewer assuming your player
+                is broken.
+            </p>
+            <p>
+                The reverse problem is the description track. Everything that matters in
+                this clip is visual, so a viewer who cannot see it gets nothing from the
+                audio. The <code>descriptions</code> track carries that information as
+                text, which the user agent can speak. This is the track most teams
+                forget, and it is the only one that helps here.
+            </p>
+            <p>
+                Notice what the caption files are <em>not</em> doing: they are not
+                describing the composition, the colour grading or the lens. Captions and
+                descriptions carry information, not appreciation. If the shot were
+                purely decorative and the page said so in its text, this clip would need
+                neither track — and knowing that is as much a part of the job as writing
+                the cues.
+            </p>
+
+            <h3>Transcript</h3>
+            <p>
+                The clip has no spoken audio. It is a five-second time-lapse: a closed
+                pink flower bud fills the frame, then the petals unfold until the flower
+                is fully open. A viewer who cannot hear misses nothing; a viewer who
+                cannot see misses everything, which is why the description track exists.
+            </p>
+            <p>
+                <a href="./assets/downloads/lesson-03-transcript.txt" download>
+                    Download the full lesson transcript (plain text, 1 KB)
+                </a>
+            </p>
+
+            <h3>What to do next</h3>
+            <ol>
+                <li>Open the three caption files in a text editor and read them.</li>
+                <li>Write a fourth track: captions in a language you speak.</li>
+                <li>Take the module 2 quiz below.</li>
+                <li>Move on to lesson 4, <em>Writing a transcript for two speakers</em>.</li>
+            </ol>
+        </section>
+
+        <section id="curriculum">
+            <h2>Curriculum</h2>
+            <p>
+                Fourteen lessons in four modules. Open a module to see its lessons.
+            </p>
+
+            <details open>
+                <summary>Module 1 — Foundations (3 lessons, 55 minutes)</summary>
+
+                <h3>Module 1 lessons</h3>
+
+                <details>
+                    <summary>
+                        Lesson 1 — Who media accessibility is for.
+                        <time datetime="PT18M">18 minutes</time>, video. Completed.
+                    </summary>
+                    <h4>Lesson 1</h4>
+                    <p>
+                        The four groups of people affected by inaccessible media, and the
+                        legal position in the UK, the EU and the US.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Lesson 2 — Captions, subtitles, transcripts, descriptions.
+                        <time datetime="PT22M">22 minutes</time>, video. Completed.
+                    </summary>
+                    <h4>Lesson 2</h4>
+                    <p>
+                        Four words that are used interchangeably and should not be. What
+                        each one is for, and which audience each one serves.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Lesson 3 — Reading a WebVTT file.
+                        <time datetime="PT15M">15 minutes</time>, reading. Completed.
+                    </summary>
+                    <h4>Lesson 3</h4>
+                    <p>
+                        Cue timings, cue payloads, notes, and the three mistakes that stop
+                        a browser loading a track at all.
+                    </p>
+                </details>
+            </details>
+
+            <details open>
+                <summary>Module 2 — Captions and transcripts (4 lessons, 1 hour 40 minutes). You are here.</summary>
+
+                <h3>Module 2 lessons</h3>
+
+                <details>
+                    <summary>
+                        Lesson 1 — Writing your first caption file.
+                        <time datetime="PT25M">25 minutes</time>, exercise. Completed.
+                    </summary>
+                    <h4>Module 2, lesson 1</h4>
+                    <p>
+                        Caption a 90-second interview clip by hand, then check it in two
+                        browsers.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Lesson 2 — Timing, reading speed and line length.
+                        <time datetime="PT20M">20 minutes</time>, video. Completed.
+                    </summary>
+                    <h4>Module 2, lesson 2</h4>
+                    <p>
+                        Why 37 characters a line and 180 words a minute, and what happens to
+                        comprehension when you ignore both.
+                    </p>
+                </details>
+
+                <details open>
+                    <summary>
+                        Lesson 3 — Captions, transcripts and audio description.
+                        <time datetime="PT12M">12 minutes</time>, video. In progress.
+                    </summary>
+                    <h4>Module 2, lesson 3</h4>
+                    <p>
+                        The lesson you are on. <a href="#lesson">Go to the lesson</a>.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>
+                        Lesson 4 — Writing a transcript for two speakers.
+                        <time datetime="PT28M">28 minutes</time>, exercise. Not started.
+                    </summary>
+                    <h4>Module 2, lesson 4</h4>
+                    <p>
+                        Speaker labels, overlapping speech, and turning a caption file into a
+                        document somebody would actually read.
+                    </p>
+                </details>
+            </details>
+
+            <details>
+                <summary>Module 3 — Images and diagrams (4 lessons, 1 hour 35 minutes). Locked.</summary>
+
+                <h3>Module 3 lessons</h3>
+                <p>Locked until you complete module 2 and pass its quiz.</p>
+
+                <ul>
+                    <li>Lesson 1 — Alt text as a decision. <time datetime="PT20M">20 minutes</time>, video.</li>
+                    <li>Lesson 2 — Charts, maps and complex images. <time datetime="PT30M">30 minutes</time>, video.</li>
+                    <li>Lesson 3 — Decorative images and when to say nothing. <time datetime="PT15M">15 minutes</time>, reading.</li>
+                    <li>Lesson 4 — Describing thirty images against the clock. <time datetime="PT30M">30 minutes</time>, exercise.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Module 4 — Reviewing and shipping (3 lessons, 1 hour 30 minutes). Locked.</summary>
+
+                <h3>Module 4 lessons</h3>
+                <p>Locked until you complete module 3.</p>
+
+                <ul>
+                    <li>Lesson 1 — Reviewing somebody else's media. <time datetime="PT25M">25 minutes</time>, video.</li>
+                    <li>Lesson 2 — Writing the review up for a client. <time datetime="PT35M">35 minutes</time>, exercise.</li>
+                    <li>Lesson 3 — Final assessment. <time datetime="PT30M">30 minutes</time>, quiz.</li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="quiz">
+            <h2>End-of-module quiz — module 2</h2>
+            <p>
+                Five questions. The pass mark is 4 out of 5, and you have three attempts.
+                Your best attempt counts.
+            </p>
+
+            <form action="#quiz" method="post">
+                <fieldset>
+                    <legend>1. A five-second clip has no spoken audio. What should its caption track contain?</legend>
+
+                    <p>
+                        <input type="radio" id="q1-a" name="q1" value="a" required>
+                        <label for="q1-a">Nothing — a silent clip needs no caption track.</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="q1-b" name="q1" value="b">
+                        <label for="q1-b">A cue stating that there is no dialogue.</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="q1-c" name="q1" value="c">
+                        <label for="q1-c">A description of the camera work.</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="q1-d" name="q1" value="d">
+                        <label for="q1-d">The whole transcript in one cue.</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Which of these are carried by a caption track? Choose all that apply.</legend>
+
+                    <p>
+                        <input type="checkbox" id="q2-a" name="q2" value="dialogue">
+                        <label for="q2-a">Spoken dialogue</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="q2-b" name="q2" value="sound-effects">
+                        <label for="q2-b">Meaningful sound effects</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="q2-c" name="q2" value="speaker-id">
+                        <label for="q2-c">Who is speaking, when it is not obvious</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="q2-d" name="q2" value="colour-grade">
+                        <label for="q2-d">The colour grading of the shot</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="q2-e" name="q2" value="music">
+                        <label for="q2-e">Music that matters to the meaning</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Which element attaches a caption file to a video?</legend>
+
+                    <p>
+                        <input type="radio" id="q3-a" name="q3" value="source" required>
+                        <label for="q3-a">The source element</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="q3-b" name="q3" value="track">
+                        <label for="q3-b">The track element</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="q3-c" name="q3" value="caption">
+                        <label for="q3-c">The caption element</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="q3-d" name="q3" value="figcaption">
+                        <label for="q3-d">The figcaption element</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. True or false: a transcript makes a caption track unnecessary.</legend>
+
+                    <p>
+                        <input type="radio" id="q4-true" name="q4" value="true" required>
+                        <label for="q4-true">True</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="q4-false" name="q4" value="false">
+                        <label for="q4-false">False</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. In your own words: when does a clip need a description track, and when does it not?</legend>
+
+                    <p>
+                        <label for="q5">Your answer</label>
+                        <textarea id="q5" name="q5" rows="6" minlength="100" maxlength="1200" required></textarea>
+                        <small>At least 100 characters. Marked by a human within two working days.</small>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit my answers</button>
+                    <button type="reset">Start again</button>
+                </p>
+            </form>
+        </section>
+
+        <section id="progress">
+            <h2>Your progress and certificate</h2>
+
+            <p>
+                <label for="module-progress">Module 2 progress</label>
+                <progress id="module-progress" value="2" max="4">2 of 4</progress>
+                2 of 4 lessons in this module complete.
+            </p>
+            <p>
+                Quiz average so far:
+                <meter min="0" max="100" value="82" low="50" high="80" optimum="100">82%</meter>
+                82%, from one quiz.
+            </p>
+
+            <h3>Certificate rules</h3>
+            <dl>
+                <dt>To qualify</dt>
+                <dd>Complete all fourteen lessons and both quizzes.</dd>
+
+                <dt>Pass mark</dt>
+                <dd>4 out of 5 on each module quiz, and 70% on the final assessment.</dd>
+
+                <dt>Attempts</dt>
+                <dd>Three per quiz. Your best attempt counts.</dd>
+
+                <dt>Issued</dt>
+                <dd>
+                    Within one working day of the final assessment being marked, as a PDF
+                    and as a verifiable link.
+                </dd>
+
+                <dt>Expiry</dt>
+                <dd>
+                    Never, but it names the edition of the course you took, so it is honest
+                    about its age.
+                </dd>
+            </dl>
+        </section>
+
+        <section id="instructor">
+            <h2>Your instructor</h2>
+
+            <figure>
+                <img src="./assets/images/portrait-lina-moreau.svg"
+                     alt="Lina Moreau, short fair hair, wearing a blue shirt, in front of a bookshelf."
+                     width="200" height="200">
+                <figcaption>Lina Moreau</figcaption>
+            </figure>
+
+            <p>
+                Lina is an accessibility engineer in Lyon. She spent six years captioning
+                and describing broadcast material before moving to the web, and now
+                audits media for two national broadcasters and a university library.
+            </p>
+            <p>
+                She teaches three courses on Meridian Learn:
+            </p>
+            <ul>
+                <li>Accessible Web Media — this course</li>
+                <li><a href="#">Accessible Forms in Depth</a></li>
+                <li><a href="#">Auditing a Site You Did Not Build</a></li>
+            </ul>
+            <p><a href="#">Lina Moreau's instructor profile</a></p>
+
+            <blockquote>
+                <p>
+                    I have never once regretted writing a transcript, and I have regretted
+                    skipping one about forty times.
+                </p>
+            </blockquote>
+            <p>— <cite>Lina Moreau, module 1 introduction</cite></p>
+        </section>
+
+        <section id="questions">
+            <h2>Questions students ask</h2>
+
+            <details>
+                <summary>What do I need to know before starting?</summary>
+                <p>
+                    Enough HTML to write a page by hand, including elements with
+                    attributes. You do not need JavaScript, a build tool or any paid
+                    software.
+                </p>
+            </details>
+
+            <details>
+                <summary>How fast should I go?</summary>
+                <p>
+                    Most students finish in three weeks at three lessons a week. The
+                    exercises are the slow part and they are the part that matters, so do
+                    not skip them to reach the certificate faster.
+                </p>
+            </details>
+
+            <details>
+                <summary>Does the certificate mean anything?</summary>
+                <p>
+                    It means you completed fourteen lessons and passed three assessments,
+                    one of which is marked by a human. It is not a professional
+                    accreditation and we never describe it as one.
+                </p>
+            </details>
+
+            <details>
+                <summary>Can I get a refund?</summary>
+                <p>
+                    Full refund within 30 days, or within 14 days of finishing the course,
+                    whichever is later. No form to fill in — email us and we process it the
+                    same day.
+                </p>
+            </details>
+
+            <details>
+                <summary>Does this course cover React, Vue or any other framework?</summary>
+                <p>
+                    No. Everything here is the platform itself: HTML elements, attributes
+                    and WebVTT files. It applies inside any framework, which is why we
+                    teach it outside all of them.
+                </p>
+            </details>
+
+            <details>
+                <summary>Are the lessons captioned?</summary>
+                <p>
+                    Every lesson has English and Arabic captions, an English description
+                    track where the visuals carry information, and a downloadable
+                    transcript. It would be a strange course if it did not.
+                </p>
+            </details>
+        </section>
+
+        <aside>
+            <h2>Students also take</h2>
+
+            <article>
+                <h3><a href="#">Accessible Forms in Depth</a></h3>
+                <p>
+                    <time datetime="PT6H10M">6 hours 10 minutes</time>, intermediate.
+                    Labels, grouping, validation and error messages.
+                </p>
+            </article>
+
+            <article>
+                <h3><a href="#">Document Structure from First Principles</a></h3>
+                <p>
+                    <time datetime="PT4H25M">4 hours 25 minutes</time>, beginner. Outlines,
+                    landmarks and heading hierarchy.
+                </p>
+            </article>
+
+            <article>
+                <h3><a href="#">Auditing a Site You Did Not Build</a></h3>
+                <p>
+                    <time datetime="PT7H">7 hours</time>, advanced. Finding, prioritising
+                    and writing up accessibility defects.
+                </p>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <nav aria-label="Footer">
+            <ul>
+                <li><a href="#">About Meridian Learn</a></li>
+                <li><a href="#">Accessibility statement</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy notice</a></li>
+                <li><a href="#">Contact support</a></li>
+            </ul>
+        </nav>
+
+        <p>
+            Meridian Learn is operated by Meridian Education Ltd, Bristol. Every course
+            on the platform is captioned and transcribed before it is published.
+        </p>
+        <p>© 2026 Meridian Education Ltd.</p>
+        <p><a href="../../">Back to all HTML challenges</a></p>
+    </footer>
+</body>
+</html>
