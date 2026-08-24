@@ -1,0 +1,46 @@
+
+body {
+   background-color: #e2e2e2;
+}
+.hero-banner {
+   height: 100vh;
+   background:radial-gradient(circle at center, transparent 0%, rgba(0,0,0,1) 100%), url('https://img.magnific.com/free-photo/modern-business-building-with-glass-wall-from-empty-floor_1127-2865.jpg?t=st=1787606480~exp=1787610080~hmac=bdb840d23f514979818a2a5a4fa62a1bb5839d6dc721686bf82be4e1eb40fcad&w=2000') no-repeat center center / cover fixed;
+  border-radius: 0% 0% 500% 500%;
+   
+}
+.hero-banner2 {
+   height: 80vh;
+   background:radial-gradient(circle at center, transparent 0%, rgba(0,0,0,1) 100%), url('../public/assets/images/image.jpg') no-repeat center center / cover fixed;
+   border-radius: 500% 500% 0 0;
+   
+}
+.hero-banner3 {
+   height: 80vh;
+   background:radial-gradient(circle at center, transparent 0%, rgba(0,0,0,1) 100%), url('https://img.magnific.com/free-photo/mumbai-skyline-skyscrapers-construction_469504-21.jpg?t=st=1787606510~exp=1787610110~hmac=107345ca7a7120186d599ec11a3039502a0dd43098b3aa3ca151eb29676e6c09&w=2000') no-repeat center center / cover fixed;
+   border-radius: 0% 0% 500% 500%;
+   
+}
+.box1 {
+   background-color: #3498db;
+}
+.box2 {
+   background-color: #27ae60;
+}
+.box3 {
+   background-color: #e91e63;
+}
+.box4{
+   border-left:2px solid #27ae60;
+}
+.box5{
+   border-right:2px dotted #27ae60;
+   border-bottom:2px dotted #27ae60;
+}
+.box6{
+   border-top:6px double #27ae60;
+   border-left:6px double #27ae60;
+}
+.box7{
+   border:6px double #27ae60;
+   border-radius: 10px 20px 30px 40px;
+}
