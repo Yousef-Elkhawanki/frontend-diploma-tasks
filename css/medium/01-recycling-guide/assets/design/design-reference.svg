@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1158" width="1000" height="1158" role="img" aria-labelledby="mt md">
+  <title id="mt">Design reference: Riverbend recycling guide</title>
+  <desc id="md">Wireframe mockup of the intended layout, with the challenge palette listed underneath.</desc>
+  <rect x="0" y="0" width="1000" height="1158" fill="#ffffff"/>
+  <rect x="0" y="0" width="1000" height="46" rx="10" fill="#dfe3e8"/>
+  <circle cx="26" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="48" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="70" cy="23" r="6" fill="#b9c0c8"/>
+  <rect x="96" y="12" width="876" height="22" rx="11" fill="#f4f6f8"/>
+  <text x="500" y="27" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">riverbend.example / recycling — one column, normal flow, no layout tools needed</text>
+  <rect x="0" y="46" width="1000" height="104" rx="0" fill="#2f6b3f"/>
+  <text x="500" y="104" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">Header band — full-bleed colour, service name (large) + one-line summary + updated date</text>
+  <rect x="170" y="174" width="660" height="52" rx="6" fill="#ffffff" stroke="#dfe3e8" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="500" y="206" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#1f2933" text-anchor="middle">H1 — What goes in which bin</text>
+  <rect x="170" y="232" width="660" height="62" rx="6" fill="#ffffff" stroke="#dfe3e8" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="500" y="268" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#6b7785" text-anchor="middle">Intro paragraph — muted text colour, comfortable line length inside a centred column</text>
+  <rect x="170" y="316" width="660" height="84" rx="6" fill="#e8f0ea"/>
+  <text x="500" y="354" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#2f6b3f" text-anchor="middle">GREEN BIN panel — tinted background, thick coloured left edge, heading + list of accepted</text>
+<text x="500" y="371" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#2f6b3f" text-anchor="middle">items</text>
+  <rect x="170" y="414" width="660" height="84" rx="6" fill="#fbf0e2"/>
+  <text x="500" y="460" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#a4611c" text-anchor="middle">AMBER BIN panel — same shape, different tint and edge colour</text>
+  <rect x="170" y="512" width="660" height="84" rx="6" fill="#e6eef6"/>
+  <text x="500" y="558" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#28527a" text-anchor="middle">BLUE BIN panel</text>
+  <rect x="170" y="610" width="660" height="84" rx="6" fill="#eceef0"/>
+  <text x="500" y="656" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#4a5560" text-anchor="middle">GREY BIN panel — the one that means 'landfill': most muted of the four</text>
+  <rect x="170" y="720" width="660" height="118" rx="6" fill="#f7f5f0"/>
+  <text x="500" y="784" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#1f2933" text-anchor="middle">Collection days — term / description pairs, every other row tinted, ID-selected section</text>
+  <rect x="170" y="860" width="660" height="82" rx="6" fill="#ffffff" stroke="#2f6b3f" stroke-width="2"/>
+  <text x="500" y="906" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#1f2933" text-anchor="middle">Contact panel — bordered box, rounded corners, phone + email links in the accent colour</text>
+  <rect x="0" y="968" width="1000" height="66" rx="0" fill="#1f2933"/>
+  <text x="500" y="1006" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#f7f5f0" text-anchor="middle">Footer band — council name, small muted print</text>
+  <line x1="28" y1="1048" x2="972" y2="1048" stroke="#dfe3e8" stroke-width="1"/>
+  <text x="72" y="1074" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">Palette</text>
+  <rect x="138" y="1056" width="26" height="26" rx="5" fill="#1f2933" stroke="#cfd5db"/>
+  <text x="170" y="1064" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Ink</text>
+  <text x="170" y="1077" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#1f2933</text>
+  <rect x="254" y="1056" width="26" height="26" rx="5" fill="#f7f5f0" stroke="#cfd5db"/>
+  <text x="286" y="1064" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Paper</text>
+  <text x="286" y="1077" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#f7f5f0</text>
+  <rect x="370" y="1056" width="26" height="26" rx="5" fill="#2f6b3f" stroke="#cfd5db"/>
+  <text x="402" y="1064" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Green</text>
+  <text x="402" y="1077" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#2f6b3f</text>
+  <rect x="486" y="1056" width="26" height="26" rx="5" fill="#d9822b" stroke="#cfd5db"/>
+  <text x="518" y="1064" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Amber</text>
+  <text x="518" y="1077" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#d9822b</text>
+  <rect x="602" y="1056" width="26" height="26" rx="5" fill="#6b7785" stroke="#cfd5db"/>
+  <text x="634" y="1064" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Muted</text>
+  <text x="634" y="1077" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#6b7785</text>
+</svg>

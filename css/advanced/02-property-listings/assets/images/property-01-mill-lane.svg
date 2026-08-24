@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-labelledby="t d">
+  <title id="t">12 Mill Lane</title>
+  <desc id="d">Placeholder property photograph: 12 Mill Lane.</desc>
+  <rect width="800" height="560" fill="#c9d8d4"/>
+  <rect y="347" width="800" height="213" fill="#a34b3a" fill-opacity="0.25"/>
+  <rect x="176" y="213" width="448" height="224" fill="#e4ddd0"/>
+  <path d="M128 224 L 400 90 L 672 224 Z" fill="#a34b3a"/>
+  <rect x="352" y="314" width="96" height="123" fill="#143b32"/>
+  <rect x="224" y="258" width="80" height="56" fill="#c9d8d4"/>
+  <rect x="496" y="258" width="80" height="56" fill="#c9d8d4"/>
+  <text x="400" y="544" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">12 Mill Lane</text>
+</svg>

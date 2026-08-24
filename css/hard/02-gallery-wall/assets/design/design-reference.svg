@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1128" width="1000" height="1128" role="img" aria-labelledby="mt md">
+  <title id="mt">Design reference: Kilnworks gallery wall</title>
+  <desc id="md">Wireframe mockup of the intended layout, with the challenge palette listed underneath.</desc>
+  <rect x="0" y="0" width="1000" height="1128" fill="#ffffff"/>
+  <rect x="0" y="0" width="1000" height="46" rx="10" fill="#dfe3e8"/>
+  <circle cx="26" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="48" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="70" cy="23" r="6" fill="#b9c0c8"/>
+  <rect x="96" y="12" width="876" height="22" rx="11" fill="#f4f6f8"/>
+  <text x="500" y="27" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">kilnworks.example / exhibition — tiles, overlays, layering and a sticky bar</text>
+  <rect x="0" y="46" width="1000" height="70" rx="0" fill="#101014"/>
+  <text x="500" y="86" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#fbfbfd" text-anchor="middle">Header band — gallery name + exhibition title</text>
+  <rect x="0" y="116" width="1000" height="46" rx="0" fill="#3c4149"/>
+  <text x="500" y="143" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#fbfbfd" text-anchor="middle">STICKY FILTER BAR — stays pinned to the top of the window once you scroll past it, and sits above the tiles</text>
+  <rect x="60" y="184" width="208" height="210" rx="6" fill="#d8cfc0"/>
+  <text x="164" y="255" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a332a" text-anchor="middle">TILE — image fills the tile;</text>
+<text x="164" y="270" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a332a" text-anchor="middle">caption strip pinned across the</text>
+<text x="164" y="285" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a332a" text-anchor="middle">bottom of the tile; small</text>
+<text x="164" y="300" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a332a" text-anchor="middle">'Sold' badge pinned to the top-</text>
+<text x="164" y="315" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a332a" text-anchor="middle">right corner, overlapping the</text>
+<text x="164" y="330" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a332a" text-anchor="middle">image</text>
+  <rect x="284" y="184" width="208" height="210" rx="6" fill="#c2b6a4"/>
+  <text x="388" y="294" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#3a332a" text-anchor="middle">TILE</text>
+  <rect x="508" y="184" width="208" height="210" rx="6" fill="#b4562f"/>
+  <text x="612" y="278" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#fdf6f0" text-anchor="middle">TILE — this one is deliberately</text>
+<text x="612" y="292" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#fdf6f0" text-anchor="middle">taller and overlaps its</text>
+<text x="612" y="308" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#fdf6f0" text-anchor="middle">neighbour, sitting above them</text>
+  <rect x="732" y="184" width="208" height="210" rx="6" fill="#cfc6b6"/>
+  <text x="836" y="294" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#3a332a" text-anchor="middle">TILE</text>
+  <rect x="60" y="410" width="208" height="180" rx="6" fill="#c9bfae"/>
+  <text x="164" y="504" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#3a332a" text-anchor="middle">TILE</text>
+  <rect x="284" y="410" width="208" height="180" rx="6" fill="#d8cfc0"/>
+  <text x="388" y="504" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#3a332a" text-anchor="middle">TILE</text>
+  <rect x="508" y="410" width="208" height="180" rx="6" fill="#b9ad9a"/>
+  <text x="612" y="504" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#3a332a" text-anchor="middle">TILE</text>
+  <rect x="732" y="410" width="208" height="180" rx="6" fill="#d3c9b8"/>
+  <text x="836" y="496" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a332a" text-anchor="middle">TILE — tiles wrap onto a new</text>
+<text x="836" y="511" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#3a332a" text-anchor="middle">line when the window is narrow</text>
+  <rect x="60" y="614" width="880" height="150" rx="6" fill="#f3f1ee" stroke="#d8cfc0" stroke-width="2"/>
+  <text x="500" y="685" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#101014" text-anchor="middle">SCROLLING PANEL — long list of works in the exhibition, given a fixed height with its own scrollbar, so the page itself does not</text>
+<text x="500" y="701" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#101014" text-anchor="middle">grow</text>
+  <rect x="60" y="786" width="880" height="132" rx="6" fill="#ffffff" stroke="#d8cfc0" stroke-width="2"/>
+  <text x="500" y="856" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#101014" text-anchor="middle">CURATOR NOTE — portrait sits above the text; a small 'Curator' tag overlaps the portrait's lower edge</text>
+  <rect x="0" y="940" width="1000" height="64" rx="0" fill="#101014"/>
+  <text x="500" y="976" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#fbfbfd" text-anchor="middle">Footer band — opening hours, admission</text>
+  <line x1="28" y1="1018" x2="972" y2="1018" stroke="#dfe3e8" stroke-width="1"/>
+  <text x="72" y="1044" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">Palette</text>
+  <rect x="138" y="1026" width="26" height="26" rx="5" fill="#101014" stroke="#cfd5db"/>
+  <text x="170" y="1034" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Black</text>
+  <text x="170" y="1047" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#101014</text>
+  <rect x="254" y="1026" width="26" height="26" rx="5" fill="#fbfbfd" stroke="#cfd5db"/>
+  <text x="286" y="1034" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">White</text>
+  <text x="286" y="1047" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#fbfbfd</text>
+  <rect x="370" y="1026" width="26" height="26" rx="5" fill="#d8cfc0" stroke="#cfd5db"/>
+  <text x="402" y="1034" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Sand</text>
+  <text x="402" y="1047" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#d8cfc0</text>
+  <rect x="486" y="1026" width="26" height="26" rx="5" fill="#b4562f" stroke="#cfd5db"/>
+  <text x="518" y="1034" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Terracotta</text>
+  <text x="518" y="1047" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#b4562f</text>
+  <rect x="602" y="1026" width="26" height="26" rx="5" fill="#3c4149" stroke="#cfd5db"/>
+  <text x="634" y="1034" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Slate</text>
+  <text x="634" y="1047" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#3c4149</text>
+</svg>

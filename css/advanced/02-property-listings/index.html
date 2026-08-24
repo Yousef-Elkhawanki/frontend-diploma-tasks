@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Houses for sale in Fairwater — Fairwater Property</title>
+    <meta name="description" content="Houses and flats for sale in Fairwater, Elmsbury and Little Marsh. Six current listings with prices, tenure and full details.">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <p class="skip"><a href="#main">Skip to main content</a></p>
+
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="#main">
+                <img src="./assets/images/fairwater-logo.svg" alt="Fairwater Property" width="170" height="36">
+            </a>
+            <nav class="topbar__nav" aria-label="Main">
+                <ul class="topbar__links">
+                    <li><a href="#results">Buying</a></li>
+                    <li><a href="#results">Renting</a></li>
+                    <li><a href="#results">Valuations</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="intro">
+            <h1 class="intro__title">Houses for sale in and around Fairwater</h1>
+            <p class="intro__line">
+                Six properties on the market this week. We list everything we are
+                instructed on, including the ones that need work.
+            </p>
+
+            <form class="search" action="#results" method="get">
+                <div class="search__field search__field--wide">
+                    <label class="search__label" for="location">Location</label>
+                    <input class="search__input" type="search" id="location" name="location" value="Fairwater">
+                </div>
+                <div class="search__field">
+                    <label class="search__label" for="max-price">Maximum price</label>
+                    <select class="search__input" id="max-price" name="max-price">
+                        <option>No maximum</option>
+                        <option>£250,000</option>
+                        <option selected>£400,000</option>
+                        <option>£600,000</option>
+                    </select>
+                </div>
+                <div class="search__field">
+                    <label class="search__label" for="beds">Bedrooms</label>
+                    <select class="search__input" id="beds" name="beds">
+                        <option selected>Any</option>
+                        <option>1 or more</option>
+                        <option>2 or more</option>
+                        <option>3 or more</option>
+                    </select>
+                </div>
+                <div class="search__field search__field--action">
+                    <button class="button button--primary" type="submit">Search</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="layout">
+            <aside class="filters" aria-label="Filter results">
+                <h2 class="filters__title">Refine</h2>
+
+                <fieldset class="filters__group">
+                    <legend class="filters__legend">Property type</legend>
+                    <label class="filters__row"><input type="checkbox" checked> Houses</label>
+                    <label class="filters__row"><input type="checkbox" checked> Flats</label>
+                    <label class="filters__row"><input type="checkbox"> New builds</label>
+                    <label class="filters__row"><input type="checkbox"> Land</label>
+                </fieldset>
+
+                <fieldset class="filters__group">
+                    <legend class="filters__legend">Status</legend>
+                    <label class="filters__row"><input type="checkbox" checked> Available</label>
+                    <label class="filters__row"><input type="checkbox" checked> Under offer</label>
+                    <label class="filters__row"><input type="checkbox"> Sold, subject to contract</label>
+                </fieldset>
+
+                <fieldset class="filters__group">
+                    <legend class="filters__legend">Must have</legend>
+                    <label class="filters__row"><input type="checkbox"> Garden</label>
+                    <label class="filters__row"><input type="checkbox"> Parking</label>
+                    <label class="filters__row"><input type="checkbox"> Chain free</label>
+                    <label class="filters__row"><input type="checkbox"> Step-free entrance</label>
+                </fieldset>
+
+                <p class="filters__note">
+                    Filters apply as soon as you tick them on the live site. This page is a
+                    static reference.
+                </p>
+            </aside>
+
+            <section id="results" class="results">
+                <div class="results__head">
+                    <p class="results__count">6 properties, Fairwater and 5 miles</p>
+                    <div class="results__sort">
+                        <label class="results__sort-label" for="sort">Sort by</label>
+                        <select class="search__input" id="sort" name="sort">
+                            <option selected>Newest first</option>
+                            <option>Price, lowest first</option>
+                            <option>Price, highest first</option>
+                            <option>Most bedrooms</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="results__grid">
+                    <article class="card">
+                        <img class="card__image" src="./assets/images/property-01-mill-lane.svg" alt="12 Mill Lane, 3 bedrooms." width="800" height="560">
+                        <div class="card__body">
+                            <p class="card__tag">New</p>
+                            <p class="card__price">£385,000</p>
+                            <h3 class="card__address">12 Mill Lane, Fairwater</h3>
+                            <ul class="card__facts">
+                                <li>3 bedrooms</li>
+                                <li>2 bathrooms</li>
+                                <li>Freehold</li>
+                            </ul>
+                            <p class="card__text">A 1930s semi with the original bay and a garden that runs down to the beck. Rewired in 2021; the kitchen is the previous owner's own work and it shows.</p>
+                            <p class="card__action"><a class="button button--ghost" href="#results">Details for 12 Mill Lane</a></p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./assets/images/property-02-quay-street.svg" alt="4 Quay Street, 2 bedrooms." width="800" height="560">
+                        <div class="card__body">
+                            <p class="card__tag">Chain free</p>
+                            <p class="card__price">£249,950</p>
+                            <h3 class="card__address">4 Quay Street, Fairwater</h3>
+                            <ul class="card__facts">
+                                <li>2 bedrooms</li>
+                                <li>1 bathroom</li>
+                                <li>Leasehold, 118 years</li>
+                            </ul>
+                            <p class="card__text">First floor of a converted sail loft, two minutes from the quay. Low ceilings under the eaves, a working shutter on every window, and no lift.</p>
+                            <p class="card__action"><a class="button button--ghost" href="#results">Details for 4 Quay Street</a></p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./assets/images/property-03-orchard-close.svg" alt="28 Orchard Close, 4 bedrooms." width="800" height="560">
+                        <div class="card__body">
+                            <p class="card__tag">Under offer</p>
+                            <p class="card__price">£520,000</p>
+                            <h3 class="card__address">28 Orchard Close, Elmsbury</h3>
+                            <ul class="card__facts">
+                                <li>4 bedrooms</li>
+                                <li>2 bathrooms</li>
+                                <li>Freehold</li>
+                            </ul>
+                            <p class="card__text">Four bedrooms on a corner plot, with a garden room that was signed off as a home office in 2019. The paddock beyond is not included and is not for sale.</p>
+                            <p class="card__action"><a class="button button--ghost" href="#results">Details for 28 Orchard Close</a></p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./assets/images/property-04-station-road.svg" alt="9 Station Road, 1 bedroom." width="800" height="560">
+                        <div class="card__body">
+                            <p class="card__tag">New</p>
+                            <p class="card__price">£179,500</p>
+                            <h3 class="card__address">9 Station Road, Fairwater</h3>
+                            <ul class="card__facts">
+                                <li>1 bedroom</li>
+                                <li>1 bathroom</li>
+                                <li>Leasehold, 94 years</li>
+                            </ul>
+                            <p class="card__text">A ground-floor flat in the old station house, facing the platform side. Quiet after 21:00, and the freeholder is the parish council.</p>
+                            <p class="card__action"><a class="button button--ghost" href="#results">Details for 9 Station Road</a></p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./assets/images/property-05-fen-view.svg" alt="Fen View Cottage, 3 bedrooms." width="800" height="560">
+                        <div class="card__body">
+                            <p class="card__tag">Chain free</p>
+                            <p class="card__price">£445,000</p>
+                            <h3 class="card__address">Fen View Cottage, Little Marsh</h3>
+                            <ul class="card__facts">
+                                <li>3 bedrooms</li>
+                                <li>1 bathroom</li>
+                                <li>Freehold</li>
+                            </ul>
+                            <p class="card__text">A brick and flint cottage at the end of a track, with a well that still works and a roof replaced in 2023. Not on mains gas.</p>
+                            <p class="card__action"><a class="button button--ghost" href="#results">Details for Fen View Cottage</a></p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__image" src="./assets/images/property-06-harbour-mews.svg" alt="3 Harbour Mews, 2 bedrooms." width="800" height="560">
+                        <div class="card__body">
+                            <p class="card__tag">New</p>
+                            <p class="card__price">£312,000</p>
+                            <h3 class="card__address">3 Harbour Mews, Fairwater</h3>
+                            <ul class="card__facts">
+                                <li>2 bedrooms</li>
+                                <li>2 bathrooms</li>
+                                <li>Freehold</li>
+                            </ul>
+                            <p class="card__text">A new-build mews house with an air source heat pump and an EPC of B. Small garden, allocated parking, and a service charge of £42 a month.</p>
+                            <p class="card__action"><a class="button button--ghost" href="#results">Details for 3 Harbour Mews</a></p>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="pagination" aria-label="Results pages">
+                    <ul class="pagination__list">
+                        <li><a class="pagination__link pagination__link--current" href="#results" aria-current="page">1</a></li>
+                        <li><a class="pagination__link" href="#results">2</a></li>
+                        <li><a class="pagination__link" href="#results">3</a></li>
+                        <li><a class="pagination__link" href="#results">Next page</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer" class="page-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h2 class="footer-col__title">Buying</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#results">Search listings</a></li>
+                    <li><a href="#results">Register for alerts</a></li>
+                    <li><a href="#results">Stamp duty</a></li>
+                    <li><a href="#results">Surveys</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Selling</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#results">Book a valuation</a></li>
+                    <li><a href="#results">Our fees</a></li>
+                    <li><a href="#results">Photography</a></li>
+                    <li><a href="#results">Energy certificates</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Renting</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#results">Available now</a></li>
+                    <li><a href="#results">Landlord services</a></li>
+                    <li><a href="#results">Deposits</a></li>
+                    <li><a href="#results">Repairs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Fairwater Property</h2>
+                <ul class="footer-col__list">
+                    <li><a href="tel:+441632960900">01632 960 900</a></li>
+                    <li><a href="mailto:sales@fairwater.example">sales@fairwater.example</a></li>
+                    <li><a href="#main">Accessibility</a></li>
+                    <li><a href="../../">Back to all CSS challenges</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="page-footer__small">
+            Fairwater Property Ltd, 2 Market Place, Fairwater. A teaching exercise for the
+            Frontend Diploma: the agency, the properties and the prices are invented.
+        </p>
+    </footer>
+</body>
+</html>

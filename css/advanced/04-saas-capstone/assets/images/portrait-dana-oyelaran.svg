@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" width="280" height="280" role="img" aria-labelledby="t d">
+  <title id="t">Dana Oyelaran</title>
+  <desc id="d">Placeholder portrait: Dana Oyelaran.</desc>
+  <rect width="280" height="280" fill="#101828"/>
+  <circle cx="140.0" cy="109" r="53" fill="#e6c3a6"/>
+  <path d="M34 280 C 34 202 87 174 140 174 C 193 174 246 202 246 280 Z" fill="#3f4fd6"/>
+  <text x="140.0" y="123" font-family="Helvetica, Arial, sans-serif" font-size="39" fill="#101828" text-anchor="middle">DO</text>
+</svg>

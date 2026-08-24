@@ -1,0 +1,536 @@
+/* =========================================================
+   Nocturne — browse
+   CSS module — Advanced 03
+   Subjects: custom properties, pseudo-elements, transitions,
+   transforms and animations, on top of everything earlier.
+
+   Rule for this file: no colour, radius or spacing literal appears
+   outside the token block below.
+   ========================================================= */
+
+/* ---------- 1. Tokens ------------------------------------ */
+
+:root {
+    /* colour */
+    --page: #0d0f14;
+    --panel: #1a1e27;
+    --panel-raised: #232838;
+    --text: #f2f4f8;
+    --text-muted: #8a93a6;
+    --accent: #7b5cf0;
+    --accent-ink: #ffffff;
+    --veil: rgba(8, 9, 14, 0.62);
+    --line: #2b3140;
+
+    /* spacing scale — four steps, nothing between them */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.75rem;
+    --space-4: 3rem;
+
+    /* shape */
+    --radius-s: 6px;
+    --radius-l: 14px;
+
+    /* type */
+    --font: "Helvetica Neue", Arial, sans-serif;
+    --size-meta: 0.85rem;
+    --size-body: 1.0625rem;
+    --size-title: clamp(2.2rem, 1.4rem + 3vw, 4rem);
+
+    /* motion, in one place so it can be tuned or removed */
+    --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+    --speed: 180ms;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--page);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: var(--size-body);
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    line-height: 1.15;
+    margin: 0 0 var(--space-1);
+}
+
+p {
+    margin: 0 0 var(--space-2);
+}
+
+a {
+    color: var(--text);
+}
+
+.skip {
+    margin: 0;
+    padding: var(--space-1) var(--space-2);
+    background-color: var(--panel);
+    font-size: var(--size-meta);
+}
+
+/* ---------- 2. Top bar -----------------------------------
+   Sits over the billboard: sticky, with a translucent panel colour
+   so the artwork shows through.                                   */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background-color: rgba(13, 15, 20, 0.72);
+    border-bottom: 1px solid var(--line);
+}
+
+.topbar__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-1) var(--space-3);
+    max-width: 84rem;
+    margin: 0 auto;
+    padding: var(--space-1) var(--space-3);
+}
+
+.topbar__nav {
+    flex: 1 1 auto;
+}
+
+.topbar__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-1) var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topbar__links a,
+.topbar__profile {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--speed) var(--ease);
+}
+
+.topbar__links a:hover,
+.topbar__profile:hover {
+    color: var(--text);
+}
+
+.topbar__brand:focus-visible,
+.topbar__links a:focus-visible,
+.topbar__profile:focus-visible,
+.card__link:focus-visible,
+.button:focus-visible,
+.page-footer__links a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* ---------- 3. Billboard ---------------------------------
+   The veil is a pseudo-element: no extra markup, and the artwork
+   file stays untouched so it can be reused elsewhere at full
+   brightness. `inset: 0` stretches it over the whole billboard.   */
+
+.billboard {
+    position: relative;
+    display: flex;
+    align-items: end;
+    min-height: 58vh;
+    padding: var(--space-4) var(--space-3);
+    background-color: var(--panel);
+    background-image: url("./assets/images/billboard-tidal.svg");
+    background-position: center 35%;
+    background-size: cover;
+}
+
+.billboard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--veil);
+}
+
+.billboard__body {
+    position: relative;                        /* above the veil */
+    max-width: 40rem;
+    margin: 0 auto 0 0;
+}
+
+.billboard__eyebrow {
+    margin: 0 0 var(--space-1);
+    color: var(--accent);
+    font-size: var(--size-meta);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.billboard__title {
+    font-size: var(--size-title);
+}
+
+.billboard__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-1) var(--space-2);
+    margin-bottom: var(--space-2);
+    color: var(--text);
+    font-size: var(--size-meta);
+}
+
+/* "Live" is a word. The dot is decoration, and it is marked
+   aria-hidden in the HTML for that reason.                        */
+.billboard__live {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-weight: 700;
+}
+
+.billboard__dot {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--accent);
+    animation: pulse 2s var(--ease) infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.45;
+        transform: scale(1.35);
+    }
+}
+
+.billboard__text {
+    max-width: 34rem;
+}
+
+.billboard__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin: 0;
+}
+
+/* ---------- 4. Buttons ----------------------------------- */
+
+.button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: var(--radius-s);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color var(--speed) var(--ease),
+                border-color var(--speed) var(--ease),
+                transform var(--speed) var(--ease);
+}
+
+.button--primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+}
+
+.button--ghost {
+    border-color: var(--text);
+    color: var(--text);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button--ghost:hover {
+    background-color: rgba(242, 244, 248, 0.12);
+}
+
+/* ---------- 5. Rails -------------------------------------
+   The accent bar before each heading is a pseudo-element, so the
+   heading text stays exactly what a screen reader announces.      */
+
+.rail {
+    max-width: 84rem;
+    margin: 0 auto;
+    padding: var(--space-3);
+}
+
+.rail__title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: 1.35rem;
+}
+
+.rail__title::before {
+    content: "";
+    width: 0.35rem;
+    height: 1.4rem;
+    border-radius: var(--radius-s);
+    background-color: var(--accent);
+}
+
+.rail__note {
+    color: var(--text-muted);
+    font-size: var(--size-meta);
+}
+
+.rail__track,
+.skeletons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+}
+
+/* ---------- 6. Cards -------------------------------------
+   Local tokens: --card-lift and --card-scale belong to this
+   component only, so the motion can be tuned in one place without
+   touching the global scale.                                      */
+
+.card {
+    --card-lift: -6px;
+    --card-scale: 1.04;
+
+    position: relative;
+    border-radius: var(--radius-l);
+}
+
+.card__link {
+    display: block;
+    border-radius: var(--radius-l);
+    color: var(--text);
+    text-decoration: none;
+    transition: transform var(--speed) var(--ease);
+}
+
+.card__art {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: var(--radius-l);
+    background-color: var(--panel);
+}
+
+.card__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    opacity: 0.82;
+    transition: opacity var(--speed) var(--ease);
+}
+
+/* At rest the strip shows its title and hides its meta line below
+   the artwork's edge; hovering or focusing slides the rest into
+   view. The title is never hidden, so nothing is only available to
+   a reader who can hover.
+
+   `transform` is animated rather than `top` or `height` because a
+   transform does not force the browser to lay the page out again. */
+.card__strip {
+    position: absolute;
+    inset: auto 0 0 0;
+    display: grid;
+    gap: 0.15rem;
+    padding: var(--space-1);
+    background-color: rgba(13, 15, 20, 0.88);
+    transform: translateY(1.5rem);             /* meta line tucked away */
+    transition: transform var(--speed) var(--ease),
+                background-color var(--speed) var(--ease);
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.card__meta {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+/* Hover and focus are given exactly the same treatment, so a
+   keyboard user sees what a mouse user sees.                      */
+.card__link:hover,
+.card__link:focus-visible {
+    transform: translateY(var(--card-lift)) scale(var(--card-scale));
+}
+
+.card__link:hover .card__image,
+.card__link:focus-visible .card__image {
+    opacity: 1;
+}
+
+.card__link:hover .card__strip,
+.card__link:focus-visible .card__strip {
+    transform: translateY(0);
+    background-color: rgba(13, 15, 20, 0.95);
+}
+
+/* Progress: the bar is decoration, and every card also says
+   "62% watched" in its meta line.                                 */
+.card__progress {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 0.25rem;
+    background-color: rgba(242, 244, 248, 0.25);
+}
+
+.card__progress-bar {
+    display: block;
+    height: 100%;
+    background-color: var(--accent);
+}
+
+.card__progress-bar--p35 { width: 35%; }
+.card__progress-bar--p40 { width: 40%; }
+.card__progress-bar--p62 { width: 62%; }
+.card__progress-bar--p88 { width: 88%; }
+.card__progress-bar--p93 { width: 93%; }
+
+/* The "New" badge: drawn, rotated and anchored by its own corner.
+   `transform-origin` is what keeps the rotation pinned to the
+   corner instead of swinging around the badge's centre.           */
+.card--new .card__art::after {
+    content: "New";
+    position: absolute;
+    top: var(--space-1);
+    left: var(--space-1);
+    padding: 0.15rem 0.6rem;
+    border-radius: var(--radius-s);
+    background-color: var(--accent);
+    color: var(--accent-ink);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transform: rotate(-4deg);
+    transform-origin: left top;
+}
+
+/* ---------- 7. Re-themed rail ----------------------------
+   One declaration. Every rule inside this section already reads
+   --accent, so re-declaring it here re-themes the whole panel:
+   heading bar, badges, progress, focus ring and buttons.          */
+
+.rail--alt {
+    --accent: #23c1c9;
+    --accent-ink: #04222a;
+
+    border-radius: var(--radius-l);
+    background-color: #12202a;                 /* the one panel-specific tone */
+}
+
+/* ---------- 8. Skeletons ---------------------------------
+   A looping shimmer, deliberately slow and low contrast. It is
+   decoration for a loading state; the heading above it says in
+   words that the row is still loading.                            */
+
+.skeleton {
+    height: 15rem;
+    border-radius: var(--radius-l);
+    background-color: var(--panel);
+    animation: shimmer 2.4s var(--ease) infinite alternate both;
+}
+
+.skeleton:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+.skeleton:nth-child(3) {
+    animation-delay: 400ms;
+}
+
+@keyframes shimmer {
+    from {
+        background-color: var(--panel);
+    }
+    to {
+        background-color: var(--panel-raised);
+    }
+}
+
+/* ---------- 9. Footer ------------------------------------ */
+
+.page-footer {
+    max-width: 84rem;
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-3);
+    border-top: 1px solid var(--line);
+    color: var(--text-muted);
+    font-size: var(--size-meta);
+}
+
+.page-footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: 0 0 var(--space-2);
+    padding: 0;
+    list-style: none;
+}
+
+.page-footer__links a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.page-footer__links a:hover {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+/* `var()` with a fallback: if --page were ever undefined — a
+   typo, or this component lifted into another project without the
+   token block — the footer still gets a dark background instead of
+   transparent.                                                    */
+.page-footer__small {
+    margin: 0;
+    padding-top: var(--space-2);
+    background-color: var(--page, #0d0f14);
+    color: var(--text-muted);
+}
+
+/* ---------- 10. Reduced motion ---------------------------
+   Everything above is decoration on top of a state change that is
+   also expressed without motion: the card still lifts its strip
+   into view and brightens, it simply arrives instantly. No
+   information is lost when this block applies.                    */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none;
+        transition: none;
+    }
+
+    .billboard__dot {
+        opacity: 1;
+    }
+
+    .card__link:hover,
+    .card__link:focus-visible {
+        transform: none;
+        outline: 3px solid var(--accent);
+        outline-offset: 3px;
+    }
+}

@@ -1,0 +1,423 @@
+/* =========================================================
+   Halftone — print catalogue
+   CSS module — Advanced 01
+   Subject: CSS Grid. The page's two-dimensional structure is grid;
+   Flexbox is used only inside a card. There is no media query in
+   this file — every reflow comes from the grid's own sizing, which
+   is the point of the challenge.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #faf8f5;
+    color: #191919;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+    margin: 0 0 0.6rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #8c4530;
+}
+
+.skip {
+    margin: 0;
+    padding: 0.5rem 1.25rem;
+    background-color: #191919;
+    font-size: 0.9rem;
+}
+
+.skip a {
+    color: #faf8f5;
+}
+
+/* ---------- 1. Header ------------------------------------
+   A three-track grid: the logo and the basket take exactly the
+   width they need (`auto`), and the navigation takes everything
+   left over (`1fr`). Flexbox would do this too — the difference is
+   that here the three tracks are declared once and every child
+   lands in a named position, rather than each child negotiating
+   its own size.                                                   */
+
+.topbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: #191919;
+    color: #efece6;
+}
+
+.topbar__brand:focus,
+.topbar__basket:focus,
+.topbar__links a:focus {
+    outline: 3px solid #d09a6a;
+    outline-offset: 3px;
+}
+
+.topbar__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topbar__links a {
+    color: #ded7cb;
+    text-decoration: none;
+}
+
+.topbar__links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.topbar__basket {
+    color: #f0c9b6;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* ---------- 2. Page introduction ------------------------- */
+
+main {
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 0;
+}
+
+.page-title {
+    font-size: 2.3rem;
+}
+
+.page-note {
+    max-width: 46rem;
+    color: #5b554d;
+}
+
+.section-title {
+    font-size: 1.8rem;
+}
+
+.section-note {
+    margin-bottom: 1.5rem;
+    color: #5b554d;
+}
+
+/* ---------- 3. Featured block ----------------------------
+   Four equal columns. The hero is placed across two of them and
+   two rows; the four small prints then flow into the remaining
+   cells in document order.
+
+   The block is two items: the hero, and a nested grid holding the
+   four smaller prints. Written that way, `auto-fit` collapses it to
+   one column on a narrow window and neither item ever has to span
+   more tracks than exist — an item whose span exceeds the column
+   count makes the browser invent extra columns, and the grid then
+   grows wider than the window.                                    */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.25rem;
+    margin: 1.5rem 0 3rem;
+}
+
+.feature-grid__side {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1.25rem;
+}
+
+.feature-grid__hero {
+    position: relative;
+    min-height: 22rem;
+    display: grid;
+    align-content: end;                        /* caption sits at the foot of the cell */
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #5c6b3f;
+}
+
+.feature-grid__hero-image {
+    grid-area: 1 / 1;                          /* image and caption share one cell */
+    width: 100%;
+    height: 100%;
+    align-self: stretch;
+}
+
+.feature-grid__caption {
+    grid-area: 1 / 1;
+    align-self: end;
+    padding: 1.25rem;
+    background-color: rgba(20, 24, 14, 0.86);
+    color: #ffffff;
+}
+
+.feature-grid__eyebrow {
+    margin: 0 0 0.25rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #cddba6;
+}
+
+.feature-grid__heading {
+    margin: 0 0 0.35rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.feature-grid__detail {
+    margin: 0 0 0.3rem;
+    font-size: 0.92rem;
+    color: #e4e6dc;
+}
+
+.feature-grid__price {
+    margin: 0;
+    font-weight: 700;
+    color: #f0c9b6;
+}
+
+.feature-grid__item {
+    position: relative;
+    min-height: 10rem;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #ece7df;
+}
+
+.feature-grid__link {
+    display: grid;
+    height: 100%;
+    align-content: end;
+    text-decoration: none;
+}
+
+.feature-grid__image {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-grid__title {
+    grid-area: 1 / 1;
+    align-self: end;
+    padding: 0.6rem 0.8rem;
+    background-color: rgba(25, 25, 25, 0.85);
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.feature-grid__link:hover .feature-grid__title {
+    text-decoration: underline;
+}
+
+.feature-grid__link:focus {
+    outline: 3px solid #a4553a;
+    outline-offset: 3px;
+}
+
+/* ---------- 4. The print wall ----------------------------
+   `auto-fit` plus `minmax()` is the whole responsive strategy:
+   as many columns as fit, none narrower than 16rem, each sharing
+   the leftover space equally. Adding a ninth card changes nothing. */
+
+.wall-section {
+    margin-bottom: 3.5rem;
+}
+
+.wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+/* The card is a grid too, in one column, with its body taking the
+   remaining height so the price can sit on the bottom edge.       */
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+    border: 1px solid #ded7cb;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.card__image {
+    display: block;
+    width: 100%;
+    height: 14rem;                             /* the image files crop to fill */
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.1rem 1.2rem;
+}
+
+.card__title {
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+}
+
+.card__link {
+    color: #191919;
+    text-decoration: none;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+.card__link:focus {
+    outline: 3px solid #a4553a;
+    outline-offset: 3px;
+}
+
+.card__meta {
+    margin-bottom: 0.75rem;
+    color: #5b554d;
+    font-size: 0.92rem;
+}
+
+.card__price {
+    margin: auto 0 0;                          /* bottom edge of every card */
+    font-weight: 700;
+    color: #8c4530;
+}
+
+/* ---------- 5. Notes beside editorial --------------------
+   Two items in a 1:2 ratio that collapse to one column on a narrow
+   window. This one is Flexbox rather than Grid, deliberately: it is
+   a single row of two items, and `flex-basis` lets each item say
+   the width below which it would rather wrap. A grid track that
+   spans two columns cannot do that — when only one column exists,
+   an item spanning two makes the browser invent a second one and
+   the page grows wider than the window.                           */
+
+.lower {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.notes {
+    flex: 1 1 16rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f2efe9;
+}
+
+.editorial {
+    flex: 2 1 22rem;                           /* twice the share of the notes */
+    max-width: 46rem;
+}
+
+.notes__title,
+.editorial__title {
+    font-size: 1.4rem;
+}
+
+.notes__list {
+    margin: 0;
+}
+
+.notes__list dt {
+    margin-top: 0.9rem;
+    font-weight: 700;
+}
+
+.notes__list dd {
+    margin: 0.15rem 0 0;
+    color: #5b554d;
+    font-size: 0.95rem;
+}
+
+/* ---------- 6. Footer ------------------------------------
+   Four columns that become two, then one, purely through the
+   minimum track width.                                            */
+
+.page-footer {
+    background-color: #191919;
+    color: #d8d2c7;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.footer-col__title {
+    margin-bottom: 0.6rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer-col__list {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col__list a {
+    color: #d8d2c7;
+    text-decoration: none;
+}
+
+.footer-col__list a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-col__list a:focus {
+    outline: 3px solid #d09a6a;
+    outline-offset: 3px;
+}
+
+.page-footer__small {
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 2.5rem;
+    font-size: 0.85rem;
+    color: #a8a297;
+}

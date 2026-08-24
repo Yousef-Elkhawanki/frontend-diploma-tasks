@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" width="1100" height="780" role="img" aria-labelledby="t d">
+  <title id="t">Signal funnel dashboard</title>
+  <desc id="d">Placeholder interface screenshot: Signal funnel dashboard.</desc>
+  <rect width="1100" height="780" rx="14" fill="#101828"/>
+  <rect x="66" y="78" width="968" height="125" rx="8" fill="#1c2740"/>
+  <rect x="66" y="250" width="462" height="390" rx="8" fill="#1c2740"/>
+  <rect x="572" y="250" width="462" height="172" rx="8" fill="#3f4fd6"/>
+  <rect x="572" y="468" width="462" height="172" rx="8" fill="#1c2740"/>
+  <circle cx="220" cy="390" r="78" fill="#0f9d8f" fill-opacity="0.6"/>
+  <text x="550" y="762" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Signal funnel dashboard</text>
+</svg>

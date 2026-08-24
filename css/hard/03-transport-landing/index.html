@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loop — live departures, tickets and step-free routes</title>
+    <meta name="description" content="Loop shows live departures for every bus, tram and ferry in the city, sells tickets that work offline, and plans step-free routes. Free, with no account required.">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <p class="skip"><a href="#main">Skip to main content</a></p>
+
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="#main">
+                <img src="./assets/images/loop-logo.svg" alt="Loop" width="120" height="36">
+            </a>
+
+            <nav class="topbar__nav" aria-label="Main">
+                <ul class="topbar__links">
+                    <li><a href="#features">What it does</a></li>
+                    <li><a href="#planner">Journey planner</a></li>
+                    <li><a href="#wallet">Tickets</a></li>
+                    <li><a href="#numbers">Coverage</a></li>
+                </ul>
+            </nav>
+
+            <a class="button button--primary" href="#get">Get the app</a>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero__text">
+                <h1 class="hero__title">Every departure in the city, thirty seconds before it happens.</h1>
+                <p class="hero__line">
+                    Loop reads the same live feed the drivers do. No account, no adverts,
+                    and it works underground because your tickets are already on the phone.
+                </p>
+                <p class="hero__actions">
+                    <a class="button button--primary" href="#get">Get Loop, free</a>
+                    <a class="button button--ghost" href="#features">See what it does</a>
+                </p>
+                <p class="hero__note">Available for 11 cities. Nothing is stored about where you go.</p>
+            </div>
+            <div class="hero__media">
+                <img class="hero__image" src="./assets/images/hero-app-screens.svg"
+                     alt="Loop showing live departures for a tram stop and a saved ticket ready to scan."
+                     width="1000" height="760">
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">What Loop does</h2>
+            <p class="section-note">Three things, properly, instead of thirty things badly.</p>
+
+            <ul class="cards">
+                <li class="card">
+                    <img class="card__icon" src="./assets/images/icon-live.svg" alt="" width="56" height="56">
+                    <h3 class="card__title">Live departures</h3>
+                    <p class="card__text">
+                        Times from the operator's own feed, updated every ten seconds, with the
+                        vehicle's position when the operator publishes it. When a service is
+                        cancelled Loop says so instead of quietly removing it.
+                    </p>
+                    <p class="card__action"><a class="button button--ghost" href="#get">See a live stop</a></p>
+                </li>
+
+                <li class="card">
+                    <img class="card__icon" src="./assets/images/icon-ticket.svg" alt="" width="56" height="56">
+                    <h3 class="card__title">Tickets that work offline</h3>
+                    <p class="card__text">
+                        Buy once, and the ticket lives on the phone. It scans in a tunnel, on a
+                        dead battery saver, and on a phone with no signal at all.
+                    </p>
+                    <p class="card__action"><a class="button button--ghost" href="#wallet">How tickets work</a></p>
+                </li>
+
+                <li class="card">
+                    <img class="card__icon" src="./assets/images/icon-step-free.svg" alt="" width="56" height="56">
+                    <h3 class="card__title">Step-free routes</h3>
+                    <p class="card__text">
+                        Plan a journey that avoids stairs, steep gradients and broken lifts,
+                        using live lift status from the operators. Route notes are written by
+                        people who have made the journey.
+                    </p>
+                    <p class="card__action"><a class="button button--ghost" href="#planner">Plan a step-free journey</a></p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="planner" class="media-row">
+            <img class="media-row__image" src="./assets/images/feature-journey-planner.svg"
+                 alt="The journey planner showing three route options with walking distances and lift status."
+                 width="800" height="500">
+            <div class="media-row__text">
+                <h2>The planner tells you what it does not know</h2>
+                <p>
+                    Most planners give you one confident answer. Loop gives you three, with the
+                    reason each one might be wrong: a lift that has been out since Tuesday, a
+                    footbridge closed for works, a bus that has been late four days running.
+                </p>
+                <p>
+                    You can rank routes by time, by number of changes, or by how much walking
+                    they involve, and the setting sticks.
+                </p>
+            </div>
+        </section>
+
+        <section id="wallet" class="media-row media-row--reverse">
+            <img class="media-row__image" src="./assets/images/feature-ticket-wallet.svg"
+                 alt="The ticket wallet showing a day ticket, its price cap, and a scan code."
+                 width="800" height="500">
+            <div class="media-row__text">
+                <h2>Buy the cheapest ticket without doing the arithmetic</h2>
+                <p>
+                    Loop watches what you have already paid for today and stops charging once
+                    you have reached the daily cap. If a day ticket would have been cheaper
+                    than your third single, it tells you before you buy it, not afterwards.
+                </p>
+                <p>
+                    Refunds for cancelled services are applied automatically within a day.
+                </p>
+            </div>
+        </section>
+
+        <section id="numbers" class="stats">
+            <h2 class="section-title">Coverage</h2>
+            <ul class="stats__list">
+                <li class="stat">
+                    <span class="stat__figure">11</span>
+                    <span class="stat__label">cities, with three more in 2027</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__figure">4,180</span>
+                    <span class="stat__label">stops with live data</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__figure">96%</span>
+                    <span class="stat__label">of departures accurate to a minute</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__figure">0</span>
+                    <span class="stat__label">journeys stored after your trip ends</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="get" class="get">
+            <h2>Get Loop</h2>
+            <p>
+                Free for everyone, funded by the transport authority rather than by
+                advertising. No account is needed to look up a departure; you only sign in
+                to buy a ticket.
+            </p>
+            <p class="get__actions">
+                <a class="button button--primary" href="#get">Download for Android</a>
+                <a class="button button--primary" href="#get">Download for iOS</a>
+                <a class="button button--ghost" href="#get">Use it in a browser</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h2 class="footer-col__title">Travelling</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#numbers">Cities covered</a></li>
+                    <li><a href="#planner">Journey planner</a></li>
+                    <li><a href="#wallet">Tickets and caps</a></li>
+                    <li><a href="#features">Live departures</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Accessibility</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#planner">Step-free routes</a></li>
+                    <li><a href="#planner">Lift status</a></li>
+                    <li><a href="#get">Accessibility statement</a></li>
+                    <li><a href="#get">Report a barrier</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">About</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#main">Who funds Loop</a></li>
+                    <li><a href="#main">Open data we use</a></li>
+                    <li><a href="#main">Status page</a></li>
+                    <li><a href="#main">Work with us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Help</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#main">Refunds</a></li>
+                    <li><a href="#main">Lost tickets</a></li>
+                    <li><a href="#main">Contact the team</a></li>
+                    <li><a href="#main">Report a wrong time</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <p class="footer-base__copy">© 2026 Loop, operated by the City Transport Authority.</p>
+            <ul class="footer-base__legal">
+                <li><a href="#main">Privacy</a></li>
+                <li><a href="#main">Terms</a></li>
+                <li><a href="../../">Back to all CSS challenges</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

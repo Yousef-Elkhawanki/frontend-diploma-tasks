@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" role="img" aria-labelledby="t d">
+  <title id="t">Contour lines</title>
+  <desc id="d">Tileable pattern: Contour lines.</desc>
+  <rect width="80" height="80" fill="#e7ece6"/>
+  <path d="M0 40 Q 20 24 40 40 T 80 40" stroke="#8fa596" stroke-width="2" fill="none"/>
+  <path d="M0 64 Q 20 48 40 64 T 80 64" stroke="#8fa596" stroke-width="2" fill="none" stroke-opacity="0.6"/>
+</svg>

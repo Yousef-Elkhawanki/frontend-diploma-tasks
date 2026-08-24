@@ -1,0 +1,450 @@
+/* =========================================================
+   Loop — city transport app
+   CSS module — Hard 03
+   Subject: Flexbox. Every arrangement below is one-dimensional:
+   a row or a column. Where an arrangement wants to be two
+   dimensional — the footer columns, the card wall — Flexbox does
+   it by wrapping, and the awkwardness you feel there is what Grid
+   is for in the next band.
+
+   No media queries are used anywhere in this file. The page adapts
+   because flex containers wrap and flex items are allowed to be
+   flexible.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #12172b;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    margin: 0 0 0.7rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #1a5f96;
+}
+
+.skip {
+    margin: 0;
+    padding: 0.5rem 1.25rem;
+    background-color: #12172b;
+    font-size: 0.9rem;
+}
+
+.skip a {
+    color: #eef2fb;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.section-note {
+    margin-bottom: 2rem;
+    color: #4a5470;
+    text-align: center;
+}
+
+/* ---------- Buttons -------------------------------------- */
+
+.button {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.button--primary {
+    background-color: #157a72;
+    border-color: #157a72;
+    color: #ffffff;
+}
+
+.button--primary:hover {
+    background-color: #0f5c56;
+    border-color: #0f5c56;
+}
+
+.button--ghost {
+    border-color: #23306b;
+    color: #23306b;
+}
+
+.button--ghost:hover {
+    background-color: #eef2fb;
+}
+
+.button:focus {
+    outline: 3px solid #e2603f;
+    outline-offset: 3px;
+}
+
+/* ---------- 1. Navigation bar ----------------------------
+   One flex row. `justify-content: space-between` pushes the three
+   groups apart; `align-items: center` lines them up on the cross
+   axis. `flex-wrap` lets the bar become two lines instead of
+   overflowing when the window is narrow — no media query needed. */
+
+.topbar {
+    background-color: #23306b;
+}
+
+.topbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 0.9rem 1.5rem;
+}
+
+.topbar__brand:focus {
+    outline: 3px solid #e2603f;
+    outline-offset: 3px;
+}
+
+/* The nav is allowed to grow into whatever space is left, so links
+   spread out on a wide screen and compress before they wrap.      */
+.topbar__nav {
+    flex: 1 1 auto;
+}
+
+.topbar__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.75rem;                       /* row-gap column-gap */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topbar__links a {
+    color: #dfe6f7;
+    text-decoration: none;
+}
+
+.topbar__links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.topbar__links a:focus {
+    outline: 3px solid #e2603f;
+    outline-offset: 3px;
+}
+
+/* ---------- 2. Hero --------------------------------------
+   Two halves. Each is allowed to shrink but not below 22rem, so
+   when the window can no longer hold both they wrap and stack —
+   text first, because that is its order in the document.          */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eef2fb;
+}
+
+.hero__text {
+    display: flex;                             /* a column, to centre its content */
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 26rem;
+    padding: 3.5rem 2rem;
+}
+
+.hero__media {
+    flex: 1 1 26rem;
+    background-color: #23306b;
+    text-align: center;
+}
+
+.hero__image {
+    max-height: 28rem;
+    padding: 2rem;
+}
+
+.hero__title {
+    max-width: 20ch;
+    font-size: 2.4rem;
+}
+
+.hero__line {
+    max-width: 42ch;
+    font-size: 1.1rem;
+    color: #2b3450;
+}
+
+/* The two buttons sit on one line and wrap together. */
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.hero__note {
+    margin: 0;
+    font-size: 0.92rem;
+    color: #4a5470;
+}
+
+/* ---------- 3. Feature cards -----------------------------
+   The row wraps; each card is itself a flex column, which is what
+   makes the buttons line up: `margin-top: auto` on the last child
+   of a column pushes it to the bottom, however tall the card is.  */
+
+.features {
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 18rem;                           /* grow, shrink, sensible basis */
+    padding: 1.5rem;
+    border: 1px solid #d4dbeb;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.card__icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 0.75rem;
+}
+
+.card__title {
+    font-size: 1.25rem;
+}
+
+.card__text {
+    color: #38415c;
+}
+
+.card__action {
+    margin: auto 0 0;                          /* pinned to the card's foot */
+    padding-top: 1rem;
+}
+
+/* ---------- 4. Media rows --------------------------------
+   Image beside text, tops aligned: `align-items: flex-start`
+   rather than the default `stretch`.                              */
+
+.media-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+.media-row__image {
+    flex: 1 1 22rem;
+    border-radius: 12px;
+}
+
+.media-row__text {
+    flex: 1 1 24rem;
+}
+
+/* The mirrored row swaps the visual order without touching the
+   HTML. Reordering whole blocks is worth doing carefully: the tab
+   order and the screen-reader order still follow the document, so
+   only use it when the two orders mean the same thing. Here the
+   image is decorative support for the text either way.            */
+.media-row--reverse .media-row__image {
+    order: 2;
+}
+
+.media-row--reverse {
+    background-color: #f6f8fd;
+}
+
+/* ---------- 5. Statistics --------------------------------
+   `justify-content: space-evenly` spreads the four figures, and
+   because the container wraps, a narrow window gets two rows with
+   the leftovers still centred rather than pinned left.            */
+
+.stats {
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.stats__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 12rem;
+    align-items: center;
+    text-align: center;
+}
+
+.stat__figure {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #157a72;
+}
+
+.stat__label {
+    color: #4a5470;
+    font-size: 0.95rem;
+}
+
+/* ---------- 6. Get the app ------------------------------- */
+
+.get {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 4rem;
+    text-align: center;
+}
+
+.get h2 {
+    font-size: 1.8rem;
+}
+
+.get__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+/* ---------- 7. Footer ------------------------------------
+   Four columns that wrap. Each column is itself a flex column so
+   its links share one gap value.                                  */
+
+.page-footer {
+    background-color: #12172b;
+    color: #c9d2ea;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 12rem;
+}
+
+.footer-col__title {
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer-col__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col__list a,
+.footer-base a {
+    color: #c9d2ea;
+    text-decoration: none;
+}
+
+.footer-col__list a:hover,
+.footer-base a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-col__list a:focus,
+.footer-base a:focus {
+    outline: 3px solid #e2603f;
+    outline-offset: 3px;
+}
+
+.footer-base {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 76rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem 2.5rem;
+    border-top: 1px solid #262d47;
+}
+
+.footer-base__copy {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-base__legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9rem;
+}

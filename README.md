@@ -19,7 +19,7 @@ every link in the repository is relative.
 | Module | Status | Challenges | Guide |
 | ------ | ------ | ---------- | ----- |
 | [HTML](html/) | Available | 12 — four medium, four hard, four advanced | [HTML module guide](html/README.md) |
-| CSS | Not started | — | — |
+| [CSS](css/) | Available | 12 — four medium, four hard, four advanced | [CSS module guide](css/README.md) |
 | JavaScript | Not started | — | — |
 | TypeScript | Not started | — | — |
 | React | Not started | — | — |
@@ -31,7 +31,7 @@ may include topics beyond the list above — Git and GitHub, Tailwind, performan
 frontend security — and each one slots into the same structure without changing
 anything that already exists.
 
-**Start here:** [HTML Challenges](html/)
+**Start here:** [HTML Challenges](html/), then [CSS Challenges](css/).
 
 ---
 
@@ -51,30 +51,58 @@ frontend-diploma-tasks/
 ├── assets/                           ← files shared across more than one module
 │   └── README.md
 │
-└── html/                             ← one folder per technology
-    ├── index.html                    ← module directory, links to its challenges
-    ├── README.md                     ← module guide: rules, workflow, submission
+├── html/                             ← one folder per technology
+│   ├── index.html                    ← module directory, links to its challenges
+│   ├── README.md                     ← module guide: rules, workflow, submission
+│   │
+│   ├── medium/
+│   │   ├── 01-personal-portfolio/
+│   │   │   ├── index.html            ← reference implementation
+│   │   │   ├── README.md             ← the brief
+│   │   │   └── assets/               ← only what this challenge uses
+│   │   ├── 02-restaurant-menu/
+│   │   ├── 03-blog-article/
+│   │   └── 04-product-page/
+│   │
+│   ├── hard/
+│   │   ├── 01-tech-conference/
+│   │   ├── 02-job-application/
+│   │   ├── 03-university-course/
+│   │   └── 04-travel-booking/
+│   │
+│   └── advanced/
+│       ├── 01-ecommerce-checkout/
+│       ├── 02-online-course/
+│       ├── 03-clinic-appointment/
+│       └── 04-news-magazine/
+│
+└── css/
+    ├── index.html
+    ├── README.md
     │
     ├── medium/
-    │   ├── 01-personal-portfolio/
+    │   ├── 01-recycling-guide/
     │   │   ├── index.html            ← reference implementation
+    │   │   ├── styles.css            ← reference stylesheet
     │   │   ├── README.md             ← the brief
-    │   │   └── assets/               ← only what this challenge uses
-    │   ├── 02-restaurant-menu/
-    │   ├── 03-blog-article/
-    │   └── 04-product-page/
+    │   │   └── assets/
+    │   │       ├── design/           ← the design reference wireframe
+    │   │       └── images/
+    │   ├── 02-trail-hero/
+    │   ├── 03-workshop-packages/
+    │   └── 04-cinema-programme/
     │
     ├── hard/
-    │   ├── 01-tech-conference/
-    │   ├── 02-job-application/
-    │   ├── 03-university-course/
-    │   └── 04-travel-booking/
+    │   ├── 01-membership-form/
+    │   ├── 02-gallery-wall/
+    │   ├── 03-transport-landing/
+    │   └── 04-pricing-plans/
     │
     └── advanced/
-        ├── 01-ecommerce-checkout/
-        ├── 02-online-course/
-        ├── 03-clinic-appointment/
-        └── 04-news-magazine/
+        ├── 01-print-catalogue/
+        ├── 02-property-listings/
+        ├── 03-streaming-browse/
+        └── 04-saas-capstone/
 ```
 
 A future module is added by creating one folder and following the same shape:
@@ -106,7 +134,8 @@ no global numbering to renumber when a challenge is inserted or moved.
 `HTML/`, `JavaScript/`, `Task 1/` or `Personal_Profile/`.
 
 **Challenge files.** Every challenge folder contains `index.html` (the reference
-implementation) and `README.md` (the brief). It may also contain `assets/`.
+implementation) and `README.md` (the brief). It may also contain `assets/`, and
+whatever else its module needs — a CSS challenge adds `styles.css`.
 
 **Assets.** If a file belongs to one challenge, it lives inside that challenge:
 `html/medium/01-personal-portfolio/assets/images/`. That keeps unrelated media
@@ -135,11 +164,16 @@ piece of content. Deciding that is the exercise.
 > Students should first read the challenge requirements, build their own
 > solution, and only then compare it with the reference implementation.
 
-Each module's guide sets out its own rules, testing steps and submission process.
-For the module that exists today, that is the
-[HTML module guide](html/README.md) — and its central rule is that HTML
-challenges are solved with **HTML only**: no CSS, no JavaScript, no frameworks.
-CSS and JavaScript are taught in their own modules later.
+Each module's guide sets out its own rules, testing steps and submission
+process:
+
+- The [HTML module](html/README.md) is solved with **HTML only** — no CSS, no
+  JavaScript, no frameworks. Pages render in the browser's default styling on
+  purpose.
+- The [CSS module](css/README.md) is solved with **HTML and pure CSS** — an
+  external stylesheet, no JavaScript, no framework and no preprocessor. Its
+  challenges follow the CSS curriculum in order, and none of them needs a
+  concept from a later one.
 
 ---
 
@@ -152,9 +186,11 @@ In **Settings → Pages**, choose "Deploy from a branch", branch `master`, folde
 | ---- | --- |
 | Diploma directory | `https://USERNAME.github.io/REPOSITORY/` |
 | HTML module | `https://USERNAME.github.io/REPOSITORY/html/` |
-| One challenge | `https://USERNAME.github.io/REPOSITORY/html/medium/01-personal-portfolio/` |
+| CSS module | `https://USERNAME.github.io/REPOSITORY/css/` |
+| One challenge | `https://USERNAME.github.io/REPOSITORY/css/medium/01-recycling-guide/` |
 
-Later modules follow automatically: `/css/`, `/javascript/`, `/react/` and so on.
+Later modules follow automatically: `/javascript/`, `/typescript/`, `/react/`
+and so on.
 
 Challenge briefs are Markdown, so read them on GitHub itself — GitHub Pages
 serves `README.md` as a plain file rather than rendering it.

@@ -1,0 +1,295 @@
+/* =========================================================
+   Cogwheel Cycle Workshop — service packages
+   CSS module — Medium 03
+   The subject of this stylesheet is the box model: widths,
+   padding, margins and the arithmetic between them.
+   ========================================================= */
+
+/* ---------- 1. The measuring rule ------------------------
+   With the default `content-box`, a 300px box with 20px padding
+   and a 2px border occupies 344px. Every width you write becomes
+   a sum you have to do in your head. `border-box` folds padding
+   and border back inside the width, so 300px means 300px. Set it
+   once, for everything, including form controls.                 */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- 2. Page defaults -----------------------------
+   The font size is left as a keyword-free default so that a reader
+   who has set a larger base size in their browser gets one. Every
+   other size in this file is a multiple of it.                   */
+
+body {
+    margin: 0;
+    background-color: #f6f4f1;
+    color: #232326;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;                       /* relative to the reader's setting */
+    line-height: 1.65;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: #a33509;
+}
+
+img {
+    max-width: 100%;                            /* never wider than its container */
+    height: auto;                               /* keep the aspect ratio */
+}
+
+.skip {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: #232326;
+    font-size: 0.9rem;
+}
+
+.skip a {
+    color: #f6f4f1;
+}
+
+/* ---------- 3. The one column ----------------------------
+   `max-width` caps the measure at a comfortable reading length;
+   `margin: 0 auto` centres the box inside whatever contains it;
+   the side padding stops the text touching the window edge on a
+   narrow screen. Every block on the page uses this one class.     */
+
+.wrap {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* ---------- 4. Header band -------------------------------
+   Height comes from a minimum measured against the window plus
+   padding, so the band grows with its content instead of clipping
+   it.                                                            */
+
+.masthead {
+    min-height: 22vh;
+    padding: 2.5rem 0 2rem;
+    background-color: #232326;
+    color: #f6f4f1;
+}
+
+.masthead__logo {
+    width: 240px;                               /* px: a logo should not scale with text */
+    height: auto;
+}
+
+.masthead__tagline {
+    margin: 0.75rem 0 0;
+    max-width: 32rem;
+    color: #c9c5bf;
+}
+
+.intro {
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #4a4a50;
+}
+
+/* ---------- 5. Packages ----------------------------------
+   One class, three identical boxes. Padding is written in `em`,
+   so it is measured against the package's own font size: raise
+   that font size and the padding grows with it, keeping the box
+   in proportion.
+
+   Note on margins: `margin-bottom` on one package and
+   `margin-top` on the next do not add up — adjacent vertical
+   margins collapse to the larger of the two. Only one of them is
+   declared here, so the gap is unambiguous.                      */
+
+.package {
+    margin: 0 0 1.75rem;
+    padding: 1.5em;
+    border: 1px solid #d6d2cc;
+    border-left: 8px solid #c2410c;
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow-wrap: break-word;
+}
+
+/* The price strip ignores the package's padding and runs to its
+   edges. Negative margins of exactly the padding value pull it
+   back out on three sides; the padding is then restored inside
+   the strip itself. This is the one place negative margins are
+   the clear answer rather than a patch.                          */
+.package__price {
+    margin: -1.5em -1.5em 1.25em;
+    padding: 0.9em 1.5em;
+    border-bottom: 1px solid #eae6e0;
+    border-radius: 9px 9px 0 0;
+    background-color: #f6f4f1;
+}
+
+.package__amount {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #a33509;
+}
+
+.package__turnaround {
+    font-size: 0.9rem;
+    color: #5b6672;
+}
+
+.package__name {
+    margin-bottom: 0.25rem;
+}
+
+.package__for {
+    margin-bottom: 1rem;
+    color: #5b6672;
+}
+
+.package__list {
+    margin: 0 0 1rem;
+    padding-left: 1.3rem;
+}
+
+.package__list li {
+    margin-bottom: 0.4rem;
+}
+
+.package__note {
+    margin: 0;
+    font-size: 0.92rem;
+    color: #5b6672;
+}
+
+/* The highlighted package changes colours only. Its box model is
+   untouched, so it stays exactly the same size as the others.    */
+.package--highlight {
+    border-color: #232326;
+    border-left-color: #c2410c;
+    background-color: #232326;
+    color: #f6f4f1;
+}
+
+.package--highlight .package__price {
+    border-bottom-color: #3a3a40;
+    background-color: #1a1a1d;
+}
+
+.package--highlight .package__amount {
+    color: #f0854f;
+}
+
+.package--highlight .package__name,
+.package--highlight .package__for,
+.package--highlight .package__note,
+.package--highlight .package__turnaround {
+    color: #cdc9c3;
+}
+
+.package--highlight .package__name {
+    color: #ffffff;
+}
+
+/* ---------- 6. Booking note ------------------------------
+   Deliberately narrower than the packages, and centred by its own
+   automatic side margins rather than by text alignment.          */
+
+.booking-note {
+    max-width: 34rem;
+    margin: 0.5rem auto 2.5rem;
+    padding: 1.1em 1.3em;
+    border-radius: 10px;
+    background-color: #fdf1e8;
+    color: #7a2c07;
+    text-align: center;
+}
+
+/* ---------- 7. Panels ------------------------------------ */
+
+.panel {
+    margin-bottom: 1.75rem;
+    padding: 1.5em;
+    border: 1px solid #d6d2cc;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.panel__note {
+    margin: 1rem 0 0;
+    font-size: 0.92rem;
+    color: #5b6672;
+}
+
+.panel__image {
+    width: 100%;                                /* fill the panel ... */
+    max-width: 560px;                           /* ... but never beyond its natural size */
+    border-radius: 8px;
+}
+
+.hours {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hours__row {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eae6e0;
+}
+
+.hours__day {
+    font-weight: 700;
+}
+
+.hours__time {
+    color: #5b6672;
+}
+
+.address {
+    margin: 1rem 0 0;
+    font-style: normal;
+    line-height: 1.8;
+}
+
+/* ---------- 8. Footer ------------------------------------ */
+
+.page-footer {
+    margin-top: 1rem;
+    padding: 2rem 0 2.5rem;
+    background-color: #232326;
+    color: #f6f4f1;
+}
+
+.page-footer p {
+    margin: 0 0 0.4rem;
+}
+
+.page-footer__small {
+    font-size: 0.88rem;
+    color: #b6b2ac;
+}
+
+.page-footer a {
+    color: #f0854f;
+}

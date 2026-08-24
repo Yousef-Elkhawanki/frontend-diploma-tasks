@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1256" width="1000" height="1256" role="img" aria-labelledby="mt md">
+  <title id="mt">Design reference: Fairwater property listings</title>
+  <desc id="md">Wireframe mockup of the intended layout, with the challenge palette listed underneath.</desc>
+  <rect x="0" y="0" width="1000" height="1256" fill="#ffffff"/>
+  <rect x="0" y="0" width="1000" height="46" rx="10" fill="#dfe3e8"/>
+  <circle cx="26" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="48" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="70" cy="23" r="6" fill="#b9c0c8"/>
+  <rect x="96" y="12" width="876" height="22" rx="11" fill="#f4f6f8"/>
+  <text x="500" y="27" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">fairwater.example / listings — mobile first; the same page at three widths</text>
+  <rect x="0" y="46" width="1000" height="34" rx="0" fill="#e9edf1"/>
+  <text x="500" y="67" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#46504e" text-anchor="middle">SMALL SCREEN (up to about 640px) — everything in one column</text>
+  <rect x="330" y="88" width="340" height="44" rx="6" fill="#143b32"/>
+  <text x="500" y="114" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#f7f5f0" text-anchor="middle">Logo + menu button</text>
+  <rect x="330" y="140" width="340" height="64" rx="6" fill="#f7f5f0"/>
+  <text x="500" y="176" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">Search panel — fields stacked</text>
+  <rect x="330" y="212" width="340" height="70" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="500" y="250" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">Listing card — image on top, details under</text>
+  <rect x="330" y="290" width="340" height="70" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="500" y="328" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">Listing card</text>
+  <rect x="0" y="382" width="1000" height="34" rx="0" fill="#e9edf1"/>
+  <text x="500" y="403" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#46504e" text-anchor="middle">MEDIUM SCREEN (about 640px and up) — two columns, navigation becomes a row</text>
+  <rect x="200" y="424" width="148" height="44" rx="6" fill="#143b32"/>
+  <text x="274" y="450" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#f7f5f0" text-anchor="middle">Logo</text>
+  <rect x="358" y="424" width="442" height="44" rx="6" fill="#143b32"/>
+  <text x="579" y="450" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#f7f5f0" text-anchor="middle">Navigation links in a row</text>
+  <rect x="200" y="476" width="290" height="56" rx="6" fill="#f7f5f0"/>
+  <text x="345" y="508" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">Search field</text>
+  <rect x="500" y="476" width="145" height="56" rx="6" fill="#f7f5f0"/>
+  <text x="572" y="508" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">Filters</text>
+  <rect x="655" y="476" width="145" height="56" rx="6" fill="#b8873b"/>
+  <text x="728" y="508" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#ffffff" text-anchor="middle">Search</text>
+  <rect x="200" y="540" width="294" height="88" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="347" y="588" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">Listing card</text>
+  <rect x="506" y="540" width="294" height="88" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="653" y="588" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">Listing card</text>
+  <rect x="0" y="650" width="1000" height="34" rx="0" fill="#e9edf1"/>
+  <text x="500" y="671" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#46504e" text-anchor="middle">LARGE SCREEN (about 1000px and up) — filters beside the results, three cards per row</text>
+  <rect x="40" y="692" width="150" height="52" rx="6" fill="#143b32"/>
+  <text x="115" y="722" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#f7f5f0" text-anchor="middle">Logo</text>
+  <rect x="200" y="692" width="600" height="52" rx="6" fill="#143b32"/>
+  <text x="500" y="722" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#f7f5f0" text-anchor="middle">Navigation</text>
+  <rect x="810" y="692" width="150" height="52" rx="6" fill="#b8873b"/>
+  <text x="885" y="722" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#ffffff" text-anchor="middle">Saved</text>
+  <rect x="40" y="754" width="218" height="170" rx="6" fill="#f7f5f0"/>
+  <text x="149" y="835" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">FILTER COLUMN — sticks beside the</text>
+<text x="149" y="850" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">results while they scroll</text>
+  <rect x="274" y="754" width="218" height="170" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="383" y="835" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#143b32" text-anchor="middle">CARD — image keeps the same shape at</text>
+<text x="383" y="849" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#143b32" text-anchor="middle">every width and is never squashed</text>
+  <rect x="508" y="754" width="218" height="170" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="617" y="842" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">CARD</text>
+  <rect x="742" y="754" width="218" height="170" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="851" y="842" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">CARD</text>
+  <rect x="40" y="938" width="218" height="100" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="149" y="991" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#8d8578" text-anchor="middle">(filters continue)</text>
+  <rect x="274" y="938" width="218" height="100" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="383" y="992" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">CARD</text>
+  <rect x="508" y="938" width="218" height="100" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="617" y="992" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">CARD</text>
+  <rect x="742" y="938" width="218" height="100" rx="6" fill="#ffffff" stroke="#d8d2c6" stroke-width="2"/>
+  <text x="851" y="992" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#143b32" text-anchor="middle">CARD</text>
+  <rect x="0" y="1058" width="1000" height="74" rx="0" fill="#143b32"/>
+  <text x="500" y="1098" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#e4ded2" text-anchor="middle">Footer — columns that collapse to one on small screens. Headings grow smoothly between the smallest and largest window, with no jump at a breakpoint.</text>
+  <line x1="28" y1="1146" x2="972" y2="1146" stroke="#dfe3e8" stroke-width="1"/>
+  <text x="72" y="1172" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">Palette</text>
+  <rect x="138" y="1154" width="26" height="26" rx="5" fill="#143b32" stroke="#cfd5db"/>
+  <text x="170" y="1162" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Green</text>
+  <text x="170" y="1175" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#143b32</text>
+  <rect x="254" y="1154" width="26" height="26" rx="5" fill="#f7f5f0" stroke="#cfd5db"/>
+  <text x="286" y="1162" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Bone</text>
+  <text x="286" y="1175" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#f7f5f0</text>
+  <rect x="370" y="1154" width="26" height="26" rx="5" fill="#b8873b" stroke="#cfd5db"/>
+  <text x="402" y="1162" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Brass</text>
+  <text x="402" y="1175" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#b8873b</text>
+  <rect x="486" y="1154" width="26" height="26" rx="5" fill="#46504e" stroke="#cfd5db"/>
+  <text x="518" y="1162" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Slate</text>
+  <text x="518" y="1175" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#46504e</text>
+  <rect x="602" y="1154" width="26" height="26" rx="5" fill="#a34b3a" stroke="#cfd5db"/>
+  <text x="634" y="1162" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Brick</text>
+  <text x="634" y="1175" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#a34b3a</text>
+</svg>

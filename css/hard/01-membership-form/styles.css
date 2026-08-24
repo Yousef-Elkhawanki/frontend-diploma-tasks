@@ -1,0 +1,319 @@
+/* =========================================================
+   Brackenfield Library — membership form
+   CSS module — Hard 01
+   The HTML has no classes and no IDs used for styling. Every rule
+   below finds its target through elements, attributes, position
+   and state. The subjects are the cascade, inheritance,
+   specificity and selectors.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- 1. Inherited defaults ------------------------
+   Colour, font and line-height inherit from <body>, so they are
+   declared once here and never repeated.                         */
+
+body {
+    margin: 0;
+    padding: 0 0 3rem;
+    background-color: #f8f9fb;
+    color: #22303f;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+}
+
+/* Form controls are the exception: browsers give them their own
+   font from the operating system, and font is not inherited into
+   them. `inherit` says explicitly what the cascade would have done
+   on its own for any other element. Without this line the textarea
+   below would be monospace.                                       */
+input,
+select,
+textarea,
+button {
+    font: inherit;
+    color: inherit;
+}
+
+h1,
+h2,
+legend {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.25;
+}
+
+h1 {
+    margin: 0 0 0.75rem;
+    font-size: 2rem;
+    color: #1d3557;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #1d3557;
+}
+
+p {
+    margin: 0 0 1.1rem;
+}
+
+a {
+    color: #1c5588;
+}
+
+/* The skip link is the only direct paragraph child of <body>, so
+   the child combinator reaches it without a class.                */
+body > p {
+    margin: 0;
+    padding: 0.5rem 1.25rem;
+    background-color: #1d3557;
+}
+
+body > p a {
+    color: #ffffff;
+}
+
+/* ---------- 2. Page furniture ---------------------------- */
+
+header {
+    padding: 1.75rem 1.25rem;
+    background-color: #1d3557;
+    color: #eef2f8;
+    text-align: center;
+}
+
+header p {
+    margin: 0.6rem 0 0;
+    color: #c6d4e6;
+}
+
+main {
+    max-width: 42rem;
+    margin: 2.5rem auto 0;
+    padding: 0 1.25rem;
+}
+
+footer {
+    max-width: 42rem;
+    margin: 2.5rem auto 0;
+    padding: 1.5rem 1.25rem 0;
+    border-top: 1px solid #c9d3e0;
+    color: #5a6472;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0 0 0.35rem;
+}
+
+/* ---------- 3. Fieldsets as panels -----------------------
+   `unset` on a non-inherited property such as min-width resolves
+   to its initial value — here 0 — which removes the odd default
+   fieldsets carry (min-inline-size: min-content) and stops a long
+   unbreakable value from stretching the panel. Writing `unset`
+   rather than `0` says "give me the default the property would
+   have had if the browser had not intervened".                    */
+
+fieldset {
+    min-width: unset;
+    margin: 0 0 1.75rem;
+    padding: 1.5rem;
+    border: 1px solid #c9d3e0;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+/* The child combinator makes the intent explicit: the legend of
+   this panel, not a legend nested deeper inside it.               */
+fieldset > legend {
+    padding: 0 0.6rem;
+    color: inherit;                            /* takes the panel's colour */
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- 4. Labels, controls and hints ----------------
+   Labels are block-level here only because that is the browser's
+   normal flow once we give them a bottom margin; no display
+   property is used anywhere in this stylesheet.                   */
+
+label {
+    font-weight: 700;
+}
+
+/* Every text-like control shares one appearance, reached by
+   attribute rather than by class. Specificity of each selector
+   below is (0,1,1): one attribute plus one element.               */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid #9fb0c4;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Checkboxes and radios must not pick that up. They are excluded
+   by :not() rather than by a later override, so there is no
+   conflict to resolve at all — the cheapest way to win a
+   specificity argument is not to have one.                        */
+input:not([type="checkbox"]):not([type="radio"]) {
+    max-width: 100%;
+}
+
+/* A hint always follows its control, so the adjacent sibling
+   combinator finds it: no class needed, and a hint that is moved
+   away from its control stops being styled, which is a useful
+   warning.                                                        */
+input + small,
+select + small,
+textarea + small {
+    color: #4c5666;
+    font-size: 0.88rem;
+}
+
+/* ---------- 5. States ------------------------------------
+   Resting, hover, focus, required, unavailable.                   */
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover,
+select:hover,
+textarea:hover {
+    border-color: #5a7ea8;
+}
+
+/* Focus: the accent border alone is not enough, because a border
+   colour change can be invisible to some readers and disappears
+   entirely in forced-colours mode. The outline is what guarantees
+   the state is visible, and the offset keeps it clear of the box. */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #2a6fb0;
+    outline-offset: 2px;
+    border-color: #2a6fb0;
+}
+
+/* Required fields carry a thicker edge on one side: a difference
+   in shape as well as in colour, and the page says so in words
+   above the form. CSS cannot reach the label that precedes an
+   input, so the mark belongs on the field itself.                 */
+input[required],
+textarea[required] {
+    border-left: 4px solid #2a6fb0;
+}
+
+/* Unavailable, driven by the attribute the HTML already has. The
+   hint under it explains why in words, so this is never colour
+   alone.                                                          */
+input[disabled] {
+    border-color: #dbe1e8;
+    border-left-color: #dbe1e8;
+    background-color: #eef1f5;
+    color: #6a7484;
+}
+
+/* ---------- 6. Choice rows -------------------------------
+   Position, not classes: every second row tinted, the first and
+   last row losing the rule they would otherwise share with the
+   panel edge.                                                     */
+
+fieldset ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset li {
+    padding: 0.7rem 0.8rem;
+    border-bottom: 1px solid #e6ebf1;
+    border-radius: 6px;
+}
+
+fieldset li:nth-child(even) {
+    background-color: #f4f7fb;
+}
+
+fieldset li:last-child {
+    border-bottom: 0;
+}
+
+fieldset li:hover {
+    background-color: #e9f0f9;
+}
+
+fieldset li label {
+    font-weight: 400;                          /* a choice, not a field name */
+}
+
+/* ---------- 7. Buttons -----------------------------------
+   Two rules that both want the button: the element rule sets the
+   shape, and the type rules set the colours. They do not conflict,
+   because they set different properties — the simplest way to keep
+   the cascade quiet. Where they would conflict, the later rule
+   wins at equal specificity, and no !important is needed anywhere
+   in this file.                                                   */
+
+button {
+    margin-right: 0.5rem;
+    padding: 0.75rem 1.6rem;
+    border: 2px solid #1d3557;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+button[type="submit"] {
+    background-color: #1d3557;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #14263f;
+}
+
+button[type="reset"] {
+    background-color: #ffffff;
+    color: #1d3557;
+}
+
+button[type="reset"]:hover {
+    background-color: #e9f0f9;
+}
+
+/* ---------- 8. What happens next -------------------------- */
+
+main > section {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border: 1px solid #c9d3e0;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+main > section h2 {
+    margin-top: 0;
+}
+
+main > section ol {
+    margin: 0 0 1rem;
+    padding-left: 1.4rem;
+}
+
+main > section li {
+    margin-bottom: 0.4rem;
+}

@@ -1,0 +1,780 @@
+/* =========================================================
+   Signal — product landing page
+   CSS module — Advanced 04, the capstone.
+
+   Organisation:
+     1. Tokens
+     2. Base
+     3. Components (buttons, cards, plans)
+     4. Sections
+     5. Breakpoints
+     6. Reduced motion
+
+   Rules of the house: no literal colour or spacing outside the
+   token block, mobile first, and one animation on the page.
+   ========================================================= */
+
+/* ---------- 1. Tokens ------------------------------------ */
+
+:root {
+    /* colour */
+    --ink: #101828;
+    --ink-soft: #1c2740;
+    --surface: #ffffff;
+    --tint: #f6f7fb;
+    --line: #dbe0ec;
+    --text: #202a3f;
+    --text-muted: #667085;
+    --on-dark: #e7ebf5;
+    --on-dark-muted: #aab4c8;
+    --indigo: #3f4fd6;
+    --indigo-dark: #2f3bb0;
+    --teal: #0f9d8f;
+    --amber: #f2a03d;
+
+    /* spacing — five steps */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2.5rem;
+    --space-5: 4rem;
+
+    /* shape */
+    --radius-s: 8px;
+    --radius-l: 16px;
+
+    /* type */
+    --font: "Helvetica Neue", Arial, sans-serif;
+    --font-display: Georgia, "Times New Roman", serif;
+    --size-body: 1.0625rem;
+    --size-meta: 0.9rem;
+    --size-h1: clamp(2.1rem, 1.3rem + 3.2vw, 3.6rem);
+    --size-h2: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem);
+
+    /* layout */
+    --measure: 68rem;
+    --gutter: min(5vw, var(--space-4));
+
+    /* motion */
+    --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+    --speed: 160ms;
+}
+
+/* ---------- 2. Base -------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 5rem;                  /* clears the sticky header */
+}
+
+body {
+    margin: 0;
+    background-color: var(--surface);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: var(--size-body);
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-display);
+    line-height: 1.15;
+    margin: 0 0 var(--space-2);
+    color: var(--ink);
+}
+
+p {
+    margin: 0 0 var(--space-2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--indigo-dark);
+}
+
+ul {
+    list-style: none;
+}
+
+.skip {
+    margin: 0;
+    padding: var(--space-1) var(--space-2);
+    background-color: var(--ink);
+    font-size: var(--size-meta);
+}
+
+.skip a {
+    color: var(--on-dark);
+}
+
+.section-title {
+    font-size: var(--size-h2);
+    text-align: center;
+}
+
+.section-note {
+    margin-bottom: var(--space-4);
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* ---------- 3. Components -------------------------------- */
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: var(--radius-s);
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color var(--speed) var(--ease),
+                border-color var(--speed) var(--ease),
+                transform var(--speed) var(--ease);
+}
+
+.button--primary {
+    background-color: var(--indigo);
+    border-color: var(--indigo);
+    color: var(--surface);
+}
+
+.button--primary:hover {
+    background-color: var(--indigo-dark);
+    border-color: var(--indigo-dark);
+    transform: translateY(-2px);
+}
+
+.button--ghost {
+    border-color: var(--indigo);
+    color: var(--indigo-dark);
+}
+
+.button--ghost:hover {
+    background-color: var(--tint);
+    transform: translateY(-2px);
+}
+
+.button:focus-visible,
+a:focus-visible,
+.signup__input:focus-visible {
+    outline: 3px solid var(--amber);
+    outline-offset: 3px;
+}
+
+/* ---------- 4. Sections ---------------------------------- */
+
+/* Header: stacked on a phone, one row from the first breakpoint. */
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background-color: var(--ink);
+}
+
+.topbar__inner {
+    display: grid;
+    gap: var(--space-2);
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: var(--space-2) var(--gutter);
+}
+
+.topbar__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: 0;
+    padding: 0;
+}
+
+.topbar__links a,
+.topbar__brand {
+    color: var(--on-dark-muted);
+    text-decoration: none;
+}
+
+.topbar__links a:hover {
+    color: var(--surface);
+    text-decoration: underline;
+}
+
+/* Hero. The decorative shape behind the heading is a pseudo-element
+   sized in the token scale; it carries no meaning and is invisible
+   to assistive technology because it is not content.              */
+.hero {
+    display: grid;
+    /* `minmax(0, 1fr)` rather than `1fr`: a grid item's automatic
+       minimum size is its content's minimum size, and for an image
+       that is its intrinsic width — 1100px here, which would push
+       the track wider than a phone screen. Zero is the honest
+       minimum.                                                    */
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: var(--space-5) var(--gutter) var(--space-4);
+}
+
+.hero__text {
+    position: relative;
+}
+
+.hero__text::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--space-4) * -1);
+    left: 0;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: var(--tint);
+    z-index: -1;
+}
+
+.hero__eyebrow {
+    margin-bottom: var(--space-1);
+    color: var(--indigo-dark);
+    font-size: var(--size-meta);
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.hero__title {
+    max-width: 16ch;
+    font-size: var(--size-h1);
+}
+
+.hero__line {
+    max-width: 46ch;
+    color: var(--text-muted);
+    font-size: 1.12rem;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+.hero__trust {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: var(--size-meta);
+}
+
+.hero__image {
+    width: 100%;
+    aspect-ratio: 11 / 8;
+    object-fit: cover;
+    border-radius: var(--radius-l);
+}
+
+/* Statistics: one column, then two, then four. */
+.stats {
+    background-color: var(--tint);
+}
+
+.stats__list {
+    display: grid;
+    gap: var(--space-3);
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: var(--space-4) var(--gutter);
+}
+
+.stat {
+    display: grid;
+    gap: 0.15rem;
+    text-align: center;
+}
+
+.stat__figure {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--indigo-dark);
+}
+
+.stat__label {
+    color: var(--text-muted);
+    font-size: var(--size-meta);
+}
+
+/* Feature grid. */
+.features {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: var(--space-5) var(--gutter);
+}
+
+.feature-grid {
+    display: grid;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+}
+
+.feature {
+    padding: var(--space-3);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-l);
+    background-color: var(--surface);
+    transition: transform var(--speed) var(--ease),
+                border-color var(--speed) var(--ease);
+}
+
+.feature:hover,
+.feature:focus-within {
+    transform: translateY(-4px);
+    border-color: var(--indigo);
+}
+
+.feature__icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: var(--space-2);
+}
+
+.feature__title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: 1.2rem;
+}
+
+.feature__text {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+/* The page's one animation. The dot is decoration; "Running now"
+   beside it is what carries the meaning, so nothing is lost when
+   the animation is switched off below.                            */
+.feature__pulse {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--teal);
+    animation: pulse 2.4s var(--ease) infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(1.4);
+    }
+}
+
+.feature__state {
+    color: var(--teal);
+    font-family: var(--font);
+    font-size: var(--size-meta);
+    font-weight: 700;
+}
+
+/* Pricing. */
+.pricing {
+    background-color: var(--tint);
+}
+
+.pricing > .section-title,
+.pricing > .section-note {
+    padding-top: var(--space-5);
+}
+
+.pricing > .section-note {
+    padding-top: 0;
+}
+
+.plans {
+    display: grid;
+    align-items: center;
+    gap: var(--space-3);
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 var(--gutter) var(--space-5);
+}
+
+.plan {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: var(--space-3);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-l);
+    background-color: var(--surface);
+}
+
+.plan--featured {
+    padding-top: var(--space-4);
+    border: 2px solid var(--indigo);
+}
+
+/* The ribbon is decoration around a fact the card already states,
+   so it can be a pseudo-element.                                  */
+.plan__ribbon {
+    position: absolute;
+    top: calc(var(--space-2) * -0.75);
+    left: var(--space-3);
+    margin: 0;
+    padding: 0.25rem 0.9rem;
+    border-radius: 999px;
+    background-color: var(--amber);
+    color: var(--ink);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.plan__name {
+    font-size: 1.3rem;
+    margin-bottom: var(--space-1);
+}
+
+.plan__amount {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.plan__period,
+.plan__for {
+    color: var(--text-muted);
+}
+
+.plan__list {
+    margin: 0 0 var(--space-2);
+    padding: 0;
+}
+
+.plan__list li {
+    padding: 0.3rem 0 0.3rem var(--space-3);
+    background-image: url("./assets/images/icon-privacy.svg");
+    background-repeat: no-repeat;
+    background-position: left 0.35rem;
+    background-size: 1rem 1rem;
+}
+
+.plan__action {
+    margin: auto 0 0;
+    padding-top: var(--space-2);
+}
+
+/* Testimonial and logo wall. */
+.customers {
+    display: grid;
+    gap: var(--space-4);
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: var(--space-5) var(--gutter);
+}
+
+.quote {
+    position: relative;
+    margin: 0;
+    padding: var(--space-4) var(--space-3) var(--space-3);
+    border-radius: var(--radius-l);
+    background-color: var(--ink);
+    color: var(--on-dark);
+}
+
+.quote::before {
+    content: "\201C";
+    position: absolute;
+    top: 0;
+    left: var(--space-2);
+    color: var(--amber);
+    font-family: var(--font-display);
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.quote__text {
+    margin: 0 0 var(--space-3);
+}
+
+.quote__text p {
+    margin: 0;
+}
+
+.quote__by {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 var(--space-2);
+    align-items: center;
+}
+
+.quote__portrait {
+    grid-row: span 2;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.quote__name {
+    font-weight: 700;
+}
+
+.quote__role {
+    color: var(--on-dark-muted);
+    font-size: var(--size-meta);
+}
+
+.logo-wall__title {
+    font-size: 1.1rem;
+    font-family: var(--font);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.logo-wall__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    margin: 0;
+    padding: 0;
+}
+
+.logo-wall__list img {
+    opacity: 0.6;
+    transition: opacity var(--speed) var(--ease);
+}
+
+.logo-wall__list img:hover {
+    opacity: 1;
+}
+
+/* Phone section. */
+.mobile-note {
+    display: grid;
+    gap: var(--space-3);
+    align-items: center;
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 var(--gutter) var(--space-5);
+}
+
+.mobile-note__image {
+    justify-self: center;
+    width: min(100%, 15rem);
+    border-radius: var(--radius-l);
+}
+
+/* Footer. */
+.page-footer {
+    background-color: var(--ink);
+    color: var(--on-dark-muted);
+}
+
+.footer-top {
+    display: grid;
+    gap: var(--space-3);
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: var(--space-4) var(--gutter) var(--space-3);
+}
+
+.footer-col__title {
+    margin-bottom: var(--space-1);
+    font-family: var(--font);
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--surface);
+}
+
+.footer-col__note {
+    font-size: var(--size-meta);
+}
+
+.footer-col__list {
+    display: grid;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col__list a,
+.footer-base a {
+    color: var(--on-dark-muted);
+    text-decoration: none;
+}
+
+.footer-col__list a:hover,
+.footer-base a:hover {
+    color: var(--surface);
+    text-decoration: underline;
+}
+
+.signup__label {
+    display: block;
+    margin-bottom: var(--space-1);
+    font-size: var(--size-meta);
+    font-weight: 700;
+    color: var(--surface);
+}
+
+.signup__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+}
+
+.signup__input {
+    flex: 1 1 11rem;
+    min-height: 44px;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    font: inherit;
+}
+
+.footer-base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-2);
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: var(--space-3) var(--gutter);
+    border-top: 1px solid var(--ink-soft);
+    font-size: var(--size-meta);
+}
+
+.footer-base__copy {
+    margin: 0;
+}
+
+.footer-base__legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: 0;
+    padding: 0;
+}
+
+.footer-base__note {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 var(--gutter) var(--space-4);
+    font-size: 0.85rem;
+}
+
+/* =========================================================
+   5. Breakpoints — two of them, both min-width.
+   ========================================================= */
+
+/* About 44rem: enough width for a header row, two statistics
+   columns and two feature columns.                                */
+@media (min-width: 44rem) {
+
+    .topbar__inner {
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+    }
+
+    .topbar__links {
+        justify-content: center;
+    }
+
+    .stats__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plans {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mobile-note {
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: var(--space-4);
+    }
+}
+
+/* About 64rem: the hero can hold two columns, the statistics four,
+   the features three — and the wide feature can span two of them. */
+@media (min-width: 64rem) {
+
+    .hero {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+        align-items: center;
+    }
+
+    .stats__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature--wide {
+        grid-column: span 2;
+    }
+
+    .plan--featured {
+        transform: translateY(calc(var(--space-2) * -1));
+    }
+
+    .customers {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+        align-items: start;
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* =========================================================
+   6. Reduced motion. Every state above is also expressed by
+   colour, border or position, so switching motion off costs the
+   page nothing but movement.
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none;
+        transition: none;
+    }
+
+    .feature:hover,
+    .feature:focus-within,
+    .button--primary:hover,
+    .button--ghost:hover {
+        transform: none;
+    }
+}

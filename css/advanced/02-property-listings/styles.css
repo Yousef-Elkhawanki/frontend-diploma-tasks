@@ -1,0 +1,531 @@
+/* =========================================================
+   Fairwater Property — listings
+   CSS module — Advanced 02
+   Subject: responsive design, written mobile first. Everything
+   above the first media query is the small-screen design; the two
+   queries below only add what a wider window has earned.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f5f0;
+    color: #1d2b27;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;                      /* body copy stays fixed and readable */
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+    margin: 0 0 0.6rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+img {
+    max-width: 100%;                           /* the baseline responsive image rule */
+    height: auto;
+}
+
+a {
+    color: #14624f;
+}
+
+.skip {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: #143b32;
+    font-size: 0.9rem;
+}
+
+.skip a {
+    color: #f7f5f0;
+}
+
+/* One fluid gutter, used by every full-width block. `min()` picks
+   the smaller of the two: 5vw on a phone, capped at 2.5rem so the
+   page never grows enormous margins on a wide monitor.            */
+.topbar__inner,
+.intro,
+.layout,
+.footer-grid,
+.page-footer__small {
+    padding-left: min(5vw, 2.5rem);
+    padding-right: min(5vw, 2.5rem);
+}
+
+/* ---------- Buttons and controls ------------------------- */
+
+.button {
+    display: inline-block;
+    min-height: 44px;                          /* a comfortable tap target */
+    padding: 0.7rem 1.4rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button--primary {
+    background-color: #b8873b;
+    border-color: #8f6626;
+    color: #241704;
+}
+
+.button--primary:hover {
+    background-color: #a3762f;
+}
+
+.button--ghost {
+    border-color: #143b32;
+    color: #143b32;
+}
+
+.button--ghost:hover {
+    background-color: #e7ece8;
+}
+
+.button:focus,
+.search__input:focus,
+.pagination__link:focus,
+.topbar__links a:focus,
+.footer-col__list a:focus,
+.filters__row input:focus {
+    outline: 3px solid #a34b3a;
+    outline-offset: 2px;
+}
+
+.search__input {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid #b9b2a4;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font: inherit;
+}
+
+/* ---------- 1. Header ------------------------------------
+   Small screens: brand above a stacked list of links, each link a
+   full-width row so it is easy to hit with a thumb.               */
+
+.topbar {
+    background-color: #143b32;
+    color: #f2efe8;
+}
+
+.topbar__inner {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+.topbar__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topbar__links a {
+    display: block;
+    padding: 0.6rem 0;
+    color: #dfe6e1;
+    text-decoration: none;
+}
+
+.topbar__links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ---------- 2. Introduction and search -------------------
+   `clamp()` gives the heading a floor, a fluid middle and a
+   ceiling: it never drops below 1.75rem, never exceeds 3rem, and
+   in between it tracks the window smoothly, so there is no jump at
+   a breakpoint.                                                   */
+
+.intro {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.intro__title {
+    max-width: 22ch;
+    font-size: clamp(1.75rem, 1.2rem + 2.4vw, 3rem);
+}
+
+.intro__line {
+    max-width: 60ch;
+    color: #46504e;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+    padding: 1.1rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    border: 1px solid #e0dacd;
+}
+
+.search__label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.search__field--action .button {
+    width: 100%;
+}
+
+/* ---------- 3. Layout, filters, results ------------------
+   Small screens: one column, filters above results.               */
+
+.layout {
+    display: grid;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.filters {
+    padding: 1.2rem;
+    border: 1px solid #e0dacd;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.filters__title {
+    font-size: 1.25rem;
+}
+
+.filters__group {
+    margin: 0 0 1.2rem;
+    padding: 0;
+    border: 0;
+}
+
+.filters__legend {
+    padding: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #46504e;
+}
+
+.filters__row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 44px;
+}
+
+.filters__note {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #46504e;
+}
+
+.results__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.results__count {
+    margin: 0;
+    font-weight: 700;
+}
+
+.results__sort {
+    flex: 1 1 14rem;
+    max-width: 20rem;
+}
+
+.results__sort-label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* One gap value, declared once, used at every breakpoint. */
+.results__grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* ---------- 4. Cards -------------------------------------
+   `aspect-ratio` fixes the shape of the picture area whatever the
+   card's width; `object-fit: cover` fills that shape by cropping
+   instead of squashing; `object-position` decides which part of
+   the photograph survives the crop — here slightly above centre,
+   because rooflines matter more than tarmac.                      */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #e0dacd;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.card__image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.1rem 1.2rem 1.3rem;
+}
+
+.card__tag {
+    align-self: start;
+    margin: 0 0 0.6rem;
+    padding: 0.25rem 0.7rem;
+    border: 1px solid #143b32;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.card__price {
+    margin: 0 0 0.2rem;
+    font-size: clamp(1.35rem, 1.2rem + 0.6vw, 1.7rem);
+    font-weight: 700;
+    color: #8f6626;
+}
+
+.card__address {
+    font-size: 1.15rem;
+}
+
+.card__facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+    margin: 0 0 0.75rem;
+    padding: 0;
+    list-style: none;
+    color: #46504e;
+    font-size: 0.95rem;
+}
+
+.card__text {
+    color: #333c3a;
+}
+
+.card__action {
+    margin: auto 0 0;
+    padding-top: 0.5rem;
+}
+
+/* ---------- 5. Pagination -------------------------------- */
+
+.pagination {
+    margin-top: 2rem;
+}
+
+.pagination__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination__link {
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #cfc7b8;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #143b32;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pagination__link--current {
+    border-color: #143b32;
+    background-color: #143b32;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.pagination__link:hover {
+    border-color: #143b32;
+}
+
+/* ---------- 6. Footer ------------------------------------ */
+
+.page-footer {
+    background-color: #143b32;
+    color: #d9e2dc;
+}
+
+.footer-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer-col__title {
+    margin-bottom: 0.5rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer-col__list {
+    display: grid;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col__list a {
+    display: inline-block;
+    padding: 0.25rem 0;
+    color: #d9e2dc;
+    text-decoration: none;
+}
+
+.footer-col__list a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.page-footer__small {
+    max-width: 70ch;
+    padding-bottom: 2.5rem;
+    font-size: 0.86rem;
+    color: #b6c4bc;
+}
+
+/* =========================================================
+   Breakpoint 1 — about 40rem (640px at the default text size).
+   Chosen because this is the width at which a card can hold two
+   columns of text comfortably and the navigation fits on one line.
+   ========================================================= */
+
+@media (min-width: 40rem) {
+
+    .topbar__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .topbar__links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.25rem 1.5rem;
+        margin-top: 0;
+    }
+
+    .topbar__links a {
+        padding: 0.4rem 0;
+    }
+
+    /* The location field takes the free space; price and bedrooms
+       take a share each; the button ends the row.                 */
+    .search {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+
+    .search__field {
+        flex: 1 1 10rem;
+    }
+
+    .search__field--wide {
+        flex: 2 1 16rem;
+    }
+
+    .search__field--action {
+        flex: 0 0 auto;
+    }
+
+    .search__field--action .button {
+        width: auto;
+    }
+
+    .results__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* =========================================================
+   Breakpoint 2 — about 62rem (992px). Chosen because below this
+   width a filter column and three cards cannot both have room;
+   above it, both can.
+   ========================================================= */
+
+@media (min-width: 62rem) {
+
+    .layout {
+        grid-template-columns: minmax(14rem, 18rem) 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    /* Sticky only where there is a column to stick in. On a phone
+       the filters are simply the panel above the results.         */
+    .filters {
+        position: sticky;
+        top: 1.5rem;
+        max-height: calc(100dvh - 3rem);
+        overflow-y: auto;
+    }
+
+    .results__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

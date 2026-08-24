@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1060" width="1000" height="1060" role="img" aria-labelledby="mt md">
+  <title id="mt">Design reference: Meridian Field Kit pricing</title>
+  <desc id="md">Wireframe mockup of the intended layout, with the challenge palette listed underneath.</desc>
+  <rect x="0" y="0" width="1000" height="1060" fill="#ffffff"/>
+  <rect x="0" y="0" width="1000" height="46" rx="10" fill="#dfe3e8"/>
+  <circle cx="26" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="48" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="70" cy="23" r="6" fill="#b9c0c8"/>
+  <rect x="96" y="12" width="876" height="22" rx="11" fill="#f4f6f8"/>
+  <text x="500" y="27" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">meridiankit.example / pricing — sticky bar, badges, a raised middle card, wrapping rows</text>
+  <rect x="0" y="46" width="163" height="56" rx="6" fill="#1b1729"/>
+  <text x="82" y="78" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#f6f5fb" text-anchor="middle">Logo</text>
+  <rect x="173" y="46" width="653" height="56" rx="6" fill="#1b1729"/>
+  <text x="500" y="78" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#f6f5fb" text-anchor="middle">STICKY HEADER — pinned to the top while you scroll the whole page, sits above every card</text>
+  <rect x="837" y="46" width="163" height="56" rx="20" fill="#17795e"/>
+  <text x="918" y="78" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#ffffff" text-anchor="middle">Start trial</text>
+  <rect x="140" y="124" width="720" height="92" rx="6" fill="#ffffff" stroke="#dfe3e8" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="500" y="175" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#1b1729" text-anchor="middle">Page heading + subheading, centred</text>
+  <rect x="330" y="230" width="340" height="54" rx="27" fill="#efedf8"/>
+  <text x="500" y="261" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#4c3a8f" text-anchor="middle">Billing toggle — two pill options side by side</text>
+  <rect x="70" y="306" width="275" height="230" rx="6" fill="#ffffff" stroke="#ddd8ee" stroke-width="2"/>
+  <text x="207" y="410" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">PLAN CARD — equal height, price block at</text>
+<text x="207" y="424" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">the top, feature list in the middle,</text>
+<text x="207" y="440" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">button pinned to the bottom edge</text>
+  <rect x="363" y="306" width="275" height="230" rx="6" fill="#f7f5ff" stroke="#4c3a8f" stroke-width="2"/>
+  <text x="500" y="410" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#4c3a8f" text-anchor="middle">PLAN CARD — raised: taller, accent border,</text>
+<text x="500" y="424" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#4c3a8f" text-anchor="middle">drawn above its neighbours, with a 'Most</text>
+<text x="500" y="440" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#4c3a8f" text-anchor="middle">popular' ribbon overlapping its top edge</text>
+  <rect x="655" y="306" width="275" height="230" rx="6" fill="#ffffff" stroke="#ddd8ee" stroke-width="2"/>
+  <text x="793" y="417" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">PLAN CARD — a small corner flag overlaps</text>
+<text x="793" y="432" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">this card too</text>
+  <rect x="70" y="562" width="159" height="124" rx="6" fill="#f6f5fb"/>
+  <text x="150" y="628" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">Add-on</text>
+  <rect x="245" y="562" width="159" height="124" rx="6" fill="#f6f5fb"/>
+  <text x="325" y="628" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">Add-on</text>
+  <rect x="420" y="562" width="159" height="124" rx="6" fill="#f6f5fb"/>
+  <text x="500" y="628" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">Add-on</text>
+  <rect x="596" y="562" width="159" height="124" rx="6" fill="#f6f5fb"/>
+  <text x="675" y="606" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1b1729" text-anchor="middle">Add-on — five add-ons in a</text>
+<text x="675" y="620" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1b1729" text-anchor="middle">row that wraps, with the</text>
+<text x="675" y="634" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1b1729" text-anchor="middle">leftover items centred on</text>
+<text x="675" y="648" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#1b1729" text-anchor="middle">the last line</text>
+  <rect x="771" y="562" width="159" height="124" rx="6" fill="#f6f5fb"/>
+  <text x="850" y="628" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#1b1729" text-anchor="middle">Add-on</text>
+  <rect x="70" y="710" width="860" height="118" rx="6" fill="#ffffff" stroke="#ddd8ee" stroke-width="2"/>
+  <text x="500" y="774" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#1b1729" text-anchor="middle">Questions — rows with the question on the left and a short answer on the right, tops aligned</text>
+  <rect x="0" y="850" width="1000" height="86" rx="0" fill="#1b1729"/>
+  <text x="500" y="898" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#cfc9e6" text-anchor="middle">Footer band — links spread across the width, wrapping when narrow</text>
+  <line x1="28" y1="950" x2="972" y2="950" stroke="#dfe3e8" stroke-width="1"/>
+  <text x="72" y="976" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">Palette</text>
+  <rect x="138" y="958" width="26" height="26" rx="5" fill="#4c3a8f" stroke="#cfd5db"/>
+  <text x="170" y="966" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Violet</text>
+  <text x="170" y="979" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#4c3a8f</text>
+  <rect x="254" y="958" width="26" height="26" rx="5" fill="#1b1729" stroke="#cfd5db"/>
+  <text x="286" y="966" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Ink</text>
+  <text x="286" y="979" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#1b1729</text>
+  <rect x="370" y="958" width="26" height="26" rx="5" fill="#f6f5fb" stroke="#cfd5db"/>
+  <text x="402" y="966" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Cloud</text>
+  <text x="402" y="979" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#f6f5fb</text>
+  <rect x="486" y="958" width="26" height="26" rx="5" fill="#17795e" stroke="#cfd5db"/>
+  <text x="518" y="966" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Mint</text>
+  <text x="518" y="979" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#17795e</text>
+  <rect x="602" y="958" width="26" height="26" rx="5" fill="#d98324" stroke="#cfd5db"/>
+  <text x="634" y="966" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Amber</text>
+  <text x="634" y="979" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#d98324</text>
+</svg>

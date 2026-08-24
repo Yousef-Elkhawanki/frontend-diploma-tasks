@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-labelledby="t d">
+  <title id="t">Tickets</title>
+  <desc id="d">Decorative icon: Tickets.</desc>
+  <circle cx="48.0" cy="48.0" r="48.0" fill="#23306b"/>
+  <path d="M29 50 L42 63 L67 35" stroke="#ffffff" stroke-width="10" fill="none" stroke-linecap="round"/>
+</svg>

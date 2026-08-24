@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join the library — Brackenfield Library</title>
+    <meta name="description" content="Apply for membership of Brackenfield Library: personal details, address, membership type and contact preferences.">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <p><a href="#main">Skip to main content</a></p>
+
+    <header>
+        <img src="./assets/images/brackenfield-crest.svg" alt="Brackenfield Library" width="240" height="51">
+        <p>Membership is free for anyone who lives, works or studies in the county.</p>
+    </header>
+
+    <main id="main">
+        <h1>Join the library</h1>
+        <p>
+            Fill this in and bring one document showing your address to any branch. Your
+            card is printed while you wait, and you can borrow the same afternoon.
+        </p>
+        <p>Fields with a coloured edge on their left are required.</p>
+
+        <form action="#main" method="post">
+            <fieldset>
+                <legend>About you</legend>
+
+                <p>
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+                    <small>As it appears on the document you will bring with you.</small>
+                </p>
+
+                <p>
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+                </p>
+
+                <p>
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" name="dob" autocomplete="bday" required>
+                    <small>Under-16 memberships need a signature from an adult at the counter.</small>
+                </p>
+
+                <p>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <small>Used for reservation notices and nothing else.</small>
+                </p>
+
+                <p>
+                    <label for="phone">Telephone number</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+                    <small>Optional. We ring only about an item you have reserved.</small>
+                </p>
+
+                <p>
+                    <label for="card-number">Library card number</label>
+                    <input type="text" id="card-number" name="card-number" value="Issued at the counter" disabled>
+                    <small>Not editable: your number is assigned when your card is printed.</small>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Where you live</legend>
+
+                <p>
+                    <label for="address-1">Address line 1</label>
+                    <input type="text" id="address-1" name="address-1" autocomplete="address-line1" required>
+                </p>
+
+                <p>
+                    <label for="address-2">Address line 2</label>
+                    <input type="text" id="address-2" name="address-2" autocomplete="address-line2">
+                </p>
+
+                <p>
+                    <label for="town">Town</label>
+                    <input type="text" id="town" name="town" autocomplete="address-level2" required>
+                </p>
+
+                <p>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" autocomplete="postal-code" required>
+                    <small>We check this against the county boundary, nothing else.</small>
+                </p>
+
+                <p>
+                    <label for="branch">Home branch</label>
+                    <select id="branch" name="branch">
+                        <option value="central">Brackenfield Central</option>
+                        <option value="fen-end">Fen End</option>
+                        <option value="north-gate">Northgate</option>
+                        <option value="mobile">The mobile library</option>
+                    </select>
+                    <small>You can borrow from and return to any branch, whichever you choose.</small>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership type</legend>
+
+                <ul>
+                    <li>
+                        <input type="radio" id="type-standard" name="type" value="standard" checked>
+                        <label for="type-standard">Standard — 12 items, 3 weeks</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="type-student" name="type" value="student">
+                        <label for="type-student">Student — 20 items, 6 weeks, term-time renewals</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="type-housebound" name="type" value="housebound">
+                        <label for="type-housebound">Housebound delivery — brought to your door fortnightly</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="type-institution" name="type" value="institution">
+                        <label for="type-institution">School or institution — 60 items, one term</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Staying in touch</legend>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" id="contact-due" name="contact" value="due" checked>
+                        <label for="contact-due">Tell me when an item is nearly due</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="contact-reservations" name="contact" value="reservations" checked>
+                        <label for="contact-reservations">Tell me when a reservation arrives</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="contact-events" name="contact" value="events">
+                        <label for="contact-events">Send me the monthly events list</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="contact-volunteer" name="contact" value="volunteer">
+                        <label for="contact-volunteer">I would like to hear about volunteering</label>
+                    </li>
+                </ul>
+
+                <p>
+                    <label for="access-needs">Anything that would make a visit easier?</label>
+                    <textarea id="access-needs" name="access-needs" rows="4"></textarea>
+                    <small>
+                        Step-free routes, a quiet hour, large print, a longer loan. Staff read
+                        every one of these.
+                    </small>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="declaration" name="declaration" value="agreed" required>
+                    <label for="declaration">
+                        I confirm the details above are correct and I accept the borrowing
+                        conditions.
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Apply for membership</button>
+                <button type="reset">Clear the form</button>
+            </p>
+        </form>
+
+        <section>
+            <h2>What happens next</h2>
+            <ol>
+                <li>Bring one document showing your name and address to any branch.</li>
+                <li>Staff check it at the counter — it takes about four minutes.</li>
+                <li>Your card is printed and you can borrow immediately.</li>
+                <li>Online access is enabled overnight.</li>
+            </ol>
+            <p>
+                Questions? Ring <a href="tel:+441632960120">01632 960 120</a> or email
+                <a href="mailto:join@brackenfield-libraries.example">join@brackenfield-libraries.example</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Brackenfield Library Service, Civic Square, Brackenfield BF1 3TT.</p>
+        <p>A teaching exercise for the Frontend Diploma. The library service is invented.</p>
+        <p><a href="../../">Back to all CSS challenges</a></p>
+    </footer>
+</body>
+</html>

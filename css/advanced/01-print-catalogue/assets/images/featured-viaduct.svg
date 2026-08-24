@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img" aria-labelledby="t d">
+  <title id="t">Viaduct, Late Summer — edition of 40</title>
+  <desc id="d">Placeholder poster artwork: Viaduct, Late Summer — edition of 40.</desc>
+  <rect width="1000" height="700" fill="#5c6b3f"/>
+  <circle cx="500" cy="238" r="280" fill="#d8cfae"/>
+  <rect x="0" y="434" width="1000" height="266" fill="#191919" fill-opacity="0.85"/>
+  <text x="500" y="546" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">Viaduct, Late Summer — edition of 40</text>
+</svg>

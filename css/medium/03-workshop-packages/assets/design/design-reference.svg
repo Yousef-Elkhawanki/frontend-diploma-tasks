@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1312" width="1000" height="1312" role="img" aria-labelledby="mt md">
+  <title id="mt">Design reference: Cogwheel Cycle Workshop service packages</title>
+  <desc id="md">Wireframe mockup of the intended layout, with the challenge palette listed underneath.</desc>
+  <rect x="0" y="0" width="1000" height="1312" fill="#ffffff"/>
+  <rect x="0" y="0" width="1000" height="46" rx="10" fill="#dfe3e8"/>
+  <circle cx="26" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="48" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="70" cy="23" r="6" fill="#b9c0c8"/>
+  <rect x="96" y="12" width="876" height="22" rx="11" fill="#f4f6f8"/>
+  <text x="500" y="27" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">cogwheel.example / servicing — box model, spacing rhythm, sizing limits</text>
+  <rect x="0" y="46" width="1000" height="92" rx="0" fill="#232326"/>
+  <text x="500" y="98" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#f6f4f1" text-anchor="middle">Header band — workshop name + tagline</text>
+  <rect x="210" y="164" width="580" height="56" rx="6" fill="#ffffff" stroke="#dfe3e8" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="500" y="198" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#232326" text-anchor="middle">H1 + intro — centred column, roughly 60 characters wide</text>
+  <rect x="210" y="226" width="580" height="30" rx="6" fill="#ffffff" stroke="#dfe3e8" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="500" y="244" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#8a8f96" text-anchor="middle">Every block below shares that column: identical left and right gutters at any window width</text>
+  <rect x="210" y="280" width="580" height="138" rx="6" fill="#f6f4f1"/>
+  <text x="500" y="345" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#232326" text-anchor="middle">PACKAGE 1 — thick left edge, generous even padding, name / price / what is</text>
+<text x="500" y="362" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#232326" text-anchor="middle">included</text>
+  <rect x="210" y="436" width="580" height="138" rx="6" fill="#f6f4f1"/>
+  <text x="500" y="510" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#232326" text-anchor="middle">PACKAGE 2 — identical box, identical padding, equal gap above and below</text>
+  <rect x="210" y="592" width="580" height="138" rx="6" fill="#232326"/>
+  <text x="500" y="666" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#f6f4f1" text-anchor="middle">PACKAGE 3 — highlighted: inverted colours, same box, same padding</text>
+  <rect x="300" y="756" width="400" height="92" rx="6" fill="#fdf1e8"/>
+  <text x="500" y="798" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#8a3a0a" text-anchor="middle">Booking note — deliberately narrower than the packages and</text>
+<text x="500" y="814" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#8a3a0a" text-anchor="middle">centred by its own margins</text>
+  <rect x="210" y="874" width="580" height="104" rx="6" fill="#ffffff" stroke="#d6d2cc" stroke-width="2"/>
+  <text x="500" y="930" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#232326" text-anchor="middle">Opening hours — table-free list, tinted rows</text>
+  <rect x="210" y="994" width="580" height="104" rx="6" fill="#ffffff" stroke="#d6d2cc" stroke-width="2"/>
+  <text x="500" y="1050" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#232326" text-anchor="middle">Where to find us — address panel, image constrained by a maximum width</text>
+  <rect x="0" y="1124" width="1000" height="64" rx="0" fill="#232326"/>
+  <text x="500" y="1160" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#f6f4f1" text-anchor="middle">Footer band</text>
+  <line x1="28" y1="1202" x2="972" y2="1202" stroke="#dfe3e8" stroke-width="1"/>
+  <text x="72" y="1228" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">Palette</text>
+  <rect x="138" y="1210" width="26" height="26" rx="5" fill="#232326" stroke="#cfd5db"/>
+  <text x="170" y="1218" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Charcoal</text>
+  <text x="170" y="1231" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#232326</text>
+  <rect x="254" y="1210" width="26" height="26" rx="5" fill="#f6f4f1" stroke="#cfd5db"/>
+  <text x="286" y="1218" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Off-white</text>
+  <text x="286" y="1231" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#f6f4f1</text>
+  <rect x="370" y="1210" width="26" height="26" rx="5" fill="#5b6672" stroke="#cfd5db"/>
+  <text x="402" y="1218" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Steel</text>
+  <text x="402" y="1231" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#5b6672</text>
+  <rect x="486" y="1210" width="26" height="26" rx="5" fill="#c2410c" stroke="#cfd5db"/>
+  <text x="518" y="1218" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Signal</text>
+  <text x="518" y="1231" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#c2410c</text>
+  <rect x="602" y="1210" width="26" height="26" rx="5" fill="#d6d2cc" stroke="#cfd5db"/>
+  <text x="634" y="1218" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Line</text>
+  <text x="634" y="1231" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#d6d2cc</text>
+</svg>

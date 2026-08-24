@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signal — product analytics that answer one question at a time</title>
+    <meta name="description" content="Signal shows you where people give up in your product, without a tag manager, a data team or a six-week onboarding. Free for 30 days.">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <p class="skip"><a href="#main">Skip to main content</a></p>
+
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="#main">
+                <img src="./assets/images/signal-logo.svg" alt="Signal" width="130" height="36">
+            </a>
+            <nav class="topbar__nav" aria-label="Main">
+                <ul class="topbar__links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#customers">Customers</a></li>
+                    <li><a href="#footer">Docs</a></li>
+                </ul>
+            </nav>
+            <a class="button button--primary" href="#pricing">Start free</a>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero__text">
+                <p class="hero__eyebrow">Product analytics</p>
+                <h1 class="hero__title">Find out where people give up.</h1>
+                <p class="hero__line">
+                    Signal watches the four or five journeys that actually matter in your
+                    product and tells you which step loses people. No tag manager, no data
+                    team, no six-week onboarding.
+                </p>
+                <p class="hero__actions">
+                    <a class="button button--primary" href="#pricing">Start a 30-day trial</a>
+                    <a class="button button--ghost" href="#features">See what it measures</a>
+                </p>
+                <p class="hero__trust">
+                    Used by 2,400 teams. No credit card. Cancel in the product, in one click.
+                </p>
+            </div>
+            <div class="hero__media">
+                <img class="hero__image" src="./assets/images/product-dashboard.svg"
+                     alt="The Signal dashboard showing a four-step funnel with the third step highlighted as the biggest drop."
+                     width="1100" height="780">
+            </div>
+        </section>
+
+        <section class="stats" aria-label="Signal in numbers">
+            <ul class="stats__list">
+                <li class="stat">
+                    <span class="stat__figure">11 min</span>
+                    <span class="stat__label">median time from sign-up to first funnel</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__figure">2,400</span>
+                    <span class="stat__label">teams, from two people to two thousand</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__figure">0</span>
+                    <span class="stat__label">third-party trackers in our snippet</span>
+                </li>
+                <li class="stat">
+                    <span class="stat__figure">99.98%</span>
+                    <span class="stat__label">ingestion uptime over the last year</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">What Signal measures</h2>
+            <p class="section-note">Six things, properly. Everything else is somebody else's product.</p>
+
+            <ul class="feature-grid">
+                <li class="feature feature--wide">
+                    <img class="feature__icon" src="./assets/images/icon-funnel.svg" alt="" width="52" height="52">
+                    <h3 class="feature__title">Funnels that survive a redesign</h3>
+                    <p class="feature__text">
+                        Steps are defined by what the user achieved, not by which button they
+                        pressed, so renaming a class or moving a screen does not silently break
+                        six months of history. When a step does break, Signal tells you rather
+                        than quietly reporting zero.
+                    </p>
+                </li>
+
+                <li class="feature feature--live">
+                    <img class="feature__icon" src="./assets/images/icon-alerts.svg" alt="" width="52" height="52">
+                    <h3 class="feature__title">
+                        Live alerting
+                        <span class="feature__pulse" aria-hidden="true"></span>
+                        <span class="feature__state">Running now</span>
+                    </h3>
+                    <p class="feature__text">
+                        Watch a release in real time and get told when a step's completion rate
+                        moves outside its normal range.
+                    </p>
+                </li>
+
+                <li class="feature">
+                    <img class="feature__icon" src="./assets/images/icon-share.svg" alt="" width="52" height="52">
+                    <h3 class="feature__title">Shareable answers</h3>
+                    <p class="feature__text">
+                        Every chart has a link that shows the same numbers to somebody without
+                        an account, with the query attached.
+                    </p>
+                </li>
+
+                <li class="feature">
+                    <img class="feature__icon" src="./assets/images/icon-privacy.svg" alt="" width="52" height="52">
+                    <h3 class="feature__title">Privacy that survives legal review</h3>
+                    <p class="feature__text">
+                        No cookies, no cross-site identifiers, EU hosting by default, and a
+                        deletion request completes in minutes.
+                    </p>
+                </li>
+
+                <li class="feature">
+                    <img class="feature__icon" src="./assets/images/icon-speed.svg" alt="" width="52" height="52">
+                    <h3 class="feature__title">A snippet that costs 4 KB</h3>
+                    <p class="feature__text">
+                        One script, no dependencies, no layout shift, and it fails silently if
+                        our servers are unreachable.
+                    </p>
+                </li>
+
+                <li class="feature">
+                    <img class="feature__icon" src="./assets/images/icon-export.svg" alt="" width="52" height="52">
+                    <h3 class="feature__title">Your data, exportable</h3>
+                    <p class="feature__text">
+                        Raw events out as CSV or Parquet, on a schedule, without asking us and
+                        without an enterprise plan.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <h2 class="section-title">Pricing</h2>
+            <p class="section-note">Charged on events, not on seats. Everybody in your team can have a login.</p>
+
+            <ul class="plans">
+                <li class="plan">
+                    <h3 class="plan__name">Starter</h3>
+                    <p class="plan__price"><span class="plan__amount">£0</span> <span class="plan__period">forever</span></p>
+                    <p class="plan__for">One product, one funnel, 20,000 events a month.</p>
+                    <ul class="plan__list">
+                        <li>3 months of history</li>
+                        <li>Shareable links</li>
+                        <li>Community support</li>
+                    </ul>
+                    <p class="plan__action"><a class="button button--ghost" href="#pricing">Start on Starter</a></p>
+                </li>
+
+                <li class="plan plan--featured">
+                    <p class="plan__ribbon">Most teams start here</p>
+                    <h3 class="plan__name">Team</h3>
+                    <p class="plan__price"><span class="plan__amount">£79</span> <span class="plan__period">per month</span></p>
+                    <p class="plan__for">Unlimited products and funnels, 2 million events a month.</p>
+                    <ul class="plan__list">
+                        <li>Two years of history</li>
+                        <li>Live alerting</li>
+                        <li>Scheduled exports</li>
+                        <li>Support within one working day</li>
+                    </ul>
+                    <p class="plan__action"><a class="button button--primary" href="#pricing">Start a 30-day trial</a></p>
+                </li>
+
+                <li class="plan">
+                    <h3 class="plan__name">Scale</h3>
+                    <p class="plan__price"><span class="plan__amount">£340</span> <span class="plan__period">per month</span></p>
+                    <p class="plan__for">20 million events a month and data residency of your choosing.</p>
+                    <ul class="plan__list">
+                        <li>Five years of history</li>
+                        <li>Single sign-on and audit logs</li>
+                        <li>A named engineer</li>
+                        <li>99.9% uptime commitment</li>
+                    </ul>
+                    <p class="plan__action"><a class="button button--ghost" href="#pricing">Talk to us</a></p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="customers" class="customers">
+            <figure class="quote">
+                <blockquote class="quote__text">
+                    <p>
+                        We had six months of analytics nobody trusted. Signal took an afternoon
+                        to set up and told us that a third of our sign-ups were failing on the
+                        email verification step — which we had been told was working.
+                    </p>
+                </blockquote>
+                <figcaption class="quote__by">
+                    <img class="quote__portrait" src="./assets/images/portrait-dana-oyelaran.svg"
+                         alt="Dana Oyelaran" width="72" height="72">
+                    <span class="quote__name">Dana Oyelaran</span>
+                    <span class="quote__role">Head of Product, Arcadia Health</span>
+                </figcaption>
+            </figure>
+
+            <div class="logo-wall">
+                <h2 class="logo-wall__title">Teams using Signal</h2>
+                <ul class="logo-wall__list">
+                    <li><img src="./assets/images/client-01-northgate.svg" alt="Northgate" width="120" height="30"></li>
+                    <li><img src="./assets/images/client-02-arcadia.svg" alt="Arcadia Health" width="120" height="30"></li>
+                    <li><img src="./assets/images/client-03-belvoir.svg" alt="Belvoir" width="120" height="30"></li>
+                    <li><img src="./assets/images/client-04-tessellate.svg" alt="Tessellate" width="120" height="30"></li>
+                    <li><img src="./assets/images/client-05-hopper.svg" alt="Hopper Rail" width="120" height="30"></li>
+                    <li><img src="./assets/images/client-06-fernway.svg" alt="Fernway" width="120" height="30"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mobile-note">
+            <img class="mobile-note__image" src="./assets/images/product-mobile.svg"
+                 alt="Signal on a phone, showing a funnel and an alert." width="420" height="760">
+            <div class="mobile-note__text">
+                <h2>It works on the phone in your pocket</h2>
+                <p>
+                    The same funnels, the same alerts, at the same speed. There is no separate
+                    mobile app to install and nothing is hidden on a small screen — the layout
+                    changes, the information does not.
+                </p>
+                <p><a class="button button--ghost" href="#pricing">Try it on your phone</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="page-footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h2 class="footer-col__title">Product</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#features">Funnels</a></li>
+                    <li><a href="#features">Live alerting</a></li>
+                    <li><a href="#features">Exports</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Developers</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#footer">Install the snippet</a></li>
+                    <li><a href="#footer">API reference</a></li>
+                    <li><a href="#footer">Self-hosting</a></li>
+                    <li><a href="#footer">Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Company</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#customers">Customers</a></li>
+                    <li><a href="#footer">About</a></li>
+                    <li><a href="#footer">Security</a></li>
+                    <li><a href="#footer">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-col--signup">
+                <h2 class="footer-col__title">Product notes</h2>
+                <p class="footer-col__note">One email a month about what changed. No marketing.</p>
+                <form class="signup" action="#footer" method="post">
+                    <label class="signup__label" for="signup-email">Email address</label>
+                    <div class="signup__row">
+                        <input class="signup__input" type="email" id="signup-email" name="email" autocomplete="email" required>
+                        <button class="button button--primary" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <p class="footer-base__copy">© 2026 Signal Analytics Ltd, Bristol. Company 09876543.</p>
+            <ul class="footer-base__legal">
+                <li><a href="#footer">Privacy</a></li>
+                <li><a href="#footer">Terms</a></li>
+                <li><a href="#footer">Data processing</a></li>
+                <li><a href="../../">Back to all CSS challenges</a></li>
+            </ul>
+        </div>
+
+        <p class="footer-base__note">
+            A teaching exercise for the Frontend Diploma. The product, the customers and
+            the numbers are invented.
+        </p>
+    </footer>
+</body>
+</html>

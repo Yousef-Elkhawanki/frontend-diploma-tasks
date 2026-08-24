@@ -1,0 +1,276 @@
+/* =========================================================
+   Fell Ridge Trail
+   CSS module — Medium 02
+   The subject of this stylesheet is backgrounds. Paths inside a
+   stylesheet resolve from the stylesheet's own folder, which is
+   why the image URLs below start at ./assets/ and not ../assets/.
+   ========================================================= */
+
+/* ---------- 1. Page defaults ----------------------------- */
+
+body {
+    margin: 0;
+    background-color: #f2f5f1;                 /* mist */
+    color: #22312a;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.25;
+    color: #1d3b2a;                            /* forest */
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin: 0 0 0.75rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin: 1.5rem 0 0.35rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: #1d3b2a;
+}
+
+ul {
+    margin: 0 0 1rem;
+    padding-left: 1.4rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+.skip {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: #0f1f17;
+    font-size: 0.9rem;
+}
+
+.skip a {
+    color: #f2f5f1;
+}
+
+/* The one column every text block sits in. */
+.column {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem;
+}
+
+.lead {
+    font-size: 1.12rem;
+}
+
+/* ---------- 2. Hero band ---------------------------------
+   Four background properties do the work here:
+     image   — the darkened landscape
+     size    — cover, so it fills the band at any width
+     position — centre the middle of the ridge, not the sky
+     attachment — fixed, so the photograph stays put while the
+                  page scrolls over it
+   The background-color underneath matches the photograph, so a
+   slow connection shows dark green rather than white.            */
+
+.hero {
+    background-color: #1d3b2a;
+    background-image: url("./assets/images/hero-fell-ridge.svg");
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero__inner {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 7rem 1.25rem 6rem;
+}
+
+.hero__eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #e0a33e;                            /* sun */
+}
+
+.hero__title {
+    margin: 0 0 0.75rem;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.hero__summary {
+    margin: 0 auto 2.25rem;
+    max-width: 30rem;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Pill: a radius larger than the box's own height rounds the ends.
+   The link stays inline — `display` is not part of this stage — so the
+   paragraph around it is given room instead of the link being turned
+   into a block. Vertical padding on an inline box paints but does not
+   push its neighbours apart, which is exactly why `inline-block`
+   exists, and why it turns up later in the module.                */
+.button {
+    padding: 0.75rem 1.75rem;
+    border: 2px solid #e0a33e;
+    border-radius: 999px;
+    background-color: #e0a33e;
+    color: #16261c;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* ---------- 3. Fact panels -------------------------------
+   The badge is a background image on the panel itself: fixed
+   size, no repeat, pinned to the left and vertically centred.
+   The left padding is wider than the badge, so text can never
+   run underneath it however long the text becomes.               */
+
+.fact {
+    margin-bottom: 1.25rem;
+    padding: 1.25rem 1.4rem 1.25rem 6rem;
+    border: 1px solid #cfd8d1;
+    border-radius: 12px;
+    background-color: #ffffff;
+    background-image: url("./assets/images/badge-distance.svg");
+    background-repeat: no-repeat;
+    background-position: 1.5rem center;
+    background-size: 56px 56px;
+}
+
+.fact--ascent {
+    background-image: url("./assets/images/badge-ascent.svg");
+}
+
+.fact--time {
+    background-image: url("./assets/images/badge-time.svg");
+}
+
+.fact__label {
+    margin: 0 0 0.2rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #5c6b62;
+}
+
+.fact__value {
+    margin: 0 0 0.35rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.fact__note {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #5c6b62;
+}
+
+/* ---------- 4. Quotation band ----------------------------
+   The same fixed treatment as the hero, shorter, and with the
+   image anchored to its lower half.                              */
+
+.quote-band {
+    background-color: #0f1f17;
+    background-image: url("./assets/images/band-summit-cairn.svg");
+    background-repeat: no-repeat;
+    background-position: center 65%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.quote-band__inner {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 5rem 1.25rem;
+    text-align: center;
+}
+
+.quote {
+    margin: 0 0 0.75rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    line-height: 1.45;
+}
+
+.quote p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.quote__source {
+    margin: 0;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+/* ---------- 5. Stage sections ----------------------------
+   Here the image is a texture, so it repeats. The shorthand
+   below reads: colour, image, repeat, position — and no
+   size, because the tile should stay at its natural 80px.        */
+
+.stage {
+    background: #e7ece6 url("./assets/images/pattern-contours.svg") repeat left top;
+    border-top: 1px solid #cfd8d1;
+    border-bottom: 1px solid #cfd8d1;
+}
+
+.stage--second {
+    background-position: 40px 30px;            /* same tile, offset */
+    background-color: #eef2ec;
+}
+
+/* ---------- 6. Practical information --------------------- */
+
+.practical {
+    padding: 1.75rem;
+    border: 2px solid #7d8a80;                 /* stone */
+    border-radius: 14px;
+    background-color: #ffffff;
+}
+
+.practical h2 {
+    margin-top: 0;
+}
+
+/* ---------- 7. Footer ------------------------------------ */
+
+.page-footer {
+    padding: 2rem 1.25rem 2.5rem;
+    background-color: #1d3b2a;
+    color: #e8ece7;
+    text-align: center;
+}
+
+.page-footer p {
+    margin: 0 0 0.4rem;
+}
+
+.page-footer__small {
+    font-size: 0.85rem;
+    color: rgba(232, 236, 231, 0.78);
+}
+
+.page-footer a {
+    color: #e0a33e;
+}

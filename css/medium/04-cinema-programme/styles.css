@@ -1,0 +1,347 @@
+/* =========================================================
+   The Lantern — this week's programme
+   CSS module — Medium 04
+   Everything from challenges 01–03 on one page. The film card is
+   the interesting problem: a poster beside text, with no layout
+   tool available. It is solved with a background image and
+   padding that reserves the space the poster occupies.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- 1. Page defaults ----------------------------- */
+
+body {
+    margin: 0;
+    background-color: #f5f1e6;
+    color: #14131a;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+    margin: 0 0 0.6rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: #8f2a23;
+}
+
+ul {
+    margin: 0 0 1rem;
+    padding-left: 1.3rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+.skip {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: #14131a;
+    font-size: 0.9rem;
+}
+
+.skip a {
+    color: #f5f1e6;
+}
+
+.wrap {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* ---------- 2. Masthead and hero ------------------------- */
+
+.masthead {
+    padding: 1rem 0;
+    background-color: #14131a;
+    color: #f5f1e6;
+}
+
+.masthead__name {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+}
+
+.masthead__address {
+    margin: 0;
+    font-size: 0.88rem;
+    color: rgba(245, 241, 230, 0.72);
+}
+
+/* The hero photograph is supplied already darkened, so cream text
+   on it clears 4.5:1 without an overlay — which would need either
+   a gradient or an extra layer, neither of which exists yet.      */
+.hero {
+    background-color: #241f2b;
+    background-image: url("./assets/images/hero-auditorium.svg");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: cover;
+    color: #f5f1e6;
+}
+
+.hero__inner {
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
+}
+
+.hero__eyebrow {
+    margin: 0 0 0.4rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c9a227;
+}
+
+.hero__title {
+    margin: 0 0 0.6rem;
+    font-size: 2.75rem;
+    color: #ffffff;
+}
+
+.hero__line {
+    max-width: 32rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* ---------- 3. Pills -------------------------------------
+   A radius bigger than the box can use rounds the ends completely.
+   These stay inline, so their horizontal padding pushes text away
+   but their vertical padding only paints — enough for a pill.     */
+
+.button {
+    padding: 0.7rem 1.6rem;
+    border: 2px solid #b3372f;
+    border-radius: 999px;
+    background-color: #b3372f;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button--gold {
+    border-color: #c9a227;
+    background-color: #c9a227;
+    color: #14131a;
+}
+
+/* ---------- 4. Section headings -------------------------- */
+
+.section-title {
+    margin-top: 2.75rem;
+    font-size: 1.7rem;
+}
+
+.section-note {
+    margin-bottom: 1.75rem;
+    color: #6f6b78;
+}
+
+/* ---------- 5. Film cards --------------------------------
+   `background-position` puts the poster at the top left of the
+   card, inset by the card's padding. `background-size` fixes its
+   width so it is never stretched. The card's left padding is the
+   poster width plus a gutter, so text can never reach it — at any
+   window width, with any length of synopsis, at any text size.    */
+
+.film {
+    margin-bottom: 1.5rem;
+    padding: 1.4rem 1.4rem 1.4rem 8.5rem;
+    border: 1px solid #d9d3c4;
+    border-radius: 12px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 1.4rem 1.4rem;
+    background-size: 6rem auto;
+}
+
+/* Alternating tint: a second class, because selecting "every other
+   card" needs a pseudo-class, which arrives in the Hard band.     */
+.film--alt {
+    background-color: #faf7ef;
+}
+
+.film--tide {
+    background-image: url("./assets/images/poster-the-quiet-tide.svg");
+}
+
+.film--north {
+    background-image: url("./assets/images/poster-north-of-here.svg");
+}
+
+.film--salt {
+    background-image: url("./assets/images/poster-salt-and-stone.svg");
+}
+
+.film__title {
+    font-size: 1.5rem;
+}
+
+.film__meta {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: #6f6b78;
+}
+
+.film__runtime,
+.film__director {
+    margin-left: 0.5rem;
+}
+
+.film__synopsis {
+    margin-bottom: 1.1rem;
+}
+
+.film__times-label {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6f6b78;
+}
+
+.film__times {
+    margin-bottom: 0.75rem;
+    line-height: 2.6;                          /* room for the pills to wrap */
+}
+
+/* Anything longer than a day and a time goes here rather than into
+   a pill, so a pill never has to be wider than a phone screen.    */
+.film__note {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #57535f;
+}
+
+/* Certificates say what they are, so they do not depend on colour. */
+.cert {
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background-color: #eceaf0;
+    color: #14131a;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cert--pg {
+    background-color: #e4efe4;
+    color: #2b5c2f;
+}
+
+.cert--12a {
+    background-color: #fdf0dd;
+    color: #7a5405;
+}
+
+.cert--15 {
+    background-color: #f7e3e1;
+    color: #8f2a23;
+}
+
+.time {
+    padding: 0.45rem 0.85rem;
+    white-space: nowrap;                       /* a time never breaks in half */
+    border: 1px solid #c8bfae;
+    border-radius: 999px;
+    background-color: #f5f1e6;
+    color: #14131a;
+    font-size: 0.9rem;
+    text-decoration: underline;                /* still obviously a link */
+}
+
+/* ---------- 6. Prices, membership, access ---------------- */
+
+.prices {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #efeadb;
+}
+
+.prices__list {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.prices__row {
+    padding: 0.55rem 0;
+    border-bottom: 1px solid #ded7c4;
+}
+
+.prices__amount {
+    font-weight: 700;
+    color: #8f2a23;
+}
+
+.prices__note {
+    margin: 0;
+    font-size: 0.92rem;
+    color: #57535f;
+}
+
+.membership {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border: 2px solid #c9a227;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.membership__title {
+    color: #8a6c10;
+}
+
+.membership p {
+    margin-bottom: 1.5rem;
+}
+
+.access {
+    margin: 1.5rem 0 3rem;
+    padding: 1.5rem;
+    border: 1px solid #d9d3c4;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #3a3640;
+}
+
+/* ---------- 7. Footer ------------------------------------ */
+
+.page-footer {
+    padding: 2rem 0 2.5rem;
+    background-color: #14131a;
+    color: #f5f1e6;
+}
+
+.page-footer p {
+    margin: 0 0 0.45rem;
+}
+
+.page-footer__small {
+    font-size: 0.86rem;
+    color: rgba(245, 241, 230, 0.7);
+}
+
+.page-footer a {
+    color: #e4c14e;
+}

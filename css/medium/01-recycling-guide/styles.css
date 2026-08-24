@@ -1,0 +1,296 @@
+/* =========================================================
+   Riverbend recycling guide
+   CSS module — Medium 01
+   Stage 1 stylesheet: selectors, colour, borders.
+   No layout system is used: the page is normal flow, one column.
+   ========================================================= */
+
+/* ---------- 1. Page defaults -----------------------------
+   Element selectors set the baseline. Everything inherits the
+   font and colour from <body>, so they are declared once.       */
+
+body {
+    margin: 0;
+    background-color: #f7f5f0;                 /* paper  */
+    color: #1f2933;                            /* ink    */
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+h1,
+h2 {                                            /* grouped: one rule, two selectors */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.1rem;
+    margin: 0 0 0.6rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+    margin: 0 0 0.5rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: #245732;
+}
+
+ul,
+ol {
+    margin: 0 0 1rem;
+    padding-left: 1.6rem;
+}
+
+li {
+    margin-bottom: 0.35rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* The skip link stays where the browser puts it: first thing in
+   the tab order, visible, unstyled apart from its colour.        */
+.skip {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: #1f2933;
+    font-size: 0.9rem;
+}
+
+.skip a {
+    color: #f7f5f0;
+}
+
+/* ---------- 2. The centred content column ----------------
+   `auto` side margins centre a block that has a width limit.     */
+
+.page {
+    max-width: 44rem;
+    margin: 2.5rem auto 3rem;
+    padding: 0 1.25rem;
+}
+
+/* ---------- 3. Header band -------------------------------
+   Full-bleed: it is a child of <body>, which has no width limit. */
+
+.masthead {
+    padding: 1.75rem 1.25rem 1.5rem;
+    background-color: #2f6b3f;                 /* brand green */
+    color: #ffffff;
+    text-align: center;
+}
+
+.masthead__crest {
+    width: 180px;
+    height: auto;
+}
+
+.masthead__service {
+    margin: 0.75rem 0 0.25rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.masthead__summary {
+    margin: 0 auto 0.5rem;
+    max-width: 34rem;
+    color: #eaf1ea;                            /* light, still 4.5:1 on the green */
+}
+
+.masthead__updated {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ffffff;
+    opacity: 0.75;                             /* quieter without a new colour */
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #46525e;
+}
+
+/* ---------- 4. Bin panels --------------------------------
+   One shape, four tints. `.bin` holds everything the panels
+   share; the modifier classes only change colour, so a fifth
+   bin costs one small rule.                                      */
+
+.bin {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem 1.4rem;
+    border: 1px solid #dcd8cf;
+    border-left: 8px solid #6b7785;            /* overridden per bin */
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.bin__name {
+    color: #1f2933;
+}
+
+.bin__when {
+    margin-bottom: 0.75rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #6b7785;                            /* muted */
+}
+
+.bin__list {
+    margin-bottom: 0.75rem;
+}
+
+.bin__no {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #46525e;
+}
+
+/* Green bin — hex */
+.bin--green {
+    border-left-color: #2f6b3f;
+    background-color: #eef4ef;
+}
+
+.bin--green .bin__name {
+    color: #245732;
+}
+
+/* Garden waste — hex shorthand, expands to #dd8822 */
+.bin--amber {
+    border-left-color: #d82;
+    background-color: #fbf2e6;
+}
+
+.bin--amber .bin__name {
+    color: #94540f;
+}
+
+/* Food waste — rgb() */
+.bin--blue {
+    border-left-color: rgb(40, 82, 122);
+    background-color: rgb(237, 242, 247);
+}
+
+.bin--blue .bin__name {
+    color: rgb(31, 64, 96);
+}
+
+/* Everything else — hsl(), deliberately the least colourful panel */
+.bin--grey {
+    border-left-color: hsl(210, 9%, 45%);
+    background-color: hsl(210, 12%, 96%);
+}
+
+.bin--grey .bin__name {
+    color: hsl(210, 15%, 28%);
+}
+
+/* ---------- 5. Collection days ---------------------------
+   Addressed by id: there is exactly one of these on the page.    */
+
+#collections {
+    margin-top: 2.5rem;
+    padding: 1.25rem 1.4rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #dcd8cf;
+}
+
+.collections__list {
+    margin: 1rem 0 0;
+}
+
+.collections__row {
+    padding: 0.75rem 0.9rem;
+    border-radius: 6px;
+}
+
+/* Alternating tint. Selecting "every other row" needs a pseudo-class,
+   which arrives in the Hard challenges; until then a second class on
+   the rows that need it does the same job.                       */
+.collections__row--tint {
+    background-color: #f4f6f4;
+}
+
+.collections__row dt {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    color: #245732;
+}
+
+.collections__row dd {
+    margin: 0.15rem 0 0;
+    color: #46525e;
+}
+
+/* ---------- 6. What happens afterwards -------------------- */
+
+.afterwards {
+    margin-top: 2rem;
+}
+
+.afterwards__steps {
+    padding-left: 1.8rem;
+}
+
+.afterwards__steps li {
+    padding-left: 0.4rem;                      /* text clear of the numeral */
+    margin-bottom: 0.6rem;
+}
+
+/* ---------- 7. Contact panel ------------------------------ */
+
+.contact {
+    margin-top: 2.5rem;
+    padding: 1.4rem;
+    border: 2px solid #2f6b3f;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.contact__lines {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.contact__note {
+    margin: 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid #dcd8cf;
+    font-size: 0.95rem;
+    color: #6b7785;
+}
+
+/* ---------- 8. Footer band -------------------------------- */
+
+.page-footer {
+    padding: 1.5rem 1.25rem 2rem;
+    background-color: #1f2933;
+    color: #f7f5f0;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.page-footer p {
+    margin: 0 0 0.4rem;
+}
+
+.page-footer__small {
+    font-size: 0.85rem;
+    color: rgba(247, 245, 240, 0.75);          /* alpha, not a second colour */
+}
+
+.page-footer a {
+    color: #cfe3d4;
+}

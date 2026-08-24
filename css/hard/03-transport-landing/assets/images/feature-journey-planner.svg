@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-labelledby="t d">
+  <title id="t">Journey planner</title>
+  <desc id="d">Placeholder interface screenshot: Journey planner.</desc>
+  <rect width="800" height="500" rx="14" fill="#1a2350"/>
+  <rect x="48" y="50" width="704" height="80" rx="8" fill="#2c3970"/>
+  <rect x="48" y="160" width="336" height="250" rx="8" fill="#2c3970"/>
+  <rect x="416" y="160" width="336" height="110" rx="8" fill="#157a72"/>
+  <rect x="416" y="300" width="336" height="110" rx="8" fill="#2c3970"/>
+  <circle cx="160" cy="250" r="50" fill="#eef2fb" fill-opacity="0.6"/>
+  <text x="400" y="482" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Journey planner</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1232" width="1000" height="1232" role="img" aria-labelledby="mt md">
+  <title id="mt">Design reference: Brackenfield Library membership form</title>
+  <desc id="md">Wireframe mockup of the intended layout, with the challenge palette listed underneath.</desc>
+  <rect x="0" y="0" width="1000" height="1232" fill="#ffffff"/>
+  <rect x="0" y="0" width="1000" height="46" rx="10" fill="#dfe3e8"/>
+  <circle cx="26" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="48" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="70" cy="23" r="6" fill="#b9c0c8"/>
+  <rect x="96" y="12" width="876" height="22" rx="11" fill="#f4f6f8"/>
+  <text x="500" y="27" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">brackenfield.example / join — selector work and field states; still a single column</text>
+  <rect x="0" y="46" width="1000" height="84" rx="0" fill="#1d3557"/>
+  <text x="500" y="94" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#f8f9fb" text-anchor="middle">Header band — library name, 'Join the library' + one line</text>
+  <rect x="180" y="154" width="640" height="64" rx="6" fill="#ffffff" stroke="#dfe3e8" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="500" y="190" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#5a6472" text-anchor="middle">Intro + required-field note (the note is styled by an attribute selector, not a class)</text>
+  <rect x="180" y="238" width="640" height="170" rx="6" fill="#ffffff" stroke="#c9d3e0" stroke-width="2"/>
+  <text x="500" y="319" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#1d3557" text-anchor="middle">FIELDSET 1 — About you. Legend sits on the panel edge. Label above each field, hint text under</text>
+<text x="500" y="335" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#1d3557" text-anchor="middle">it in a smaller muted size. Text inputs fill the panel width.</text>
+  <rect x="180" y="424" width="640" height="56" rx="6" fill="#ffffff" stroke="#2a6fb0" stroke-width="2"/>
+  <text x="500" y="456" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#2a6fb0" text-anchor="middle">FIELD IN FOCUS — thicker accent border plus a visible outline offset from the box</text>
+  <rect x="180" y="490" width="640" height="56" rx="6" fill="#ffffff" stroke="#9fb3c8" stroke-width="2"/>
+  <text x="500" y="522" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#1d3557" text-anchor="middle">REQUIRED FIELD — marked from its attribute; label carries a small accent dot</text>
+  <rect x="180" y="556" width="640" height="56" rx="6" fill="#eef1f5" stroke="#dbe1e8" stroke-width="2"/>
+  <text x="500" y="580" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#8a93a0" text-anchor="middle">DISABLED FIELD — muted background and text, reads as unavailable without relying on</text>
+<text x="500" y="597" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#8a93a0" text-anchor="middle">colour alone</text>
+  <rect x="180" y="632" width="640" height="150" rx="6" fill="#ffffff" stroke="#c9d3e0" stroke-width="2"/>
+  <text x="500" y="703" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#1d3557" text-anchor="middle">FIELDSET 2 — Membership type. Radio rows: first and last row styled differently, every other</text>
+<text x="500" y="719" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#1d3557" text-anchor="middle">row tinted, hovering or focusing a row lifts its tint.</text>
+  <rect x="180" y="798" width="640" height="126" rx="6" fill="#ffffff" stroke="#c9d3e0" stroke-width="2"/>
+  <text x="500" y="865" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#1d3557" text-anchor="middle">FIELDSET 3 — Contact preferences. Checkbox rows + textarea that inherits the page font</text>
+  <rect x="180" y="942" width="640" height="76" rx="6" fill="#f4f7fb"/>
+  <text x="500" y="976" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#1d3557" text-anchor="middle">Actions — primary button (accent fill) and secondary button (outline). Both change on hover</text>
+<text x="500" y="992" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#1d3557" text-anchor="middle">AND on keyboard focus.</text>
+  <rect x="0" y="1042" width="1000" height="66" rx="0" fill="#1d3557"/>
+  <text x="500" y="1080" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#f8f9fb" text-anchor="middle">Footer band</text>
+  <line x1="28" y1="1122" x2="972" y2="1122" stroke="#dfe3e8" stroke-width="1"/>
+  <text x="72" y="1148" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">Palette</text>
+  <rect x="138" y="1130" width="26" height="26" rx="5" fill="#1d3557" stroke="#cfd5db"/>
+  <text x="170" y="1138" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Navy</text>
+  <text x="170" y="1151" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#1d3557</text>
+  <rect x="254" y="1130" width="26" height="26" rx="5" fill="#f8f9fb" stroke="#cfd5db"/>
+  <text x="286" y="1138" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Paper</text>
+  <text x="286" y="1151" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#f8f9fb</text>
+  <rect x="370" y="1130" width="26" height="26" rx="5" fill="#2a6fb0" stroke="#cfd5db"/>
+  <text x="402" y="1138" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Blue</text>
+  <text x="402" y="1151" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#2a6fb0</text>
+  <rect x="486" y="1130" width="26" height="26" rx="5" fill="#c9d3e0" stroke="#cfd5db"/>
+  <text x="518" y="1138" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Line</text>
+  <text x="518" y="1151" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#c9d3e0</text>
+  <rect x="602" y="1130" width="26" height="26" rx="5" fill="#5a6472" stroke="#cfd5db"/>
+  <text x="634" y="1138" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Muted</text>
+  <text x="634" y="1151" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#5a6472</text>
+</svg>

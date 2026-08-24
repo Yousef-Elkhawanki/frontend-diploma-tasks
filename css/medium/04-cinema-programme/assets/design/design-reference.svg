@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1334" width="1000" height="1334" role="img" aria-labelledby="mt md">
+  <title id="mt">Design reference: The Lantern independent cinema — this week</title>
+  <desc id="md">Wireframe mockup of the intended layout, with the challenge palette listed underneath.</desc>
+  <rect x="0" y="0" width="1000" height="1334" fill="#ffffff"/>
+  <rect x="0" y="0" width="1000" height="46" rx="10" fill="#dfe3e8"/>
+  <circle cx="26" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="48" cy="23" r="6" fill="#b9c0c8"/>
+  <circle cx="70" cy="23" r="6" fill="#b9c0c8"/>
+  <rect x="96" y="12" width="876" height="22" rx="11" fill="#f4f6f8"/>
+  <text x="500" y="27" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">lanterncinema.example — everything from the first three challenges, one page</text>
+  <rect x="0" y="46" width="1000" height="76" rx="0" fill="#14131a"/>
+  <text x="500" y="90" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#f5f1e6" text-anchor="middle">Masthead band — cinema name + address line</text>
+  <rect x="0" y="122" width="1000" height="196" rx="0" fill="#241f2b"/>
+  <text x="500" y="226" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#f5f1e6" text-anchor="middle">HERO — auditorium photograph with a dark tint over it, film of the week + one line + pill link</text>
+  <rect x="130" y="344" width="740" height="130" rx="6" fill="#ffffff" stroke="#d9d3c4" stroke-width="2"/>
+  <text x="500" y="397" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#14131a" text-anchor="middle">FILM 1 — the poster is the card's own background image: fixed size, no repeat, pinned to the left, with</text>
+<text x="500" y="413" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#14131a" text-anchor="middle">enough left padding that the text never runs over it. Title, certificate pill, running time, synopsis,</text>
+<text x="500" y="429" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#14131a" text-anchor="middle">screening-time pills.</text>
+  <rect x="130" y="490" width="740" height="130" rx="6" fill="#faf7ef" stroke="#d9d3c4" stroke-width="2"/>
+  <text x="500" y="560" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#14131a" text-anchor="middle">FILM 2 — same card, alternating tint</text>
+  <rect x="130" y="636" width="740" height="130" rx="6" fill="#ffffff" stroke="#d9d3c4" stroke-width="2"/>
+  <text x="500" y="706" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#14131a" text-anchor="middle">FILM 3</text>
+  <rect x="130" y="792" width="740" height="104" rx="6" fill="#f5f1e6"/>
+  <text x="500" y="848" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#14131a" text-anchor="middle">Ticket prices — tinted panel, price list</text>
+  <rect x="130" y="912" width="740" height="96" rx="6" fill="#ffffff" stroke="#c9a227" stroke-width="2"/>
+  <text x="500" y="964" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#14131a" text-anchor="middle">Membership — gold border, gold heading, pill call to action</text>
+  <rect x="130" y="1024" width="740" height="88" rx="6" fill="#ffffff" stroke="#d9d3c4" stroke-width="2"/>
+  <text x="500" y="1072" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#3a3640" text-anchor="middle">Access information — bordered panel, muted body text</text>
+  <rect x="0" y="1138" width="1000" height="72" rx="0" fill="#14131a"/>
+  <text x="500" y="1178" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" fill="#f5f1e6" text-anchor="middle">Footer band — opening hours, contact, small print</text>
+  <line x1="28" y1="1224" x2="972" y2="1224" stroke="#dfe3e8" stroke-width="1"/>
+  <text x="72" y="1250" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#6b7580" text-anchor="middle">Palette</text>
+  <rect x="138" y="1232" width="26" height="26" rx="5" fill="#14131a" stroke="#cfd5db"/>
+  <text x="170" y="1240" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Near black</text>
+  <text x="170" y="1253" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#14131a</text>
+  <rect x="254" y="1232" width="26" height="26" rx="5" fill="#f5f1e6" stroke="#cfd5db"/>
+  <text x="286" y="1240" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Cream</text>
+  <text x="286" y="1253" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#f5f1e6</text>
+  <rect x="370" y="1232" width="26" height="26" rx="5" fill="#b3372f" stroke="#cfd5db"/>
+  <text x="402" y="1240" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Red</text>
+  <text x="402" y="1253" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#b3372f</text>
+  <rect x="486" y="1232" width="26" height="26" rx="5" fill="#c9a227" stroke="#cfd5db"/>
+  <text x="518" y="1240" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Gold</text>
+  <text x="518" y="1253" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#c9a227</text>
+  <rect x="602" y="1232" width="26" height="26" rx="5" fill="#6f6b78" stroke="#cfd5db"/>
+  <text x="634" y="1240" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3b4650">Grey</text>
+  <text x="634" y="1253" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b7580">#6f6b78</text>
+</svg>

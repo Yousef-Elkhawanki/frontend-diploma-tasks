@@ -1,0 +1,527 @@
+/* =========================================================
+   Meridian Field Kit — pricing
+   CSS module — Hard 04
+   The whole Hard band at once: Flexbox for arrangement,
+   positioning for the ribbon, the flag and the sticky header, and
+   stacking to decide what is drawn above what.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* The sticky header is 4.5rem tall, so the browser is told to keep
+   that much clear when it scrolls something into view — otherwise a
+   keyboard user can tab to a link that lands underneath the bar.   */
+html {
+    scroll-padding-top: 5rem;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #1b1729;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    margin: 0 0 0.7rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #3f2f7a;
+}
+
+.skip {
+    margin: 0;
+    padding: 0.5rem 1.25rem;
+    background-color: #1b1729;
+    font-size: 0.9rem;
+}
+
+.skip a {
+    color: #f6f5fb;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.section-note {
+    margin-bottom: 2rem;
+    color: #514a66;
+    text-align: center;
+}
+
+/* ---------- Buttons -------------------------------------- */
+
+.button {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.button--primary {
+    background-color: #17795e;
+    border-color: #17795e;
+    color: #ffffff;
+}
+
+.button--primary:hover {
+    background-color: #115c47;
+    border-color: #115c47;
+}
+
+.button--ghost {
+    border-color: #4c3a8f;
+    color: #4c3a8f;
+}
+
+.button--ghost:hover {
+    background-color: #efedf8;
+}
+
+.button:focus {
+    outline: 3px solid #d98324;
+    outline-offset: 3px;
+}
+
+/* ---------- 1. Sticky header -----------------------------
+   The header is a flex row and a sticky box at once. Its z-index
+   puts it above the cards; because the cards' own stacking is
+   created inside <main>, a card can never rise above this bar
+   however large its z-index is.                                   */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: #1b1729;
+}
+
+.topbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0.85rem 1.5rem;
+}
+
+.topbar__nav {
+    flex: 1 1 auto;
+}
+
+.topbar__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topbar__links a,
+.topbar__brand {
+    color: #d9d4ea;
+    text-decoration: none;
+}
+
+.topbar__links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.topbar__links a:focus,
+.topbar__brand:focus {
+    outline: 3px solid #d98324;
+    outline-offset: 3px;
+}
+
+/* ---------- 2. Page head and billing toggle -------------- */
+
+.page-head {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1rem;
+    text-align: center;
+}
+
+.page-head h1 {
+    font-size: 2.3rem;
+}
+
+.page-head__line {
+    color: #514a66;
+}
+
+/* The toggle is an inline flex row: it lays its two options out
+   like a flex container, but sits in the text flow like a word, so
+   `margin: auto` still centres it.                                */
+.toggle {
+    display: inline-flex;
+    gap: 0.25rem;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    border-radius: 999px;
+    background-color: #efedf8;
+}
+
+.toggle__option {
+    padding: 0.5rem 1.1rem;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    color: #3f2f7a;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+/* The chosen option differs by fill, weight and border, so it is
+   not distinguished by colour alone.                              */
+.toggle__option--current {
+    border-color: #4c3a8f;
+    background-color: #ffffff;
+    font-weight: 700;
+}
+
+.toggle__option:hover {
+    text-decoration: underline;
+}
+
+.toggle__option:focus {
+    outline: 3px solid #d98324;
+    outline-offset: 2px;
+}
+
+/* ---------- 3. Plan cards --------------------------------
+   The row is a flex container that wraps. `align-items: center`
+   is what lets the middle card be taller than the others without
+   stretching them to match: each card is sized by its content and
+   then centred on the cross axis.                                 */
+
+.plans {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 1rem;
+}
+
+.plans__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Each card is itself a flex column, so its button can be pushed
+   to the bottom with an automatic top margin.                     */
+.plan {
+    position: relative;                        /* containing block for the badges */
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 17rem;
+    max-width: 22rem;
+    padding: 1.75rem 1.5rem;
+    border: 1px solid #ddd8ee;
+    border-radius: 14px;
+    background-color: #ffffff;
+}
+
+.plan__name {
+    font-size: 1.3rem;
+}
+
+.plan__price {
+    margin-bottom: 0.5rem;
+}
+
+.plan__amount {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.plan__period {
+    color: #514a66;
+}
+
+.plan__for {
+    color: #514a66;
+}
+
+.plan__includes {
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.plan__includes li {
+    padding: 0.35rem 0 0.35rem 1.6rem;
+    background-image: url("./assets/images/icon-included.svg");
+    background-repeat: no-repeat;
+    background-position: left 0.55rem;
+    background-size: 1rem 1rem;
+}
+
+.plan__action {
+    margin: auto 0 0;                          /* pinned to the foot of the card */
+    padding-top: 1rem;
+}
+
+/* The featured card: bigger, bordered in the accent, tinted, and
+   lifted above its neighbours where they meet. `position:
+   relative` is what makes its z-index count.                      */
+.plan--featured {
+    z-index: 2;
+    flex-basis: 20rem;
+    padding: 2.25rem 1.75rem 2rem;
+    border: 2px solid #4c3a8f;
+    background-color: #f7f5ff;
+}
+
+/* The ribbon sits half on the card and half above it: the card is
+   its containing block, and a negative top offset lifts it out.
+   The card's own padding-top leaves room so it never touches the
+   plan name.                                                      */
+.plan__ribbon {
+    position: absolute;
+    top: -0.9rem;
+    left: 50%;
+    margin: 0 0 0 -5.5rem;                     /* half its own width, to centre it */
+    width: 11rem;
+    padding: 0.35rem 0;
+    border-radius: 999px;
+    background-color: #4c3a8f;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* The corner flag is clipped by the card's rounded corner because
+   the card hides what overflows it. Note that this means nothing
+   else on this card may deliberately hang outside it.             */
+.plan--atlas {
+    overflow: hidden;
+}
+
+.plan__flag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0.3rem 0.9rem;
+    border-bottom-left-radius: 10px;
+    background-color: #d98324;
+    color: #241704;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.plans__note {
+    max-width: 46rem;
+    margin: 2rem auto 0;
+    color: #514a66;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* ---------- 4. Add-ons -----------------------------------
+   A wrapping row whose last, partly filled line stays centred:
+   that is `justify-content: center` on a wrapping container.       */
+
+.addons {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 1rem;
+}
+
+.addons__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.addon {
+    flex: 0 1 13.5rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: 12px;
+    background-color: #f6f5fb;
+}
+
+.addon__marker {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 0.5rem;
+}
+
+.addon__name {
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+}
+
+.addon__price {
+    margin-bottom: 0.35rem;
+    font-weight: 700;
+    color: #17795e;
+}
+
+.addon__text {
+    margin: 0;
+    font-size: 0.92rem;
+    color: #514a66;
+}
+
+/* ---------- 5. Questions ---------------------------------
+   Question and answer side by side with their tops aligned; the
+   question column is fixed-ish and the answer takes the rest.     */
+
+.questions {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 4rem;
+}
+
+.qa {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.qa__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5rem 2rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: 10px;
+}
+
+.qa__row:nth-child(odd) {
+    background-color: #f6f5fb;
+}
+
+.qa__q {
+    flex: 1 1 14rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.qa__a {
+    flex: 3 1 22rem;
+    margin: 0;
+    color: #3d3651;
+}
+
+/* ---------- 6. Footer ------------------------------------ */
+
+.page-footer {
+    background-color: #1b1729;
+    color: #cfc9e6;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.footer-col {
+    flex: 1 1 12rem;
+}
+
+.footer-col__title {
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer-col__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col__list a,
+.footer-base a {
+    color: #cfc9e6;
+    text-decoration: none;
+}
+
+.footer-col__list a:hover,
+.footer-base a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-col__list a:focus,
+.footer-base a:focus {
+    outline: 3px solid #d98324;
+    outline-offset: 3px;
+}
+
+.footer-base {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem 2.5rem;
+    border-top: 1px solid #2c2542;
+    font-size: 0.9rem;
+}
+
+.footer-base__copy {
+    margin: 0;
+}
+
+.footer-base__legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

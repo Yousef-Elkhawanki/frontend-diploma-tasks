@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pricing — Meridian Field Kit</title>
+    <meta name="description" content="Three plans for the Meridian field survey kit: Field, Survey and Atlas. Prices, limits, add-ons and answers to the questions people ask before buying.">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <p class="skip"><a href="#main">Skip to main content</a></p>
+
+    <header class="topbar">
+        <div class="topbar__inner">
+            <a class="topbar__brand" href="#main">
+                <img src="./assets/images/meridian-logo.svg" alt="Meridian" width="140" height="32">
+            </a>
+            <nav class="topbar__nav" aria-label="Main">
+                <ul class="topbar__links">
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#addons">Add-ons</a></li>
+                    <li><a href="#questions">Questions</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="button button--primary" href="#plans">Start a 30-day trial</a>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-head">
+            <h1>Pricing that counts surveys, not seats</h1>
+            <p class="page-head__line">
+                Every plan includes the whole kit: offline capture, the tablet app, and
+                export to anything. What changes is how many surveys you file and how long
+                we keep them.
+            </p>
+
+            <nav class="toggle" aria-label="Billing period">
+                <a class="toggle__option toggle__option--current" href="#plans" aria-current="true">Monthly</a>
+                <a class="toggle__option" href="#plans">Yearly — two months free</a>
+            </nav>
+        </section>
+
+        <section id="plans" class="plans">
+            <ul class="plans__list">
+                <li class="plan">
+                    <h2 class="plan__name">Field</h2>
+                    <p class="plan__price"><span class="plan__amount">£29</span> <span class="plan__period">per month</span></p>
+                    <p class="plan__for">One surveyor, one project at a time.</p>
+                    <ul class="plan__includes">
+                        <li>40 surveys a month</li>
+                        <li>Offline capture on two devices</li>
+                        <li>Twelve months of storage</li>
+                        <li>CSV and GeoJSON export</li>
+                        <li>Email support, two working days</li>
+                    </ul>
+                    <p class="plan__action"><a class="button button--ghost" href="#plans">Choose Field</a></p>
+                </li>
+
+                <li class="plan plan--featured">
+                    <p class="plan__ribbon">Most popular</p>
+                    <h2 class="plan__name">Survey</h2>
+                    <p class="plan__price"><span class="plan__amount">£89</span> <span class="plan__period">per month</span></p>
+                    <p class="plan__for">A team of up to eight, several projects at once.</p>
+                    <ul class="plan__includes">
+                        <li>400 surveys a month</li>
+                        <li>Offline capture on twelve devices</li>
+                        <li>Five years of storage</li>
+                        <li>Every export format, including shapefile</li>
+                        <li>Shared templates and review queues</li>
+                        <li>Support within four working hours</li>
+                    </ul>
+                    <p class="plan__action"><a class="button button--primary" href="#plans">Choose Survey</a></p>
+                </li>
+
+                <li class="plan plan--atlas">
+                    <p class="plan__flag">New</p>
+                    <h2 class="plan__name">Atlas</h2>
+                    <p class="plan__price"><span class="plan__amount">£240</span> <span class="plan__period">per month</span></p>
+                    <p class="plan__for">Organisations that have to keep records for a decade.</p>
+                    <ul class="plan__includes">
+                        <li>Unlimited surveys</li>
+                        <li>Unlimited devices</li>
+                        <li>Ten years of storage, audited</li>
+                        <li>Single sign-on and audit logs</li>
+                        <li>A named contact and a phone number</li>
+                    </ul>
+                    <p class="plan__action"><a class="button button--ghost" href="#plans">Choose Atlas</a></p>
+                </li>
+            </ul>
+
+            <p class="plans__note">
+                Prices exclude VAT. Every plan is monthly, cancellable in the app, and your
+                data stays exportable for 90 days after you leave.
+            </p>
+        </section>
+
+        <section id="addons" class="addons">
+            <h2 class="section-title">Add-ons</h2>
+            <p class="section-note">Available on any plan, charged monthly, cancellable separately.</p>
+
+            <ul class="addons__list">
+                <li class="addon">
+                    <img class="addon__marker" src="./assets/images/icon-addon.svg" alt="" width="28" height="28">
+                    <h3 class="addon__name">Extra storage</h3>
+                    <p class="addon__price">£8 per 100 GB</p>
+                    <p class="addon__text">For photograph-heavy surveys and drone imagery.</p>
+                </li>
+                <li class="addon">
+                    <img class="addon__marker" src="./assets/images/icon-addon.svg" alt="" width="28" height="28">
+                    <h3 class="addon__name">Satellite sync</h3>
+                    <p class="addon__price">£45 per month</p>
+                    <p class="addon__text">Upload from sites with no mobile coverage at all.</p>
+                </li>
+                <li class="addon">
+                    <img class="addon__marker" src="./assets/images/icon-addon.svg" alt="" width="28" height="28">
+                    <h3 class="addon__name">Second reviewer</h3>
+                    <p class="addon__price">£15 per month</p>
+                    <p class="addon__text">A two-person sign-off step before a survey is filed.</p>
+                </li>
+                <li class="addon">
+                    <img class="addon__marker" src="./assets/images/icon-addon.svg" alt="" width="28" height="28">
+                    <h3 class="addon__name">Custom forms</h3>
+                    <p class="addon__price">£30 per month</p>
+                    <p class="addon__text">Build your own capture forms with conditional questions.</p>
+                </li>
+                <li class="addon">
+                    <img class="addon__marker" src="./assets/images/icon-addon.svg" alt="" width="28" height="28">
+                    <h3 class="addon__name">Training day</h3>
+                    <p class="addon__price">£450 once</p>
+                    <p class="addon__text">A day on site with one of our surveyors, up to twelve people.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="questions" class="questions">
+            <h2 class="section-title">Questions people ask before buying</h2>
+
+            <ul class="qa">
+                <li class="qa__row">
+                    <p class="qa__q">What counts as a survey?</p>
+                    <p class="qa__a">
+                        One completed form, filed. Drafts, revisions and photographs attached to
+                        a filed survey do not count again, however many times you edit them.
+                    </p>
+                </li>
+                <li class="qa__row">
+                    <p class="qa__q">What happens if we go over the limit?</p>
+                    <p class="qa__a">
+                        Nothing stops working. We tell you in the app, and if you are over for
+                        two months running we email about moving up a plan. We never charge an
+                        overage fee without asking first.
+                    </p>
+                </li>
+                <li class="qa__row">
+                    <p class="qa__q">Can we move between plans?</p>
+                    <p class="qa__a">
+                        Any time, in the app, and it takes effect immediately. Moving down is
+                        pro-rated; we refund the difference rather than crediting it.
+                    </p>
+                </li>
+                <li class="qa__row">
+                    <p class="qa__q">Do you offer a charity or education price?</p>
+                    <p class="qa__a">
+                        Half price on every plan for registered charities, schools and
+                        universities. Email us from an institutional address and we apply it the
+                        same day.
+                    </p>
+                </li>
+                <li class="qa__row">
+                    <p class="qa__q">What happens to our data if we leave?</p>
+                    <p class="qa__a">
+                        You can export everything at any time, and the export includes the
+                        photographs at full resolution. After you cancel we keep the data
+                        exportable for 90 days, then delete it.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="footer" class="page-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h2 class="footer-col__title">Product</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#addons">Add-ons</a></li>
+                    <li><a href="#main">The tablet app</a></li>
+                    <li><a href="#main">Export formats</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Support</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#questions">Questions</a></li>
+                    <li><a href="#main">Status</a></li>
+                    <li><a href="#main">Training</a></li>
+                    <li><a href="#main">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2 class="footer-col__title">Company</h2>
+                <ul class="footer-col__list">
+                    <li><a href="#main">About Meridian</a></li>
+                    <li><a href="#main">Security</a></li>
+                    <li><a href="#main">Accessibility</a></li>
+                    <li><a href="#main">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <p class="footer-base__copy">© 2026 Meridian Field Systems Ltd, Sheffield.</p>
+            <ul class="footer-base__legal">
+                <li><a href="#main">Privacy</a></li>
+                <li><a href="#main">Terms</a></li>
+                <li><a href="../../">Back to all CSS challenges</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" width="520" height="620" role="img" aria-labelledby="t d">
+  <title id="t">Quarry line</title>
+  <desc id="d">Placeholder artwork: Quarry line.</desc>
+  <rect width="520" height="620" fill="#d3cabb"/>
+  <rect x="62" y="87" width="260" height="310" fill="#4a5b52"/>
+  <circle cx="354" cy="384" r="114" fill="#2b2b2b" fill-opacity="0.85"/>
+  <text x="260" y="602" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2b2b2b" text-anchor="middle">Quarry line</text>
+</svg>

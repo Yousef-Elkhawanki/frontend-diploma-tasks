@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 76" width="320" height="76" role="img" aria-labelledby="t d">
+  <title id="t">Cogwheel</title>
+  <desc id="d">Wordmark for Cogwheel.</desc>
+  <rect width="320" height="76" rx="15" fill="#232326"/>
+  <circle cx="38" cy="38" r="20" fill="#f6f4f1"/>
+  <text x="70" y="49" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="bold" fill="#f6f4f1">Cogwheel</text>
+</svg>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Challenges — Frontend Diploma Challenges</title>
+    <meta name="description" content="Twelve CSS practice challenges: four medium, four hard and four advanced, each with a brief, a design reference and a complete reference implementation. HTML and pure CSS only.">
+</head>
+<body>
+    <p><a href="#main">Skip to main content</a></p>
+
+    <header>
+        <nav aria-label="Breadcrumb">
+            <ol>
+                <li><a href="../">Frontend Diploma Challenges</a></li>
+                <li><a href="./" aria-current="page">CSS</a></li>
+            </ol>
+        </nav>
+
+        <h1>CSS Challenges</h1>
+        <p>
+            Twelve real interfaces to build with <strong>HTML and pure CSS</strong> — no
+            JavaScript, no framework, no preprocessor. Each challenge unlocks the next
+            part of the CSS curriculum, and never asks for a concept you have not met
+            yet.
+        </p>
+
+        <nav aria-label="Sections of this page">
+            <ul>
+                <li><a href="#how-to-use">How to use this module</a></li>
+                <li><a href="#progression">What unlocks when</a></li>
+                <li><a href="#medium">Medium challenges</a></li>
+                <li><a href="#hard">Hard challenges</a></li>
+                <li><a href="#advanced">Advanced challenges</a></li>
+                <li><a href="#summary">All twelve at a glance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="how-to-use">
+            <h2>How to use this module</h2>
+
+            <ol>
+                <li>Work in order. Each challenge assumes the one before it.</li>
+                <li>
+                    Read the brief — the <code>README.md</code> in the challenge folder —
+                    including the design reference image and the constraints.
+                </li>
+                <li>
+                    Build your own <code>index.html</code> and <code>styles.css</code> in
+                    your own folder, from the brief and the design reference alone.
+                </li>
+                <li>
+                    Only when you have finished, open the reference page, compare, and then
+                    read its stylesheet.
+                </li>
+                <li>
+                    Use your browser's developer tools on both pages. Inspecting the
+                    difference between your box model and the reference's is most of the
+                    learning.
+                </li>
+            </ol>
+
+            <h3>The rules for this module</h3>
+            <ul>
+                <li>HTML for structure, <strong>external CSS</strong> for everything visual.</li>
+                <li>No <code>&lt;style&gt;</code> element and no <code>style</code> attribute.</li>
+                <li>No JavaScript, no Tailwind, no Bootstrap, no Sass, no UI library.</li>
+                <li>
+                    No concept from a later stage of the curriculum: if you have not met
+                    Flexbox yet, the challenge can be solved without it.
+                </li>
+                <li>
+                    Every hover state needs a matching focus state, and every design decision
+                    has to survive being read by a screen reader.
+                </li>
+            </ul>
+        </section>
+
+        <section id="progression">
+            <h2>What unlocks when</h2>
+            <p>
+                Nothing in a challenge requires a concept from a later one. This is the
+                order the module introduces things:
+            </p>
+
+            <table>
+                <caption>CSS concepts, and the challenge that introduces each group</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Introduced in</th>
+                        <th scope="col">Concepts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Medium 01</th>
+                        <td>Syntax, external stylesheets, selectors, colour, borders, radius, comments</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Medium 02</th>
+                        <td>Backgrounds in depth, including <code>background-attachment</code></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Medium 03</th>
+                        <td>Box model, <code>box-sizing</code>, dimensions, units, spacing, centring</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Medium 04</th>
+                        <td>All of the above combined on one page</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hard 01</th>
+                        <td>Cascade, inheritance, specificity, combinators, attribute selectors, pseudo-classes, states</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hard 02</th>
+                        <td><code>display</code>, normal flow, visibility, overflow, positioning, <code>z-index</code></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hard 03</th>
+                        <td>Flexbox: containers and items</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hard 04</th>
+                        <td>Flexbox with positioning and layering together</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Advanced 01</th>
+                        <td>CSS Grid: tracks, placement, implicit grids, <code>minmax()</code>, <code>auto-fit</code></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Advanced 02</th>
+                        <td>Responsive design: media queries, fluid units, <code>clamp()</code>, responsive media</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Advanced 03</th>
+                        <td>Pseudo-elements, custom properties, transitions, transforms, animations</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Advanced 04</th>
+                        <td>Capstone: the whole module in one page</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="medium">
+            <h2>Medium</h2>
+            <p>
+                CSS foundations: selectors, colour, backgrounds, borders, box model, units
+                and spacing. No layout system yet — these pages are one column, in normal
+                flow, which is exactly why the layout challenges later feel like a relief.
+            </p>
+
+            <ul>
+                <li>
+                    <a href="./medium/01-recycling-guide/">01 — Riverbend Recycling Guide</a>
+                    — selectors, colour, borders, a first stylesheet. 60–75 minutes.
+                    (<a href="./medium/01-recycling-guide/README.md">brief for medium 01</a>)
+                </li>
+                <li>
+                    <a href="./medium/02-trail-hero/">02 — Fell Ridge Trail</a>
+                    — backgrounds in depth, including fixed photographic bands and tiled
+                    textures. 75–90 minutes.
+                    (<a href="./medium/02-trail-hero/README.md">brief for medium 02</a>)
+                </li>
+                <li>
+                    <a href="./medium/03-workshop-packages/">03 — Cogwheel Service Packages</a>
+                    — box model, sizing, units, spacing rhythm, centring. 75–90 minutes.
+                    (<a href="./medium/03-workshop-packages/README.md">brief for medium 03</a>)
+                </li>
+                <li>
+                    <a href="./medium/04-cinema-programme/">04 — The Lantern Programme</a>
+                    — everything above on one page, including a poster laid out with a
+                    background image. 90–105 minutes.
+                    (<a href="./medium/04-cinema-programme/README.md">brief for medium 04</a>)
+                </li>
+            </ul>
+        </section>
+
+        <section id="hard">
+            <h2>Hard</h2>
+            <p>
+                How CSS actually behaves — the cascade, specificity and inheritance — then
+                the tools that arrange a page: display, positioning, stacking and Flexbox.
+            </p>
+
+            <ul>
+                <li>
+                    <a href="./hard/01-membership-form/">01 — Brackenfield Membership Form</a>
+                    — cascade, specificity, inheritance, attribute selectors, field states.
+                    Styled without adding a single class. 90–120 minutes.
+                    (<a href="./hard/01-membership-form/README.md">brief for hard 01</a>)
+                </li>
+                <li>
+                    <a href="./hard/02-gallery-wall/">02 — Kilnworks Gallery Wall</a>
+                    — display and normal flow, overflow, absolute badges, a sticky bar,
+                    stacking. 100–120 minutes.
+                    (<a href="./hard/02-gallery-wall/README.md">brief for hard 02</a>)
+                </li>
+                <li>
+                    <a href="./hard/03-transport-landing/">03 — Loop Transport Landing Page</a>
+                    — Flexbox: navbar, split hero, equal-height cards, media rows, footer.
+                    100–120 minutes.
+                    (<a href="./hard/03-transport-landing/README.md">brief for hard 03</a>)
+                </li>
+                <li>
+                    <a href="./hard/04-pricing-plans/">04 — Meridian Pricing</a>
+                    — Flexbox, positioning and layering together: a raised plan, a ribbon,
+                    a wrapping add-on row. 110–130 minutes.
+                    (<a href="./hard/04-pricing-plans/README.md">brief for hard 04</a>)
+                </li>
+            </ul>
+        </section>
+
+        <section id="advanced">
+            <h2>Advanced</h2>
+            <p>
+                Two-dimensional layout, responsive design and modern CSS, finishing with a
+                capstone that uses the entire module.
+            </p>
+
+            <ul>
+                <li>
+                    <a href="./advanced/01-print-catalogue/">01 — Halftone Print Catalogue</a>
+                    — CSS Grid: spans, implicit tracks, <code>minmax()</code> and
+                    <code>auto-fit</code>, with no media query anywhere. 120–140 minutes.
+                    (<a href="./advanced/01-print-catalogue/README.md">brief for advanced 01</a>)
+                </li>
+                <li>
+                    <a href="./advanced/02-property-listings/">02 — Fairwater Property Listings</a>
+                    — mobile-first responsive design, <code>clamp()</code>,
+                    <code>aspect-ratio</code>, <code>object-fit</code>, two honest
+                    breakpoints. 130–150 minutes.
+                    (<a href="./advanced/02-property-listings/README.md">brief for advanced 02</a>)
+                </li>
+                <li>
+                    <a href="./advanced/03-streaming-browse/">03 — Nocturne Streaming Browse</a>
+                    — custom properties as a design system, pseudo-element decoration,
+                    transitions, transforms, animation and reduced motion. 130–150 minutes.
+                    (<a href="./advanced/03-streaming-browse/README.md">brief for advanced 03</a>)
+                </li>
+                <li>
+                    <a href="./advanced/04-saas-capstone/">04 — Signal Landing Page (capstone)</a>
+                    — the whole module in one responsive page. 150–180 minutes.
+                    (<a href="./advanced/04-saas-capstone/README.md">brief for advanced 04</a>)
+                </li>
+            </ul>
+        </section>
+
+        <section id="summary">
+            <h2>All twelve at a glance</h2>
+
+            <table>
+                <caption>The twelve CSS challenges, in the order they should be attempted</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Difficulty</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Challenge</th>
+                        <th scope="col">Concepts practised</th>
+                        <th scope="col">Estimated time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="4">Medium</th>
+                        <th scope="row">01</th>
+                        <td><a href="./medium/01-recycling-guide/">Riverbend Recycling Guide</a></td>
+                        <td>External stylesheets, element/class/ID/universal selectors, grouping, hex, rgb, hsl, alpha, opacity, borders, radius</td>
+                        <td>60–75 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">02</th>
+                        <td><a href="./medium/02-trail-hero/">Fell Ridge Trail</a></td>
+                        <td>background-image, -repeat, -position, -size, <strong>-attachment</strong>, shorthand, pill and circle shapes, text over photography</td>
+                        <td>75–90 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03</th>
+                        <td><a href="./medium/03-workshop-packages/">Cogwheel Service Packages</a></td>
+                        <td>box-sizing, width/height, min and max sizing, px/%/em/rem/vh, margin, padding, margin collapsing, one negative margin, centring</td>
+                        <td>75–90 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">04</th>
+                        <td><a href="./medium/04-cinema-programme/">The Lantern Programme</a></td>
+                        <td>All of the above on one page: component variants, a background-image poster with reserved padding, a spacing scale</td>
+                        <td>90–105 min</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="4">Hard</th>
+                        <th scope="row">01</th>
+                        <td><a href="./hard/01-membership-form/">Brackenfield Membership Form</a></td>
+                        <td>Cascade, specificity, inheritance, inherit/initial/unset, attribute selectors, combinators, pseudo-classes, focus and hover states</td>
+                        <td>90–120 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">02</th>
+                        <td><a href="./hard/02-gallery-wall/">Kilnworks Gallery Wall</a></td>
+                        <td>display, inline-block, visibility, overflow, static/relative/absolute/fixed/sticky, containing blocks, z-index</td>
+                        <td>100–120 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03</th>
+                        <td><a href="./hard/03-transport-landing/">Loop Transport Landing Page</a></td>
+                        <td>Flex containers and items, direction, justify, align, wrap, gap, grow/shrink/basis, align-self, order</td>
+                        <td>100–120 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">04</th>
+                        <td><a href="./hard/04-pricing-plans/">Meridian Pricing</a></td>
+                        <td>Flexbox with positioning and stacking: raised card, overlapping ribbon, clipped corner flag, sticky header, wrapping rows</td>
+                        <td>110–130 min</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="4">Advanced</th>
+                        <th scope="row">01</th>
+                        <td><a href="./advanced/01-print-catalogue/">Halftone Print Catalogue</a></td>
+                        <td>Grid tracks, fr, repeat(), gap, spans, implicit grid, grid-auto-rows, minmax(), auto-fit, grid alignment, Grid with Flexbox</td>
+                        <td>120–140 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">02</th>
+                        <td><a href="./advanced/02-property-listings/">Fairwater Property Listings</a></td>
+                        <td>Mobile-first media queries, clamp/min/calc, dvh, aspect-ratio, object-fit and -position, responsive Grid and Flexbox, reflow</td>
+                        <td>130–150 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03</th>
+                        <td><a href="./advanced/03-streaming-browse/">Nocturne Streaming Browse</a></td>
+                        <td>::before and ::after, custom properties and var() fallbacks, local and re-declared tokens, transitions, transforms, keyframes, reduced motion</td>
+                        <td>130–150 min</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">04</th>
+                        <td><a href="./advanced/04-saas-capstone/">Signal Landing Page</a></td>
+                        <td>Capstone: tokens, Grid, Flexbox, responsive, fluid type, responsive media, pseudo-elements, transitions, transforms, one animation</td>
+                        <td>150–180 min</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Each challenge keeps its own images and its design reference in its own
+            <code>assets/</code> folder, so a challenge folder can be copied or opened on
+            its own.
+        </p>
+        <p><a href="./README.md">Read the CSS module guide</a></p>
+        <p><a href="../">Back to Frontend Diploma Challenges</a></p>
+    </footer>
+</body>
+</html>
